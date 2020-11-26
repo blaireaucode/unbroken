@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unbroken VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-11-26 20:16+0100\n"
+"POT-Creation-Date: 2020-11-26 21:27+0100\n"
 "PO-Revision-Date: 2020-11-25 21:47+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -22,31 +22,102 @@ msgstr ""
 msgid "Maxyn Zenma"
 msgstr ""
 
-#: character.json:4
+#: character.json:4 character.json:24
 msgid "Sneak"
 msgstr "Le Furtif"
 
 #: character.json:5
-msgid "sneak.png"
+msgid "maxyn.png"
 msgstr ""
 
 #: character.json:8
 msgid "Caellahan"
 msgstr ""
 
-#: character.json:9
+#: character.json:9 character.json:39
 msgid "Brawler"
 msgstr ""
 
 #: character.json:10
-msgid "brawler.png"
+msgid "caellahan.png"
 msgstr ""
 
-#: main.py:34
-msgid "Hello World"
-msgstr "Salut monde"
+#: character.json:13
+msgid "Kirilla el Kaer"
+msgstr ""
 
-#: ui/NewGameWidget.py:72
+#: character.json:14 character.json:29
+msgid "Hunter"
+msgstr ""
+
+#: character.json:15
+msgid "kirilla.png"
+msgstr ""
+
+#: character.json:18
+msgid "Helena"
+msgstr ""
+
+#: character.json:19 character.json:34
+msgid "Sage"
+msgstr ""
+
+#: character.json:20
+msgid "helena.png"
+msgstr ""
+
+#: character.json:23
+msgid "Mae'el"
+msgstr ""
+
+#: character.json:25
+msgid "maeel.png"
+msgstr ""
+
+#: character.json:28
+msgid "Huckdorf"
+msgstr ""
+
+#: character.json:30
+msgid "huckdorf.png"
+msgstr ""
+
+#: character.json:33
+msgid "Tomu"
+msgstr ""
+
+#: character.json:35
+msgid "tomu.png"
+msgstr ""
+
+#: character.json:38
+msgid "Niola"
+msgstr ""
+
+#: character.json:40
+msgid "niola.png"
+msgstr ""
+
+#: ui/NewGameWidget.py:57
+msgid "Previous"
+msgstr ""
+
+#: ui/NewGameWidget.py:58
 msgid "Next"
 msgstr "Suivant"
+
+#~ msgid "Hello World"
+#~ msgstr "Salut monde"
+
+#~ msgid "sneak.png"
+#~ msgstr ""
+
+#~ msgid "brawler.png"
+#~ msgstr ""
+
+#~ msgid "hunter.png"
+#~ msgstr ""
+
+#~ msgid "sage.png"
+#~ msgstr ""
 

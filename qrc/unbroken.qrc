@@ -1,5 +1,12 @@
 <RCC>
   <qresource prefix="character">
-    <file>sneak.png</file>
+    <file>niola.png</file>
+    <file>tomu.png</file>
+    <file>huckdorf.png</file>
+    <file>maeel.png</file>
+    <file>kirilla.png</file>
+    <file>helena.png</file>
+    <file>caellahan.png</file>
+    <file>maxyn.png</file>
   </qresource>
 </RCC>

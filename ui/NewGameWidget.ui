@@ -6,23 +6,62 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>635</width>
-    <height>547</height>
+    <width>617</width>
+    <height>552</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_3">
+   <property name="leftMargin">
+    <number>12</number>
+   </property>
+   <property name="topMargin">
+    <number>12</number>
+   </property>
+   <property name="bottomMargin">
+    <number>12</number>
+   </property>
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QLabel" name="label_2">
+        <spacer name="verticalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_name">
          <property name="font">
           <font>
-           <pointsize>24</pointsize>
+           <family>Chalkboard</family>
+           <pointsize>31</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Mae'l</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_class_type">
+         <property name="font">
+          <font>
+           <pointsize>26</pointsize>
+           <kerning>true</kerning>
           </font>
          </property>
          <property name="text">
@@ -37,7 +76,20 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_3">
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_ability">
          <property name="maximumSize">
           <size>
            <width>300</width>
@@ -63,14 +115,14 @@ Après le jet de dé du monstre, dépensez pour réduire ce résultat de 1.</str
         </widget>
        </item>
        <item>
-        <spacer name="verticalSpacer">
+        <spacer name="verticalSpacer_6">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
            <width>20</width>
-           <height>40</height>
+           <height>181</height>
           </size>
          </property>
         </spacer>
@@ -80,27 +132,9 @@ Après le jet de dé du monstre, dépensez pour réduire ce résultat de 1.</str
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <item>
-          <widget class="QPushButton" name="previous">
-           <property name="text">
-            <string>PushButton</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="next">
-           <property name="text">
-            <string>PushButton</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
         <widget class="QLabel" name="label">
          <property name="frameShape">
-          <enum>QFrame::Box</enum>
+          <enum>QFrame::NoFrame</enum>
          </property>
          <property name="frameShadow">
           <enum>QFrame::Sunken</enum>
@@ -109,7 +143,49 @@ Après le jet de dé du monstre, dépensez pour réduire ce résultat de 1.</str
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap resource="../qrc/unbroken.qrc">:/character/sneak.png</pixmap>
+          <pixmap resource="../qrc/unbroken.qrc">:/character/maeel.png</pixmap>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="previous">
+           <property name="text">
+            <string>previous</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="next">
+           <property name="text">
+            <string>next</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_index">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <property name="text">
+          <string>2/8</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -128,12 +204,14 @@ Après le jet de dé du monstre, dépensez pour réduire ce résultat de 1.</str
      <property name="standardButtons">
       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
      </property>
+     <property name="centerButtons">
+      <bool>true</bool>
+     </property>
     </widget>
    </item>
   </layout>
  </widget>
  <resources>
-  <include location="../qrc/unbroken.qrc"/>
   <include location="../qrc/unbroken.qrc"/>
  </resources>
  <connections>

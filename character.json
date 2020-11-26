@@ -1,12 +1,42 @@
 [
   {
     "name": "Maxyn Zenma",
-    "surname": "Sneak",
-    "image": "sneak.png"
+    "class_type": "Sneak",
+    "image": "maxyn.png"
   },
   {
     "name": "Caellahan",
-    "surname": "Brawler",
-    "image": "brawler.png"
+    "class_type": "Brawler",
+    "image": "caellahan.png"
+  },
+  {
+    "name": "Kirilla el Kaer",
+    "class_type": "Hunter",
+    "image": "kirilla.png"
+  },
+  {
+    "name": "Helena",
+    "class_type": "Sage",
+    "image": "helena.png"
+  },
+  {
+    "name": "Mae'el",
+    "class_type": "Sneak",
+    "image": "maeel.png"
+  },
+  {
+    "name": "Huckdorf",
+    "class_type": "Hunter",
+    "image": "huckdorf.png"
+  },
+  {
+    "name": "Tomu",
+    "class_type": "Sage",
+    "image": "tomu.png"
+  },
+  {
+    "name": "Niola",
+    "class_type": "Brawler",
+    "image": "niola.png"
   }
 ]

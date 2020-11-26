@@ -31,56 +31,58 @@ class NewGameWidget(QtWidgets.QDialog, Ui_NewGameWidget):
         super().__init__(parent)
         self.setupUi(self)
 
+        self.setModal(True)
+
         # read database of character
         self.characters = read_character_database()
+
         # build widget
-
-        # make ui (delete unused one)
-        self.verticalLayout_2.removeWidget(self.label)
-        self.label.deleteLater()
-
-        self.label = QtWidgets.QLabel(self)
-        self.label.setGeometry(QtCore.QRect(520, 50, 351, 461))
-        self.label.setFrameShape(QtWidgets.QFrame.Box)
-        self.label.setFrameShadow(QtWidgets.QFrame.Sunken)
-        self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap(":/character/sneak.png"))
-        self.label.setAlignment(QtCore.Qt.AlignCenter)
-        self.label.setObjectName("label")
-
-        self.label2 = QtWidgets.QLabel(self)
-        self.label2.setGeometry(QtCore.QRect(520, 50, 251, 461))
-        self.label2.setFrameShape(QtWidgets.QFrame.Box)
-        self.label2.setFrameShadow(QtWidgets.QFrame.Sunken)
-        self.label2.setText("")
-        self.label2.setPixmap(QtGui.QPixmap(":/character/sneak.png"))
-        self.label2.setAlignment(QtCore.Qt.AlignCenter)
-        self.label2.setObjectName("label2")
-
-        # self.verticalLayout_2.addWidget(self.label)
+        self.image_widgets = []
+        for c in self.characters:
+            self.build_widget(c)
 
         # set widget to stacked
         self.slidingStacked = SlidingStackedWidget()
-        self.slidingStacked.addWidget(self.label)
-        self.slidingStacked.addWidget(self.label2)
-
-        self.verticalLayout_2.addWidget(self.slidingStacked)
-
+        self.slidingStacked.setWrap(True)
+        for w in self.image_widgets:
+            self.slidingStacked.addWidget(w)
+        self.verticalLayout_2.replaceWidget(self.label, self.slidingStacked)
+        # delete unused one, only useful to check in designer
+        self.label.deleteLater()
         self.previous.pressed.connect(self.slot_previous)
         self.next.pressed.connect(self.slot_next)
+        self.change_current_character()
 
+        # button text
+        self.previous.setText(_('Previous'))
         self.next.setText(_('Next'))
 
     @Slot()
     def slot_next(self):
-        print('next')
-        for c in self.characters:
-            print(c)
         self.slidingStacked.slideInNext()
+        self.change_current_character()
 
     @Slot()
     def slot_previous(self):
-        print('previous')
-        for c in self.characters:
-            print(c)
         self.slidingStacked.slideInPrev()
+        self.change_current_character()
+
+    def build_widget(self, character):
+        l = QtWidgets.QLabel(self)
+        l.setGeometry(QtCore.QRect(520, 50, 351, 461))
+        l.setFrameShape(QtWidgets.QFrame.Box)
+        l.setFrameShadow(QtWidgets.QFrame.Sunken)
+        l.setText("")
+        l.setFrameShape(QtWidgets.QFrame.NoFrame)
+        l.setPixmap(QtGui.QPixmap(":/character/" + character.image))
+        l.setAlignment(QtCore.Qt.AlignCenter)
+        l.setObjectName(character.name)
+        self.image_widgets.append(l)
+
+    def change_current_character(self):
+        i = self.slidingStacked.m_next  # not sure why 'next'
+        c = self.characters[i]
+        self.label_name.setText(c.name)
+        self.label_class_type.setText(c.class_type.upper())
+        self.label_index.setText(f'{i+1}/{len(self.characters)}')
+        self.repaint()
