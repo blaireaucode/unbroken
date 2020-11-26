@@ -4,6 +4,7 @@
 import os
 import platform
 
+
 def gen_ui(win, name):
     print(f'Generate UI {name}')
     if win:
@@ -11,10 +12,11 @@ def gen_ui(win, name):
     else:
         os.system('pyside2-uic ui/' + name + '.ui -o ui/ui_' + name + '.py')
 
+
 s = platform.platform()
 
 w = False
-if 'Windows' in  s:
+if 'Windows' in s:
     print('Platform is windows')
     w = True
 else:
@@ -32,4 +34,9 @@ if w:
 else:
     os.system('pyside2-rcc qrc/unbroken.qrc -o unbroken_rc.py')
 
-os.system('ls -lrt ui')
+print('locale')
+os.system('pybabel extract .  --project unbroken -F babel.cfg -o locales/base.pot')
+#os.system('pybabel init -l fr -i locales/unbroken.pot -d locales')
+os.system('pybabel update -i locales/base.pot -d locales')
+os.system('pybabel compile -d locales')
+

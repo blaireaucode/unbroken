@@ -37,8 +37,8 @@
    <widget class="PhaseWidget" name="phase" native="true">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>310</y>
+      <x>540</x>
+      <y>300</y>
       <width>371</width>
       <height>241</height>
      </rect>

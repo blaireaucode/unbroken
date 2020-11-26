@@ -7,6 +7,7 @@ from PySide2.QtGui import QIcon
 from PySide2.QtWidgets import QApplication, QGridLayout, QWidget, QFileDialog, QMessageBox
 from .NewGameWidget import *
 
+
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def __init__(self, *args, **kwargs):
@@ -17,7 +18,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # start new game
         self.button_new.clicked.connect(self.slot_on_new_game)
 
-
     def set_game(self, g):
         print('set game', g)
         self.character.set_game(g)
@@ -27,6 +27,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         print('okok')
         # dialog: name, difficulty + random
         # return: charcter
-        diag = NewGameWidget(self)
+        diag = NewGameWidget(self) ### FIXME set the Game
         diag.show()
         print('after dialog')
+        # FIXME check if cancel or not,

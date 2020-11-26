@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/MainWindow.ui',
 # licensing of 'ui/MainWindow.ui' applies.
 #
-# Created: Mon Nov 23 21:19:19 2020
+# Created: Thu Nov 26 20:16:43 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ class Ui_MainWindow(object):
         self.encouter.setGeometry(QtCore.QRect(560, 80, 301, 171))
         self.encouter.setObjectName("encouter")
         self.phase = PhaseWidget(self.centralwidget)
-        self.phase.setGeometry(QtCore.QRect(470, 310, 371, 241))
+        self.phase.setGeometry(QtCore.QRect(540, 300, 371, 241))
         self.phase.setObjectName("phase")
         self.button_new = QtWidgets.QPushButton(self.centralwidget)
         self.button_new.setGeometry(QtCore.QRect(10, 10, 61, 31))
@@ -44,5 +44,5 @@ class Ui_MainWindow(object):
         self.button_new.setText(QtWidgets.QApplication.translate("MainWindow", "new", None, -1))
 
 from .EncounterWidget import EncounterWidget
-from .PhaseWidget import PhaseWidget
 from .CharacterWidget import CharacterWidget
+from .PhaseWidget import PhaseWidget

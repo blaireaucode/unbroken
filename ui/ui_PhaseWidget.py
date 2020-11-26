@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/PhaseWidget.ui',
 # licensing of 'ui/PhaseWidget.ui' applies.
 #
-# Created: Mon Nov 23 21:19:20 2020
+# Created: Thu Nov 26 20:16:44 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
