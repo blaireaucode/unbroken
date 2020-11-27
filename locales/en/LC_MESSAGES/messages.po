@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unbroken VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-11-26 21:27+0100\n"
+"POT-Creation-Date: 2020-11-27 22:18+0100\n"
 "PO-Revision-Date: 2020-11-25 21:54+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -18,83 +18,127 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: character.json:3
+#: qrc/abilities.json:3 qrc/abilities.json:9 qrc/abilities.json:15
+msgid "id"
+msgstr ""
+
+#: qrc/abilities.json:4
+msgid "Take a peek"
+msgstr ""
+
+#: qrc/abilities.json:5
+msgid "Travel Action"
+msgstr ""
+
+#: qrc/abilities.json:6
+msgid "Reveal +1 card during the Exploration Step."
+msgstr ""
+
+#: qrc/abilities.json:10
+msgid "Flexible"
+msgstr ""
+
+#: qrc/abilities.json:11 qrc/abilities.json:17
+msgid "Response"
+msgstr ""
+
+#: qrc/abilities.json:12
+msgid "Before gaining a new Skill, reveal +1 Skill card to select from."
+msgstr ""
+
+#: qrc/abilities.json:16
+msgid "Dodge"
+msgstr ""
+
+#: qrc/abilities.json:18
+msgid ""
+"After a monster's combat roll spend <EFFORT> to reduce the roll result by"
+" 1."
+msgstr ""
+
+#: qrc/characters.json:3
 msgid "Maxyn Zenma"
 msgstr ""
 
-#: character.json:4 character.json:24
+#: qrc/characters.json:4 qrc/characters.json:44
 msgid "Sneak"
 msgstr ""
 
-#: character.json:5
+#: qrc/characters.json:5
 msgid "maxyn.png"
 msgstr ""
 
-#: character.json:8
+#: qrc/characters.json:6 qrc/characters.json:16 qrc/characters.json:26
+#: qrc/characters.json:36 qrc/characters.json:46 qrc/characters.json:56
+#: qrc/characters.json:66 qrc/characters.json:76
+msgid "abilities"
+msgstr ""
+
+#: qrc/characters.json:13
 msgid "Caellahan"
 msgstr ""
 
-#: character.json:9 character.json:39
+#: qrc/characters.json:14 qrc/characters.json:74
 msgid "Brawler"
 msgstr ""
 
-#: character.json:10
+#: qrc/characters.json:15
 msgid "caellahan.png"
 msgstr ""
 
-#: character.json:13
+#: qrc/characters.json:23
 msgid "Kirilla el Kaer"
 msgstr ""
 
-#: character.json:14 character.json:29
+#: qrc/characters.json:24 qrc/characters.json:54
 msgid "Hunter"
 msgstr ""
 
-#: character.json:15
+#: qrc/characters.json:25
 msgid "kirilla.png"
 msgstr ""
 
-#: character.json:18
+#: qrc/characters.json:33
 msgid "Helena"
 msgstr ""
 
-#: character.json:19 character.json:34
+#: qrc/characters.json:34 qrc/characters.json:64
 msgid "Sage"
 msgstr ""
 
-#: character.json:20
+#: qrc/characters.json:35
 msgid "helena.png"
 msgstr ""
 
-#: character.json:23
+#: qrc/characters.json:43
 msgid "Mae'el"
 msgstr ""
 
-#: character.json:25
+#: qrc/characters.json:45
 msgid "maeel.png"
 msgstr ""
 
-#: character.json:28
+#: qrc/characters.json:53
 msgid "Huckdorf"
 msgstr ""
 
-#: character.json:30
+#: qrc/characters.json:55
 msgid "huckdorf.png"
 msgstr ""
 
-#: character.json:33
+#: qrc/characters.json:63
 msgid "Tomu"
 msgstr ""
 
-#: character.json:35
+#: qrc/characters.json:65
 msgid "tomu.png"
 msgstr ""
 
-#: character.json:38
+#: qrc/characters.json:73
 msgid "Niola"
 msgstr ""
 
-#: character.json:40
+#: qrc/characters.json:75
 msgid "niola.png"
 msgstr ""
 

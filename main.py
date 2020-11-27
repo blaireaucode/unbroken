@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 import gettext
 import config
 import os
+import core
 
 matplotlib.use('TkAgg')
 
@@ -31,9 +32,9 @@ def main():
     lang1.install()
 
     app = QApplication(sys.argv)
-    g = Game()
+    #g = Game()
     m = MainWindow()
-    m.set_game(g)
+    #m.set_game(g)
     m.show()
     sys.exit(app.exec_())
 

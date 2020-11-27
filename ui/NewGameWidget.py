@@ -6,7 +6,7 @@ from .ui_NewGameWidget import Ui_NewGameWidget
 import platform
 from PySide2 import QtCore, QtGui, QtWidgets
 from .SlidingStackedWidget import *
-from core import *
+# from core import *
 import gettext
 
 """
@@ -27,19 +27,19 @@ This difficulty setting is for players who want a real challenge. On HARD, you b
 
 class NewGameWidget(QtWidgets.QDialog, Ui_NewGameWidget):
 
-    def __init__(self, parent=None):
+    def __init__(self, game, parent=None):
         super().__init__(parent)
         self.setupUi(self)
+        self.game = game
 
         self.setModal(True)
 
-        # read database of character
-        self.characters = read_character_database()
-
         # build widget
         self.image_widgets = []
+        self.characters = game.db.characters
         for c in self.characters:
             self.build_widget(c)
+        print(self.characters)
 
         # set widget to stacked
         self.slidingStacked = SlidingStackedWidget()
@@ -56,6 +56,8 @@ class NewGameWidget(QtWidgets.QDialog, Ui_NewGameWidget):
         # button text
         self.previous.setText(_('Previous'))
         self.next.setText(_('Next'))
+
+    ## FIXME need exit -> build GAME
 
     @Slot()
     def slot_next(self):
@@ -84,5 +86,14 @@ class NewGameWidget(QtWidgets.QDialog, Ui_NewGameWidget):
         c = self.characters[i]
         self.label_name.setText(c.name)
         self.label_class_type.setText(c.class_type.upper())
-        self.label_index.setText(f'{i+1}/{len(self.characters)}')
+        self.label_index.setText(f'{i + 1}/{len(self.characters)}')
+        self.change_current_abilities(c)
         self.repaint()
+
+    def change_current_abilities(self, character):
+        # FIXME replace by a widget
+        t = ''
+        for a in character.abilities:
+            t += f'{a.name} | {a.action_type}\n'
+            t += f'{a.text}\n\n'
+        self.label_ability.setText(t)

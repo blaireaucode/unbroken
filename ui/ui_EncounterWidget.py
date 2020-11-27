@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/EncounterWidget.ui',
 # licensing of 'ui/EncounterWidget.ui' applies.
 #
-# Created: Thu Nov 26 21:27:10 2020
+# Created: Fri Nov 27 22:18:53 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!

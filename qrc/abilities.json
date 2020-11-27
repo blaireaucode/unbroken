@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Take a peek",
+    "action_type": "Travel Action",
+    "text": "Reveal +1 card during the Exploration Step."
+  },
+  {
+    "id": 2,
+    "name": "Flexible",
+    "action_type": "Response",
+    "text": "Before gaining a new Skill, reveal +1 Skill card to select from."
+  },
+  {
+    "id": 3,
+    "name": "Dodge",
+    "action_type": "Response",
+    "text": "After a monster's combat roll spend <EFFORT> to reduce the roll result by 1."
+  }
+]

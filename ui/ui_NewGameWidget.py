@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/NewGameWidget.ui',
 # licensing of 'ui/NewGameWidget.ui' applies.
 #
-# Created: Thu Nov 26 21:27:10 2020
+# Created: Fri Nov 27 22:18:53 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -13,7 +13,7 @@ from PySide2 import QtCore, QtGui, QtWidgets
 class Ui_NewGameWidget(object):
     def setupUi(self, NewGameWidget):
         NewGameWidget.setObjectName("NewGameWidget")
-        NewGameWidget.resize(617, 552)
+        NewGameWidget.resize(690, 577)
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(NewGameWidget)
         self.verticalLayout_3.setContentsMargins(12, 12, -1, 12)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
@@ -42,7 +42,8 @@ class Ui_NewGameWidget(object):
         spacerItem1 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.verticalLayout.addItem(spacerItem1)
         self.label_ability = QtWidgets.QLabel(NewGameWidget)
-        self.label_ability.setMaximumSize(QtCore.QSize(300, 16777215))
+        self.label_ability.setMinimumSize(QtCore.QSize(350, 0))
+        self.label_ability.setMaximumSize(QtCore.QSize(350, 16777215))
         font = QtGui.QFont()
         font.setPointSize(15)
         self.label_ability.setFont(font)
