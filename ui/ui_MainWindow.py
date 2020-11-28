@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/MainWindow.ui',
 # licensing of 'ui/MainWindow.ui' applies.
 #
-# Created: Fri Nov 27 22:18:52 2020
+# Created: Sat Nov 28 17:56:47 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -31,6 +31,12 @@ class Ui_MainWindow(object):
         self.button_new.setFont(font)
         self.button_new.setFlat(False)
         self.button_new.setObjectName("button_new")
+        self.button_save = QtWidgets.QPushButton(self.centralwidget)
+        self.button_save.setGeometry(QtCore.QRect(80, 10, 61, 31))
+        font = QtGui.QFont()
+        self.button_save.setFont(font)
+        self.button_save.setFlat(False)
+        self.button_save.setObjectName("button_save")
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -42,7 +48,8 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QtWidgets.QApplication.translate("MainWindow", "MainWindow", None, -1))
         self.button_new.setText(QtWidgets.QApplication.translate("MainWindow", "new", None, -1))
+        self.button_save.setText(QtWidgets.QApplication.translate("MainWindow", "save", None, -1))
 
+from .CharacterWidget import CharacterWidget
 from .PhaseWidget import PhaseWidget
 from .EncounterWidget import EncounterWidget
-from .CharacterWidget import CharacterWidget

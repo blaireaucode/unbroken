@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/CharacterWidget.ui',
 # licensing of 'ui/CharacterWidget.ui' applies.
 #
-# Created: Fri Nov 27 22:18:52 2020
+# Created: Sat Nov 28 17:56:47 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!

@@ -17,4 +17,4 @@ class CharacterWidget(QtWidgets.QWidget, Ui_CharacterWidget):
     def set_game(self, g):
         self.game = g
         self.character = g.character
-        self.textEdit.setText('toto')
+        self.textEdit.setText(self.character.name)
