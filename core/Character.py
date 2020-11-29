@@ -11,6 +11,7 @@ class Character:
         self.level = 1
         self.abilities = []
         self.image = None
+        self.game = None
         # initialize according a initial_data dictionary
         for dictionary in initial_data:
             for key in dictionary:
@@ -33,3 +34,8 @@ class Character:
     def __str__(self):
         s = f'{self.id} {self.name} {self.class_type}'
         return s
+
+    def set_game(self, g):
+        self.game = g
+        for a in self.abilities:
+            a.set_game(g)

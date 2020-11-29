@@ -74,7 +74,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         r = diag.exec_()
         if r == 0:
             return
-        self.set_game(diag.game)
+        g = diag.game
+        g.phase.start()
+        self.set_game(g)
 
     @Slot()
     def slot_on_save_game(self):

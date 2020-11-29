@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unbroken VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-11-29 10:59+0100\n"
+"POT-Creation-Date: 2020-11-29 15:53+0100\n"
 "PO-Revision-Date: 2020-11-25 21:47+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -19,6 +19,8 @@ msgstr ""
 "Generated-By: Babel 2.9.0\n"
 
 #: qrc/abilities.json:3 qrc/abilities.json:9 qrc/abilities.json:15
+#: qrc/abilities.json:21 qrc/abilities.json:27 qrc/abilities.json:33
+#: qrc/abilities.json:39 qrc/abilities.json:45 qrc/abilities.json:51
 msgid "id"
 msgstr ""
 
@@ -52,8 +54,61 @@ msgstr "Éviter"
 
 #: qrc/abilities.json:18
 msgid ""
-"After a monster's combat roll spend <EFFORT> to reduce the roll result by"
+"After a monster's combat roll spend <Effort> to reduce the roll result by"
 " 1."
+msgstr ""
+
+#: qrc/abilities.json:22
+msgid "Focus"
+msgstr ""
+
+#: qrc/abilities.json:23 qrc/abilities.json:29 qrc/abilities.json:35
+#: qrc/abilities.json:41
+msgid "General"
+msgstr ""
+
+#: qrc/abilities.json:24
+msgid "Spend 4 small Efforts and gain 1 medium Effort."
+msgstr ""
+
+#: qrc/abilities.json:28
+msgid "Inspiration"
+msgstr ""
+
+#: qrc/abilities.json:30
+msgid "Spend 2 medium Efforts and gain 1 large Effort."
+msgstr ""
+
+#: qrc/abilities.json:34
+msgid "Plan"
+msgstr ""
+
+#: qrc/abilities.json:36
+msgid "Spend 4 small Efforts and gain 1 Cunning."
+msgstr ""
+
+#: qrc/abilities.json:40
+msgid "Craft"
+msgstr ""
+
+#: qrc/abilities.json:42
+msgid "Spend the required cost to upgrade your weapon."
+msgstr ""
+
+#: qrc/abilities.json:46
+msgid "Orienteer"
+msgstr ""
+
+#: qrc/abilities.json:47 qrc/abilities.json:53
+msgid "Travel"
+msgstr ""
+
+#: qrc/abilities.json:48 qrc/abilities.json:54
+msgid "TODO."
+msgstr ""
+
+#: qrc/abilities.json:52
+msgid "Scout"
 msgstr ""
 
 #: qrc/characters.json:3
@@ -142,11 +197,11 @@ msgstr ""
 msgid "niola.png"
 msgstr ""
 
-#: ui/NewGameWidget.py:56
+#: ui/NewGameWidget.py:57
 msgid "Previous"
 msgstr "Précédent"
 
-#: ui/NewGameWidget.py:57
+#: ui/NewGameWidget.py:58
 msgid "Next"
 msgstr "Suivant"
 
@@ -163,5 +218,20 @@ msgstr "Suivant"
 #~ msgstr ""
 
 #~ msgid "sage.png"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After a monster's combat roll spend "
+#~ "<EFFORT> to reduce the roll result "
+#~ "by 1."
+#~ msgstr ""
+
+#~ msgid "Concentration"
+#~ msgstr ""
+
+#~ msgid "Generic"
+#~ msgstr ""
+
+#~ msgid "Spend the required cost to enhance your weapon."
 #~ msgstr ""
 

@@ -8,6 +8,7 @@ class Ability:
         self.name = None
         self.text = None
         self.action_type = None
+        self.game = None
         # initialize according a initial_data dictionary
         for dictionary in initial_data:
             for key in dictionary:
@@ -18,3 +19,9 @@ class Ability:
     def __str__(self):
         s = f'{self.id} {self.name} {self.action_type}'
         return s
+
+    def do_it(self):
+        print(f'do the action', self.name)
+
+    def set_game(self, g):
+        self.game = g

@@ -18,4 +18,5 @@ class PhaseWidget(QtWidgets.QWidget, Ui_PhaseWidget):
         if not g:
             self.textEdit.setText('no game')
             return
-        self.textEdit.setText('phase')
+        s = f'Phase: {g.phase.current_state}'
+        self.textEdit.setText(s)

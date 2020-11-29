@@ -16,7 +16,7 @@ class CharacterWidget(QtWidgets.QWidget, Ui_CharacterWidget):
 
     def set_game(self, g):
         self.game = g
-        if not g:
+        if not g or not g.character:
             self.textEdit.setText('no character yet')
             return
         self.character = g.character

@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/ActionsWidget.ui',
 # licensing of 'ui/ActionsWidget.ui' applies.
 #
-# Created: Sun Nov 29 10:59:13 2020
+# Created: Sun Nov 29 15:53:29 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -13,28 +13,26 @@ from PySide2 import QtCore, QtGui, QtWidgets
 class Ui_ActionsWidget(object):
     def setupUi(self, ActionsWidget):
         ActionsWidget.setObjectName("ActionsWidget")
-        ActionsWidget.resize(400, 300)
-        self.gridLayout_2 = QtWidgets.QGridLayout(ActionsWidget)
-        self.gridLayout_2.setObjectName("gridLayout_2")
-        self.frame = QtWidgets.QFrame(ActionsWidget)
-        self.frame.setFrameShape(QtWidgets.QFrame.Box)
-        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame.setObjectName("frame")
-        self.gridLayout = QtWidgets.QGridLayout(self.frame)
-        self.gridLayout.setObjectName("gridLayout")
-        self.textEdit = QtWidgets.QTextEdit(self.frame)
-        self.textEdit.setObjectName("textEdit")
-        self.gridLayout.addWidget(self.textEdit, 0, 0, 1, 1)
-        self.gridLayout_2.addWidget(self.frame, 0, 0, 1, 1)
+        ActionsWidget.resize(681, 455)
+        self.verticalLayout = QtWidgets.QVBoxLayout(ActionsWidget)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.action_layout = QtWidgets.QVBoxLayout()
+        self.action_layout.setObjectName("action_layout")
+        self.debug1 = ActionWidget(ActionsWidget)
+        self.debug1.setObjectName("debug1")
+        self.action_layout.addWidget(self.debug1)
+        self.debug2 = ActionWidget(ActionsWidget)
+        self.debug2.setObjectName("debug2")
+        self.action_layout.addWidget(self.debug2)
+        self.verticalLayout.addLayout(self.action_layout)
+        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem)
 
         self.retranslateUi(ActionsWidget)
         QtCore.QMetaObject.connectSlotsByName(ActionsWidget)
 
     def retranslateUi(self, ActionsWidget):
         ActionsWidget.setWindowTitle(QtWidgets.QApplication.translate("ActionsWidget", "Form", None, -1))
-        self.textEdit.setHtml(QtWidgets.QApplication.translate("ActionsWidget", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'.AppleSystemUIFont\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Actions</p></body></html>", None, -1))
 
+from .ActionWidget import ActionWidget
+import unbroken_rc

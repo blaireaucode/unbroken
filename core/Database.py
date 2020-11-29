@@ -2,16 +2,17 @@ from .Ability import *
 from .Character import *
 import json
 
+
 class Database:
-    abilities = []
+    all_abilities = []
     characters = []
 
     def __init__(self):
         pass
 
     def read_all_data(self):
-        self.abilities = read_abilities_database()
-        self.characters = read_character_database(self.abilities)
+        self.all_abilities = read_abilities_database()
+        self.characters = read_character_database(self.all_abilities)
 
 
 def read_abilities_database():

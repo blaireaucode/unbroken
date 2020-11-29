@@ -32,6 +32,7 @@ class NewGameWidget(QtWidgets.QDialog, Ui_NewGameWidget):
         self.setupUi(self)
         self.setModal(True)
         self.game = Game()
+        self.current_character = None
 
         # build widget
         self.image_widgets = []
@@ -55,6 +56,7 @@ class NewGameWidget(QtWidgets.QDialog, Ui_NewGameWidget):
         # button text
         self.previous.setText(_('Previous'))
         self.next.setText(_('Next'))
+        self.accepted.connect(self.slot_accepted)
 
     ## FIXME need exit -> build GAME
 
@@ -87,7 +89,7 @@ class NewGameWidget(QtWidgets.QDialog, Ui_NewGameWidget):
         self.label_class_type.setText(c.class_type.upper())
         self.label_index.setText(f'{i + 1}/{len(self.characters)}')
         self.change_current_abilities(c)
-        self.game.character = c
+        self.current_character = c
         self.repaint()
 
     def change_current_abilities(self, character):
@@ -97,3 +99,8 @@ class NewGameWidget(QtWidgets.QDialog, Ui_NewGameWidget):
             t += f'{a.name} | {a.action_type}\n'
             t += f'{a.text}\n\n'
         self.label_ability.setText(t)
+
+    def slot_accepted(self):
+        print('accepted')
+        self.game.set_character(self.current_character) ## FIXME only if accept
+
