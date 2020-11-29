@@ -11,3 +11,11 @@ class EncounterWidget(QtWidgets.QWidget, Ui_EncounterWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setupUi(self)
+        self.game = None
+
+    def set_game(self, g):
+        self.game = g
+        if not g:
+            self.textEdit.setText('No encounter')
+            return
+        self.textEdit.setText(f'Encounter ...')

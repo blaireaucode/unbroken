@@ -27,6 +27,7 @@ gen_ui(w, 'CharacterWidget')
 gen_ui(w, 'PhaseWidget')
 gen_ui(w, 'EncounterWidget')
 gen_ui(w, 'NewGameWidget')
+gen_ui(w, 'ActionsWidget')
 
 print('Generate RC')
 if w:

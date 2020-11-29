@@ -9,4 +9,8 @@
     <file>caellahan.png</file>
     <file>maxyn.png</file>
   </qresource>
+  <qresource prefix="lang">
+    <file>950-9502144_about-the-french-language-france-flag-icon-png.png</file>
+    <file>icon-english-10.jpg</file>
+  </qresource>
 </RCC>

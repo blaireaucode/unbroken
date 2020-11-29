@@ -14,33 +14,33 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="CharacterWidget" name="character" native="true">
+   <widget class="CharacterWidget" name="widget_character" native="true">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>130</y>
+      <x>110</x>
+      <y>80</y>
       <width>341</width>
       <height>201</height>
      </rect>
     </property>
    </widget>
-   <widget class="EncounterWidget" name="encouter" native="true">
+   <widget class="EncounterWidget" name="widget_encounter" native="true">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>80</y>
+      <x>520</x>
+      <y>320</y>
       <width>301</width>
-      <height>171</height>
+      <height>201</height>
      </rect>
     </property>
    </widget>
-   <widget class="PhaseWidget" name="phase" native="true">
+   <widget class="PhaseWidget" name="widget_phase" native="true">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>300</y>
-      <width>371</width>
-      <height>241</height>
+      <x>120</x>
+      <y>310</y>
+      <width>311</width>
+      <height>211</height>
      </rect>
     </property>
    </widget>
@@ -86,6 +86,16 @@
      <bool>false</bool>
     </property>
    </widget>
+   <widget class="ActionsWidget" name="widget_actions" native="true">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>90</y>
+      <width>311</width>
+      <height>191</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
@@ -108,7 +118,15 @@
    <header>.PhaseWidget.h</header>
    <container>1</container>
   </customwidget>
+  <customwidget>
+   <class>ActionsWidget</class>
+   <extends>QWidget</extends>
+   <header>.ActionsWidget.h</header>
+   <container>1</container>
+  </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="../qrc/unbroken.qrc"/>
+ </resources>
  <connections/>
 </ui>

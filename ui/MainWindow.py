@@ -32,21 +32,15 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.button_save.clicked.connect(self.slot_on_save_game)
 
     def read_config(self, fn):
-        print(fn)
         self.config = configparser.ConfigParser()
         if not os.path.exists(fn):
             self.config['default'] = {'lang': 'en'}
             f = open(fn, 'w')
             self.config.write(f)
-        print('here')
         self.config.read(fn)
-        print(self.config)
-        for c in self.config:
-            print(c)
 
     def init_language(self):
         l = self.config['default']['lang']
-        print(l)
         lang1 = gettext.translation('messages', localedir='locales', languages=[l])
         lang1.install()
 
@@ -54,7 +48,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         g = None
         if 'last_game' in self.config['default']:
             g = Game()
-            g = g.load(self.config['default']['last_game'])
+            f = self.config['default']['last_game']
+            if os.path.exists(f):
+                g = g.load(f)
+            else:
+                print(f'file {f} not found ?')
         self.set_game(g)
 
     def set_game(self, g):
@@ -62,9 +60,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.game = g
         if g:
             self.button_save.setEnabled(True)
-            self.character.set_game(g)  # FIXME main stuff here
         else:
             self.button_save.setEnabled(False)
+        # FIXME main stuff here
+        self.widget_character.set_game(g)
+        self.widget_phase.set_game(g)
+        self.widget_encounter.set_game(g)
+        self.widget_actions.set_game(g)
 
     @Slot()
     def slot_on_new_game(self):

@@ -11,3 +11,11 @@ class PhaseWidget(QtWidgets.QWidget, Ui_PhaseWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setupUi(self)
+        self.game = None
+
+    def set_game(self, g):
+        self.game = g
+        if not g:
+            self.textEdit.setText('no game')
+            return
+        self.textEdit.setText('phase')
