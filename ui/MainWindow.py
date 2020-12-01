@@ -47,13 +47,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def init_game(self):
         g = None
         if 'last_game' in self.config['default']:
-            g = Game()
             f = self.config['default']['last_game']
-            if os.path.exists(f):
-                g = g.load(f)
-            else:
-                print(f'file {f} not found ?')
-        self.set_game(g)
+            self.slot_on_load_game(f)
 
     def set_game(self, g):
         print('set game', g)
@@ -69,13 +64,20 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.widget_actions.set_game(g)
 
     @Slot()
+    def slot_on_load_game(self, filename):
+        g = Game()
+        f = self.config['default']['last_game']
+        if os.path.exists(f):
+            g = g.load(f)
+            self.set_game(g)
+
+    @Slot()
     def slot_on_new_game(self):
         diag = NewGameWidget(self)
         r = diag.exec_()
         if r == 0:
             return
         g = diag.game
-        g.phase.start()
         self.set_game(g)
 
     @Slot()

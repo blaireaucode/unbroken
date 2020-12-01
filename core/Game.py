@@ -8,7 +8,7 @@ import jsonpickle
 jsonpickle.set_encoder_options('json', indent=2)
 
 
-class Game:
+class Game(object):
     db = None
 
     def __init__(self):
@@ -16,11 +16,14 @@ class Game:
         self.phase = Phase(self)
         self.encounter = None
         self.actions = []
+        self.all_actions = []
         if not Game.db:
             print('reading database')
             Game.db = Database()
             Game.db.read_all_data()
-        print(self.phase)
+        self.all_actions = Game.db.all_actions.copy()
+        for a in self.all_actions:
+            a.set_game(self)
 
     def save(self, filename):
         print('save to', filename)
@@ -32,7 +35,8 @@ class Game:
         print('load from ', filename)
         with open(filename, 'r') as f:
             data = json.load(f)
-            return jsonpickle.decode(data)
+            g = jsonpickle.decode(data)
+            return g
 
     def set_character(self, c):
         self.character = c

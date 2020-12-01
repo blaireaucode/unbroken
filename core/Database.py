@@ -1,31 +1,31 @@
-from .Ability import *
+from .Action import *
 from .Character import *
 import json
 
 
-class Database:
-    all_abilities = []
+class Database(object):
+    all_actions = []
     characters = []
 
     def __init__(self):
         pass
 
     def read_all_data(self):
-        self.all_abilities = read_abilities_database()
-        self.characters = read_character_database(self.all_abilities)
+        self.all_actions = read_actions_database()
+        self.characters = read_character_database(self.all_actions)
 
 
-def read_abilities_database():
-    f = open('qrc/abilities.json')
+def read_actions_database():
+    f = open('qrc/actions.json')
     data = json.load(f)
-    abilities = []
+    actions = []
     for d in data:
-        c = Ability(d)
-        abilities.append(c)
-    return abilities
+        c = Action(d)
+        actions.append(c)
+    return actions
 
 
-def read_character_database(abilities):
+def read_character_database(actions):
     f = open('qrc/characters.json')
     data = json.load(f)
     i = 0
@@ -33,8 +33,8 @@ def read_character_database(abilities):
     for d in data:
         c = Character(d)
         c.id = i
-        c.init_abilities(abilities)
+        c.init_actions(actions)
         characters.append(c)
-        # FIXME abilities
+        # FIXME actions
         i = i + 1
     return characters

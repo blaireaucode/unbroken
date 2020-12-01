@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unbroken VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-11-29 15:53+0100\n"
+"POT-Creation-Date: 2020-11-29 18:29+0100\n"
 "PO-Revision-Date: 2020-11-25 21:54+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -18,96 +18,97 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: qrc/abilities.json:3 qrc/abilities.json:9 qrc/abilities.json:15
-#: qrc/abilities.json:21 qrc/abilities.json:27 qrc/abilities.json:33
-#: qrc/abilities.json:39 qrc/abilities.json:45 qrc/abilities.json:51
+#: qrc/actions.json:3 qrc/actions.json:9 qrc/actions.json:15
+#: qrc/actions.json:21 qrc/actions.json:28 qrc/actions.json:35
+#: qrc/actions.json:42 qrc/actions.json:49 qrc/actions.json:56
 msgid "id"
 msgstr ""
 
-#: qrc/abilities.json:4
+#: qrc/actions.json:4
 msgid "Take a peek"
 msgstr ""
 
-#: qrc/abilities.json:5
-msgid "Travel Action"
+#: qrc/actions.json:5 qrc/actions.json:51 qrc/actions.json:58
+msgid "Travel"
 msgstr ""
 
-#: qrc/abilities.json:6
+#: qrc/actions.json:6
 msgid "Reveal +1 card during the Exploration Step."
 msgstr ""
 
-#: qrc/abilities.json:10
+#: qrc/actions.json:10
 msgid "Flexible"
 msgstr ""
 
-#: qrc/abilities.json:11 qrc/abilities.json:17
+#: qrc/actions.json:11 qrc/actions.json:17
 msgid "Response"
 msgstr ""
 
-#: qrc/abilities.json:12
+#: qrc/actions.json:12
 msgid "Before gaining a new Skill, reveal +1 Skill card to select from."
 msgstr ""
 
-#: qrc/abilities.json:16
+#: qrc/actions.json:16
 msgid "Dodge"
 msgstr ""
 
-#: qrc/abilities.json:18
+#: qrc/actions.json:18
 msgid ""
 "After a monster's combat roll spend <Effort> to reduce the roll result by"
 " 1."
 msgstr ""
 
-#: qrc/abilities.json:22
+#: qrc/actions.json:22
 msgid "Focus"
 msgstr ""
 
-#: qrc/abilities.json:23 qrc/abilities.json:29 qrc/abilities.json:35
-#: qrc/abilities.json:41
+#: qrc/actions.json:23 qrc/actions.json:30 qrc/actions.json:37
+#: qrc/actions.json:44
 msgid "General"
 msgstr ""
 
-#: qrc/abilities.json:24
+#: qrc/actions.json:24
 msgid "Spend 4 small Efforts and gain 1 medium Effort."
 msgstr ""
 
-#: qrc/abilities.json:28
+#: qrc/actions.json:25 qrc/actions.json:32 qrc/actions.json:39
+#: qrc/actions.json:46 qrc/actions.json:53 qrc/actions.json:60
+msgid "is_ability"
+msgstr ""
+
+#: qrc/actions.json:29
 msgid "Inspiration"
 msgstr ""
 
-#: qrc/abilities.json:30
+#: qrc/actions.json:31
 msgid "Spend 2 medium Efforts and gain 1 large Effort."
 msgstr ""
 
-#: qrc/abilities.json:34
+#: qrc/actions.json:36
 msgid "Plan"
 msgstr ""
 
-#: qrc/abilities.json:36
+#: qrc/actions.json:38
 msgid "Spend 4 small Efforts and gain 1 Cunning."
 msgstr ""
 
-#: qrc/abilities.json:40
+#: qrc/actions.json:43
 msgid "Craft"
 msgstr ""
 
-#: qrc/abilities.json:42
+#: qrc/actions.json:45
 msgid "Spend the required cost to upgrade your weapon."
 msgstr ""
 
-#: qrc/abilities.json:46
+#: qrc/actions.json:50
 msgid "Orienteer"
 msgstr ""
 
-#: qrc/abilities.json:47 qrc/abilities.json:53
-msgid "Travel"
-msgstr ""
-
-#: qrc/abilities.json:48 qrc/abilities.json:54
+#: qrc/actions.json:52 qrc/actions.json:59
 msgid "TODO."
 msgstr ""
 
-#: qrc/abilities.json:52
+#: qrc/actions.json:57
 msgid "Scout"
 msgstr ""
 
@@ -233,5 +234,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Spend the required cost to enhance your weapon."
+#~ msgstr ""
+
+#~ msgid "Travel Action"
+#~ msgstr ""
+
+#~ msgid "initial"
 #~ msgstr ""
 

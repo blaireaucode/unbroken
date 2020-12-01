@@ -1,7 +1,7 @@
 
 
 from .Phase import *
-from .Ability import *
+from .Action import *
 from .Database import *
 from .Character import *
 from .Game import *

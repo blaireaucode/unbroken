@@ -1,9 +1,6 @@
 from PySide2 import QtWidgets
-from PySide2.QtCore import Slot, Signal, QSize
-from PySide2.QtGui import QPixmap, QPalette, QColor, QFont
-from PySide2.QtWidgets import QAction
+from PySide2.QtCore import Slot
 from .ui_ActionWidget import Ui_ActionWidget
-import platform
 
 
 class ActionWidget(QtWidgets.QWidget, Ui_ActionWidget):
@@ -19,7 +16,16 @@ class ActionWidget(QtWidgets.QWidget, Ui_ActionWidget):
         self.label_action_type.setText(action.action_type)
         self.label_text.setText(action.text)
 
-        self.button_doit.clicked.connect(self.slot_on_do_it)
+        self.button_do_it.clicked.connect(self.slot_on_do_it)
+        self.action.game.character.character_changed.connect(self.slot_on_character_changed)
+        self.slot_on_character_changed()
+
+    def slot_on_character_changed(self, **kwargs):
+        if self.action.is_applicable():
+            self.button_do_it.setEnabled(True)
+        else:
+            self.button_do_it.setEnabled(False)
+        self.repaint()
 
     @Slot()
     def slot_on_do_it(self):

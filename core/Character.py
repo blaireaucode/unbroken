@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# from PySide2.QtCore import Signal, QObject
+from signalslot import Signal
 
-class Character:
+
+class Character(object):
+    character_changed = Signal()
 
     def __init__(self, *initial_data, **kwargs):
+        # QObject.__init__(self)
         self.id = None
         self.name = None
         self.class_type = None
@@ -22,11 +27,16 @@ class Character:
                     setattr(self, key, dictionary[key])
         for key in kwargs:
             setattr(self, key, kwargs[key])
+        # resources
+        self.small_efforts = 13
+        self.medium_efforts = 0
+        self.large_efforts = 0
+        self.cunning = 0
 
-    def init_abilities(self, all_abilities):
+    def init_actions(self, all_actions):
         ab = []
         for a in self.abilities:
-            aa = next((item for item in all_abilities if item.id == a), None)
+            aa = next((item for item in all_actions if item.id == a), None)
             if aa:
                 ab.append(aa)
         self.abilities = ab
@@ -39,3 +49,19 @@ class Character:
         self.game = g
         for a in self.abilities:
             a.set_game(g)
+
+    def add_small_efforts(self, v):
+        self.small_efforts += v
+        self.character_changed.emit()
+
+    def add_medium_efforts(self, v):
+        self.medium_efforts += v
+        self.character_changed.emit()
+
+    def add_large_efforts(self, v):
+        self.large_efforts += v
+        self.character_changed.emit()
+
+    def add_cunning(self, v):
+        self.cunning += v
+        self.character_changed.emit()

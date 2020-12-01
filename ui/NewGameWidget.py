@@ -102,5 +102,8 @@ class NewGameWidget(QtWidgets.QDialog, Ui_NewGameWidget):
 
     def slot_accepted(self):
         print('accepted')
-        self.game.set_character(self.current_character) ## FIXME only if accept
+        self.game.set_character(self.current_character)
+        #for a in Game.db.all_actions:
+        #    a.set_game(self.game)
+        self.game.phase.start()
 

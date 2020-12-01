@@ -4,7 +4,7 @@
 from statemachine import StateMachine, State
 
 
-class Phase(StateMachine):
+class Phase(StateMachine, object):
 
     # states
     before = State('before', initial=True)
