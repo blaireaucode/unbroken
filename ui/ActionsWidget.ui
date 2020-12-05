@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>604</width>
-    <height>367</height>
+    <width>671</width>
+    <height>463</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,17 +30,17 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>580</width>
-        <height>343</height>
+        <width>647</width>
+        <height>439</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <layout class="QVBoxLayout" name="action_layout">
-         <item>
+        <layout class="QGridLayout" name="action_layout">
+         <item row="0" column="0">
           <widget class="ActionWidget" name="debug1" native="true"/>
          </item>
-         <item>
+         <item row="1" column="0">
           <widget class="ActionWidget" name="debug2" native="true"/>
          </item>
         </layout>

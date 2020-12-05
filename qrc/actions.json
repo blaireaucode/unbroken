@@ -58,5 +58,12 @@
     "action_type": "Travel",
     "text": "TODO.",
     "is_ability": false
+  },
+  {
+    "id": 10,
+    "name": "Decision step",
+    "action_type": "-",
+    "text": "You must make a decision: are you ready to encounter the monster? ",
+    "is_ability": false
   }
 ]

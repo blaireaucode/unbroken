@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unbroken VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-11-29 18:29+0100\n"
+"POT-Creation-Date: 2020-12-05 11:58+0100\n"
 "PO-Revision-Date: 2020-11-25 21:54+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,7 @@ msgstr ""
 #: qrc/actions.json:3 qrc/actions.json:9 qrc/actions.json:15
 #: qrc/actions.json:21 qrc/actions.json:28 qrc/actions.json:35
 #: qrc/actions.json:42 qrc/actions.json:49 qrc/actions.json:56
+#: qrc/actions.json:63
 msgid "id"
 msgstr ""
 
@@ -73,6 +74,7 @@ msgstr ""
 
 #: qrc/actions.json:25 qrc/actions.json:32 qrc/actions.json:39
 #: qrc/actions.json:46 qrc/actions.json:53 qrc/actions.json:60
+#: qrc/actions.json:67
 msgid "is_ability"
 msgstr ""
 
@@ -110,6 +112,18 @@ msgstr ""
 
 #: qrc/actions.json:57
 msgid "Scout"
+msgstr ""
+
+#: qrc/actions.json:64
+msgid "Decision step"
+msgstr ""
+
+#: qrc/actions.json:65
+msgid "-"
+msgstr ""
+
+#: qrc/actions.json:66
+msgid "You must make a decision: are you ready to encounter the monster? "
 msgstr ""
 
 #: qrc/characters.json:3

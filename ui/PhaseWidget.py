@@ -18,5 +18,11 @@ class PhaseWidget(QtWidgets.QWidget, Ui_PhaseWidget):
         if not g:
             self.textEdit.setText('no game')
             return
-        s = f'Phase: {g.phase.current_state}'
+        self.game.phase_changed.connect(self.slot_on_phase_changed)
+        self.slot_on_phase_changed()
+
+    def slot_on_phase_changed(self, **kwargs):
+        s = f'Phase: {self.game.phase.current_state}\n'
+        s += f' step: {self.game.sub_phase.current_state}'
         self.textEdit.setText(s)
+        self.repaint()

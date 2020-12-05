@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/ActionWidget.ui',
 # licensing of 'ui/ActionWidget.ui' applies.
 #
-# Created: Sun Nov 29 18:29:17 2020
+# Created: Sat Dec  5 11:58:20 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -13,14 +13,14 @@ from PySide2 import QtCore, QtGui, QtWidgets
 class Ui_ActionWidget(object):
     def setupUi(self, ActionWidget):
         ActionWidget.setObjectName("ActionWidget")
-        ActionWidget.resize(432, 98)
+        ActionWidget.resize(384, 83)
         self.verticalLayout = QtWidgets.QVBoxLayout(ActionWidget)
-        self.verticalLayout.setContentsMargins(6, 0, 6, 12)
+        self.verticalLayout.setContentsMargins(6, 0, 6, 6)
         self.verticalLayout.setObjectName("verticalLayout")
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setSpacing(-1)
         self.horizontalLayout.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
-        self.horizontalLayout.setContentsMargins(-1, -1, 0, 0)
+        self.horizontalLayout.setContentsMargins(0, -1, 0, 0)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.button_do_it = QtWidgets.QPushButton(ActionWidget)
         self.button_do_it.setObjectName("button_do_it")

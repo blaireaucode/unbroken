@@ -29,6 +29,7 @@ gen_ui(w, 'EncounterWidget')
 gen_ui(w, 'NewGameWidget')
 gen_ui(w, 'ActionWidget')
 gen_ui(w, 'ActionsWidget')
+gen_ui(w, 'TravelDecisionWidget')
 
 print('Generate RC')
 if w:

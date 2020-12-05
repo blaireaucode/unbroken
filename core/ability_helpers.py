@@ -33,7 +33,19 @@ def action_inspiration_do_it(g):
 def action_plan_is_applicable(g):
     return g.character.small_efforts >= 4
 
+
 # plan #6
 def action_plan_do_it(g):
     g.character.add_small_efforts(-4)
     g.character.add_cunning(1)
+
+
+# decision # 10
+def action_decision_is_applicable(g):
+    return g.phase.is_travel and g.sub_phase.is_preparation_step
+
+
+# decision #10
+def action_decision_do_it(g):
+    g.sub_phase.to_decision()
+    g.phase_changed.emit()

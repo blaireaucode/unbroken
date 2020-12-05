@@ -48,7 +48,9 @@ all_abilities_do_it = {}
 all_abilities_is_applicable[4] = action_focus_is_applicable
 all_abilities_is_applicable[5] = action_inspiration_is_applicable
 all_abilities_is_applicable[6] = action_plan_is_applicable
+all_abilities_is_applicable[10] = action_decision_is_applicable
 
 all_abilities_do_it[4] = action_focus_do_it
 all_abilities_do_it[5] = action_inspiration_do_it
 all_abilities_do_it[6] = action_plan_do_it
+all_abilities_do_it[10] = action_decision_do_it
