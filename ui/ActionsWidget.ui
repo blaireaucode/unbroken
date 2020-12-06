@@ -38,10 +38,10 @@
        <item>
         <layout class="QGridLayout" name="action_layout">
          <item row="0" column="0">
-          <widget class="ActionWidget" name="debug1" native="true"/>
+          <widget class="GenericActionWidget" name="debug1" native="true"/>
          </item>
          <item row="1" column="0">
-          <widget class="ActionWidget" name="debug2" native="true"/>
+          <widget class="GenericActionWidget" name="debug2" native="true"/>
          </item>
         </layout>
        </item>
@@ -53,9 +53,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>ActionWidget</class>
+   <class>GenericActionWidget</class>
    <extends>QWidget</extends>
-   <header>.ActionWidget.h</header>
+   <header>.GenericActionWidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

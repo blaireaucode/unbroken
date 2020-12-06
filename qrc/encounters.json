@@ -1,0 +1,161 @@
+[
+  {
+    "id": 1,
+    "name": "Abandoned Hovel",
+    "text": "You see a abandoned slum. Examining it allows you to learn more about the creatures that once lived there.",
+    "spend": "-1se",
+    "gain": "+1c",
+    "time": 1
+  },
+  {
+    "id": 2,
+    "name": "Eavesdropping",
+    "text": "todo",
+    "spend": "Commit to next encounter",
+    "gain": "+1c",
+    "time": 1
+  },
+  {
+    "id": 3,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 4,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 5,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 6,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 7,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 8,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 9,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 10,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },{
+    "id": 11,
+    "name": "Abandoned Hovel",
+    "text": "You see a abandoned slum. Examining it allows you to learn more about the creatures that once lived there.",
+    "spend": "-1se",
+    "gain": "+1c",
+    "time": 1
+  },
+  {
+    "id": 12,
+    "name": "Eavesdropping",
+    "text": "todo",
+    "spend": "Commit to next encounter",
+    "gain": "+1c",
+    "time": 1
+  },
+  {
+    "id": 13,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 14,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 15,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 16,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 17,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 18,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 19,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 20,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  }
+]

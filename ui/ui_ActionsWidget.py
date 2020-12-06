@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/ActionsWidget.ui',
 # licensing of 'ui/ActionsWidget.ui' applies.
 #
-# Created: Sat Dec  5 11:58:21 2020
+# Created: Sat Dec  5 18:38:26 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -28,10 +28,10 @@ class Ui_ActionsWidget(object):
         self.verticalLayout.setObjectName("verticalLayout")
         self.action_layout = QtWidgets.QGridLayout()
         self.action_layout.setObjectName("action_layout")
-        self.debug1 = ActionWidget(self.scrollAreaWidgetContents)
+        self.debug1 = GenericActionWidget(self.scrollAreaWidgetContents)
         self.debug1.setObjectName("debug1")
         self.action_layout.addWidget(self.debug1, 0, 0, 1, 1)
-        self.debug2 = ActionWidget(self.scrollAreaWidgetContents)
+        self.debug2 = GenericActionWidget(self.scrollAreaWidgetContents)
         self.debug2.setObjectName("debug2")
         self.action_layout.addWidget(self.debug2, 1, 0, 1, 1)
         self.verticalLayout.addLayout(self.action_layout)
@@ -44,5 +44,5 @@ class Ui_ActionsWidget(object):
     def retranslateUi(self, ActionsWidget):
         ActionsWidget.setWindowTitle(QtWidgets.QApplication.translate("ActionsWidget", "Form", None, -1))
 
-from .ActionWidget import ActionWidget
+from .GenericActionWidget import GenericActionWidget
 import unbroken_rc

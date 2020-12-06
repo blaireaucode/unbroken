@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unbroken VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-05 11:58+0100\n"
+"POT-Creation-Date: 2020-12-05 18:38+0100\n"
 "PO-Revision-Date: 2020-11-25 21:47+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -21,13 +21,19 @@ msgstr ""
 #: qrc/actions.json:3 qrc/actions.json:9 qrc/actions.json:15
 #: qrc/actions.json:21 qrc/actions.json:28 qrc/actions.json:35
 #: qrc/actions.json:42 qrc/actions.json:49 qrc/actions.json:56
-#: qrc/actions.json:63
+#: qrc/actions.json:63 qrc/encounters.json:3 qrc/encounters.json:11
+#: qrc/encounters.json:19 qrc/encounters.json:27 qrc/encounters.json:35
+#: qrc/encounters.json:43 qrc/encounters.json:51 qrc/encounters.json:59
+#: qrc/encounters.json:67 qrc/encounters.json:75 qrc/encounters.json:82
+#: qrc/encounters.json:90 qrc/encounters.json:98 qrc/encounters.json:106
+#: qrc/encounters.json:114 qrc/encounters.json:122 qrc/encounters.json:130
+#: qrc/encounters.json:138 qrc/encounters.json:146 qrc/encounters.json:154
 msgid "id"
 msgstr ""
 
 #: qrc/actions.json:4
 msgid "Take a peek"
-msgstr "Jeter un oeil"
+msgstr ""
 
 #: qrc/actions.json:5 qrc/actions.json:51 qrc/actions.json:58
 msgid "Travel"
@@ -43,7 +49,7 @@ msgstr ""
 
 #: qrc/actions.json:11 qrc/actions.json:17
 msgid "Response"
-msgstr "Combat"
+msgstr ""
 
 #: qrc/actions.json:12
 msgid "Before gaining a new Skill, reveal +1 Skill card to select from."
@@ -51,7 +57,7 @@ msgstr ""
 
 #: qrc/actions.json:16
 msgid "Dodge"
-msgstr "Éviter"
+msgstr ""
 
 #: qrc/actions.json:18
 msgid ""
@@ -132,7 +138,7 @@ msgstr ""
 
 #: qrc/characters.json:4 qrc/characters.json:44
 msgid "Sneak"
-msgstr "Furtif"
+msgstr ""
 
 #: qrc/characters.json:5
 msgid "maxyn.png"
@@ -150,7 +156,7 @@ msgstr ""
 
 #: qrc/characters.json:14 qrc/characters.json:74
 msgid "Brawler"
-msgstr "Bagarreur"
+msgstr ""
 
 #: qrc/characters.json:15
 msgid "caellahan.png"
@@ -162,7 +168,7 @@ msgstr ""
 
 #: qrc/characters.json:24 qrc/characters.json:54
 msgid "Hunter"
-msgstr "Chasseur"
+msgstr ""
 
 #: qrc/characters.json:25
 msgid "kirilla.png"
@@ -212,13 +218,99 @@ msgstr ""
 msgid "niola.png"
 msgstr ""
 
+#: qrc/encounters.json:4 qrc/encounters.json:83
+msgid "Abandoned Hovel"
+msgstr ""
+
+#: qrc/encounters.json:5 qrc/encounters.json:84
+msgid ""
+"You see a abandoned slum. Examining it allows you to learn more about the"
+" creatures that once lived there."
+msgstr ""
+
+#: qrc/encounters.json:6 qrc/encounters.json:85
+msgid "-1se"
+msgstr ""
+
+#: qrc/encounters.json:7 qrc/encounters.json:15 qrc/encounters.json:86
+#: qrc/encounters.json:94
+msgid "+1c"
+msgstr ""
+
+#: qrc/encounters.json:8 qrc/encounters.json:16 qrc/encounters.json:24
+#: qrc/encounters.json:32 qrc/encounters.json:40 qrc/encounters.json:48
+#: qrc/encounters.json:56 qrc/encounters.json:64 qrc/encounters.json:72
+#: qrc/encounters.json:80 qrc/encounters.json:87 qrc/encounters.json:95
+#: qrc/encounters.json:103 qrc/encounters.json:111 qrc/encounters.json:119
+#: qrc/encounters.json:127 qrc/encounters.json:135 qrc/encounters.json:143
+#: qrc/encounters.json:151 qrc/encounters.json:159
+msgid "time"
+msgstr ""
+
+#: qrc/encounters.json:12 qrc/encounters.json:91
+msgid "Eavesdropping"
+msgstr ""
+
+#: qrc/encounters.json:13 qrc/encounters.json:20 qrc/encounters.json:21
+#: qrc/encounters.json:22 qrc/encounters.json:23 qrc/encounters.json:28
+#: qrc/encounters.json:29 qrc/encounters.json:30 qrc/encounters.json:31
+#: qrc/encounters.json:36 qrc/encounters.json:37 qrc/encounters.json:38
+#: qrc/encounters.json:39 qrc/encounters.json:44 qrc/encounters.json:45
+#: qrc/encounters.json:46 qrc/encounters.json:47 qrc/encounters.json:52
+#: qrc/encounters.json:53 qrc/encounters.json:54 qrc/encounters.json:55
+#: qrc/encounters.json:60 qrc/encounters.json:61 qrc/encounters.json:62
+#: qrc/encounters.json:63 qrc/encounters.json:68 qrc/encounters.json:69
+#: qrc/encounters.json:70 qrc/encounters.json:71 qrc/encounters.json:76
+#: qrc/encounters.json:77 qrc/encounters.json:78 qrc/encounters.json:79
+#: qrc/encounters.json:92 qrc/encounters.json:99 qrc/encounters.json:100
+#: qrc/encounters.json:101 qrc/encounters.json:102 qrc/encounters.json:107
+#: qrc/encounters.json:108 qrc/encounters.json:109 qrc/encounters.json:110
+#: qrc/encounters.json:115 qrc/encounters.json:116 qrc/encounters.json:117
+#: qrc/encounters.json:118 qrc/encounters.json:123 qrc/encounters.json:124
+#: qrc/encounters.json:125 qrc/encounters.json:126 qrc/encounters.json:131
+#: qrc/encounters.json:132 qrc/encounters.json:133 qrc/encounters.json:134
+#: qrc/encounters.json:139 qrc/encounters.json:140 qrc/encounters.json:141
+#: qrc/encounters.json:142 qrc/encounters.json:147 qrc/encounters.json:148
+#: qrc/encounters.json:149 qrc/encounters.json:150 qrc/encounters.json:155
+#: qrc/encounters.json:156 qrc/encounters.json:157 qrc/encounters.json:158
+msgid "todo"
+msgstr ""
+
+#: qrc/encounters.json:14 qrc/encounters.json:93
+msgid "Commit to next encounter"
+msgstr ""
+
+#: ui/ChooseEncounterActionWidget.py:22
+msgid "Choose {e1.name}"
+msgstr ""
+
+#: ui/ChooseEncounterActionWidget.py:23
+msgid "Choose {e2.name}"
+msgstr ""
+
 #: ui/NewGameWidget.py:57
 msgid "Previous"
-msgstr "Précédent"
+msgstr ""
 
 #: ui/NewGameWidget.py:58
 msgid "Next"
-msgstr "Suivant"
+msgstr ""
+
+#: ui/ResolveOrRestActionWidget.py:12
+msgid "Resolve"
+msgstr ""
+
+#: ui/ResolveOrRestActionWidget.py:13
+msgid "Rest"
+msgstr ""
+
+#: ui/TravelDecisionActionWidget.py:12
+msgid "Yes! Start the combat ..."
+msgstr ""
+
+#: ui/TravelDecisionActionWidget.py:13
+msgid "Not yet, explore!"
+msgstr ""
 
 #~ msgid "Hello World"
 #~ msgstr "Salut monde"
@@ -255,4 +347,178 @@ msgstr "Suivant"
 
 #~ msgid "initial"
 #~ msgstr ""
+
+#~ msgid "id"
+#~ msgstr ""
+
+#~ msgid "Take a peek"
+#~ msgstr "Jeter un oeil"
+
+#~ msgid "Travel"
+#~ msgstr "Voyager"
+
+#~ msgid "Reveal +1 card during the Exploration Step."
+#~ msgstr ""
+
+#~ msgid "Flexible"
+#~ msgstr ""
+
+#~ msgid "Response"
+#~ msgstr "Combat"
+
+#~ msgid "Before gaining a new Skill, reveal +1 Skill card to select from."
+#~ msgstr ""
+
+#~ msgid "Dodge"
+#~ msgstr "Éviter"
+
+#~ msgid ""
+#~ "After a monster's combat roll spend "
+#~ "<Effort> to reduce the roll result "
+#~ "by 1."
+#~ msgstr ""
+
+#~ msgid "Focus"
+#~ msgstr ""
+
+#~ msgid "General"
+#~ msgstr ""
+
+#~ msgid "Spend 4 small Efforts and gain 1 medium Effort."
+#~ msgstr ""
+
+#~ msgid "is_ability"
+#~ msgstr ""
+
+#~ msgid "Inspiration"
+#~ msgstr ""
+
+#~ msgid "Spend 2 medium Efforts and gain 1 large Effort."
+#~ msgstr ""
+
+#~ msgid "Plan"
+#~ msgstr ""
+
+#~ msgid "Spend 4 small Efforts and gain 1 Cunning."
+#~ msgstr ""
+
+#~ msgid "Craft"
+#~ msgstr ""
+
+#~ msgid "Spend the required cost to upgrade your weapon."
+#~ msgstr ""
+
+#~ msgid "Orienteer"
+#~ msgstr ""
+
+#~ msgid "TODO."
+#~ msgstr ""
+
+#~ msgid "Scout"
+#~ msgstr ""
+
+#~ msgid "Decision step"
+#~ msgstr ""
+
+#~ msgid "-"
+#~ msgstr ""
+
+#~ msgid "You must make a decision: are you ready to encounter the monster? "
+#~ msgstr ""
+
+#~ msgid "Maxyn Zenma"
+#~ msgstr ""
+
+#~ msgid "Sneak"
+#~ msgstr "Furtif"
+
+#~ msgid "maxyn.png"
+#~ msgstr ""
+
+#~ msgid "abilities"
+#~ msgstr ""
+
+#~ msgid "Caellahan"
+#~ msgstr ""
+
+#~ msgid "Brawler"
+#~ msgstr "Bagarreur"
+
+#~ msgid "caellahan.png"
+#~ msgstr ""
+
+#~ msgid "Kirilla el Kaer"
+#~ msgstr ""
+
+#~ msgid "Hunter"
+#~ msgstr "Chasseur"
+
+#~ msgid "kirilla.png"
+#~ msgstr ""
+
+#~ msgid "Helena"
+#~ msgstr ""
+
+#~ msgid "Sage"
+#~ msgstr ""
+
+#~ msgid "helena.png"
+#~ msgstr ""
+
+#~ msgid "Mae'el"
+#~ msgstr ""
+
+#~ msgid "maeel.png"
+#~ msgstr ""
+
+#~ msgid "Huckdorf"
+#~ msgstr ""
+
+#~ msgid "huckdorf.png"
+#~ msgstr ""
+
+#~ msgid "Tomu"
+#~ msgstr ""
+
+#~ msgid "tomu.png"
+#~ msgstr ""
+
+#~ msgid "Niola"
+#~ msgstr ""
+
+#~ msgid "niola.png"
+#~ msgstr ""
+
+#~ msgid "Abandoned Hovel"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You see a abandoned slum. Examining "
+#~ "it allows you to learn more about"
+#~ " the creatures that once lived there."
+#~ msgstr ""
+
+#~ msgid "-1se"
+#~ msgstr ""
+
+#~ msgid "+1c"
+#~ msgstr ""
+
+#~ msgid "time"
+#~ msgstr ""
+
+#~ msgid "Eavesdropping"
+#~ msgstr ""
+
+#~ msgid "todo"
+#~ msgstr ""
+
+#~ msgid "Commit to next encounter"
+#~ msgstr ""
+
+#~ msgid "Previous"
+#~ msgstr "Précédent"
+
+#~ msgid "Next"
+#~ msgstr "Suivant"
 

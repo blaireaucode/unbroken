@@ -50,6 +50,33 @@ class Character(object):
         for a in self.abilities:
             a.set_game(g)
 
+    def update_resource(self, s):
+        words = s.split()
+        print(words)
+        if len(words) > 1:
+            for w in words:
+                self.update_resource(w)
+            return
+        f = None
+        if s[0] == '-':
+            f = -1
+        if s[0] == '0':
+            f = 1
+        if not f:
+            print('error update resource', s)
+            return
+        n = int(s[1:2])
+        r = s[2:]
+        print(n, r)
+        v = f * n
+        if r == 'se':
+            self.small_efforts += v
+        if r == 'me':
+            self.medium_efforts += v
+        if r == 'se':
+            self.large_efforts += v
+        self.character_changed.emit()
+
     def add_small_efforts(self, v):
         self.small_efforts += v
         self.character_changed.emit()

@@ -36,7 +36,7 @@ class NewGameWidget(QtWidgets.QDialog, Ui_NewGameWidget):
 
         # build widget
         self.image_widgets = []
-        self.characters = self.game.db.characters
+        self.characters = self.game.db.all_characters
         for c in self.characters:
             self.build_widget(c)
 

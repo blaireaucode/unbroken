@@ -5,6 +5,7 @@ from .Database import *
 from .Phase import *
 import jsonpickle
 from signalslot import Signal
+import random
 
 jsonpickle.set_encoder_options('json', indent=2)
 
@@ -17,16 +18,25 @@ class Game(object):
         self.character = None
         self.phase = Phase()
         self.sub_phase = SubPhase()
-        self.encounter = None
+        self.encounter = []
+        self.monster = None
         self.actions = []
         self.all_actions = []
+        self.all_encounters = []
         if not Game.db:
             print('reading database')
             Game.db = Database()
             Game.db.read_all_data()
+        # init all actions (make a copy to keep the game consistent)
         self.all_actions = Game.db.all_actions.copy()
         for a in self.all_actions:
             a.set_game(self)
+        # init all encounters (make a copy to keep the game consistent)
+        self.all_encounters = Game.db.all_encounters.copy()
+        for a in self.all_encounters:
+            a.set_game(self)
+        # shuffle
+        random.shuffle(self.all_encounters)
 
     def save(self, filename):
         print('save to', filename)
@@ -45,17 +55,30 @@ class Game(object):
         self.character = c
         self.character.set_game(self)
 
-    def set_travel_phase_decision(self, go_to_fight):
-        p = self.phase
-        if not p.is_travel:
-            return
-        sp = self.sub_phase
-        if not sp.is_decision_step:
-            return
-        if go_to_fight:
-            p.start_fight()
-            sp.to_battle()
-        else:
-            sp.to_exploration()
-        print(p, sp)
+    def combat(self):
+        self.phase.start_combat()
+        self.sub_phase.to_battle()
+        self.phase_changed.emit()
+
+    def explore(self):
+        self.sub_phase.to_exploration()
+        self.encounter = []
+        e = self.all_encounters.pop(0)
+        self.encounter.append(e)
+        e = self.all_encounters.pop(0)
+        self.encounter.append(e)
+        self.phase_changed.emit()
+
+    def choose_encounter_card(self, index):
+        # put all other cards at the end of the desk
+        i = 0
+        for e in self.encounter:
+            if i != index:
+                self.all_encounters.append(e)
+            i += 1
+        # keep only one encounter card
+        e = self.encounter[index]
+        self.encounter = []
+        self.encounter.append(e)
+        # announce
         self.phase_changed.emit()

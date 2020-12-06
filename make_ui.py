@@ -27,9 +27,11 @@ gen_ui(w, 'CharacterWidget')
 gen_ui(w, 'PhaseWidget')
 gen_ui(w, 'EncounterWidget')
 gen_ui(w, 'NewGameWidget')
-gen_ui(w, 'ActionWidget')
+gen_ui(w, 'GenericActionWidget')
 gen_ui(w, 'ActionsWidget')
-gen_ui(w, 'TravelDecisionWidget')
+gen_ui(w, 'TravelDecisionActionWidget')
+gen_ui(w, 'ResolveOrRestActionWidget')
+gen_ui(w, 'ChooseEncounterActionWidget')
 
 print('Generate RC')
 if w:

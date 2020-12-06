@@ -1,9 +1,5 @@
 from PySide2 import QtWidgets
-from PySide2.QtCore import Slot, Signal, QSize
-from PySide2.QtGui import QPixmap, QPalette, QColor, QFont
-from PySide2.QtWidgets import QAction
 from .ui_EncounterWidget import Ui_EncounterWidget
-import platform
 
 
 class EncounterWidget(QtWidgets.QWidget, Ui_EncounterWidget):
@@ -16,6 +12,19 @@ class EncounterWidget(QtWidgets.QWidget, Ui_EncounterWidget):
     def set_game(self, g):
         self.game = g
         if not g:
-            self.textEdit.setText('No encounter')
+            self.textEdit.setText('No game')
             return
-        self.textEdit.setText(f'Encounter ...')
+        self.game.phase_changed.connect(self.slot_on_phase_changed)
+        self.slot_on_phase_changed()
+
+    def slot_on_phase_changed(self, **kwargs):
+        e = self.game.encounter
+        if not e:
+            self.textEdit.setText('No encounter')
+        else:
+            s = ''
+            for ee in e:
+                print(ee)
+                s += f'Encounter: {ee}\n'
+            self.textEdit.setText(s)
+        self.repaint()

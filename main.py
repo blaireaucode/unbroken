@@ -15,9 +15,7 @@ matplotlib.use('TkAgg')
 
 def main():
     app = QApplication(sys.argv)
-    # g = Game()
     m = MainWindow()
-    # m.set_game(g)
     m.show()
     sys.exit(app.exec_())
 

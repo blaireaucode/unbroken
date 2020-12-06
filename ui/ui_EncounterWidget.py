@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/EncounterWidget.ui',
 # licensing of 'ui/EncounterWidget.ui' applies.
 #
-# Created: Sat Dec  5 11:58:19 2020
+# Created: Sat Dec  5 18:38:25 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -13,7 +13,7 @@ from PySide2 import QtCore, QtGui, QtWidgets
 class Ui_EncounterWidget(object):
     def setupUi(self, EncounterWidget):
         EncounterWidget.setObjectName("EncounterWidget")
-        EncounterWidget.resize(400, 300)
+        EncounterWidget.resize(777, 534)
         self.gridLayout_2 = QtWidgets.QGridLayout(EncounterWidget)
         self.gridLayout_2.setObjectName("gridLayout_2")
         self.frame = QtWidgets.QFrame(EncounterWidget)

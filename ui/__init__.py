@@ -5,8 +5,10 @@ from .CharacterWidget import *
 from .NewGameWidget import *
 from .PhaseWidget import *
 from .EncounterWidget import *
-from .ActionWidget import *
-from .TravelDecisionWidget import *
+from .GenericActionWidget import *
+from .TravelDecisionActionWidget import *
+from .ResolveOrRestActionWidget import *
+from .ChooseEncounterActionWidget import *
 from .ActionsWidget import *
 
 from .MainWindow import *

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'ui/TravelDecisionWidget.ui',
-# licensing of 'ui/TravelDecisionWidget.ui' applies.
+# Form implementation generated from reading ui file 'ui/TravelDecisionActionWidget.ui',
+# licensing of 'ui/TravelDecisionActionWidget.ui' applies.
 #
-# Created: Sat Dec  5 11:58:21 2020
+# Created: Sat Dec  5 16:49:52 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -37,6 +37,6 @@ class Ui_TravelDecisionWidget(object):
         TravelDecisionWidget.setWindowTitle(QtWidgets.QApplication.translate("TravelDecisionWidget", "Form", None, -1))
         self.label_text.setText(QtWidgets.QApplication.translate("TravelDecisionWidget", "Are you ready to encounter the monster?", None, -1))
         self.button_combat.setText(QtWidgets.QApplication.translate("TravelDecisionWidget", "Yes! Start the combat ...", None, -1))
-        self.button_exploration.setText(QtWidgets.QApplication.translate("TravelDecisionWidget", "Not yet ... Continue Exploration", None, -1))
+        self.button_exploration.setText(QtWidgets.QApplication.translate("TravelDecisionWidget", "Not yet ... Explore!", None, -1))
 
 import unbroken_rc

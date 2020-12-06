@@ -1,11 +1,9 @@
-from PySide2 import QtWidgets
-from PySide2.QtCore import Slot, Signal, QSize
-from PySide2.QtGui import QPixmap, QPalette, QColor, QFont
-from PySide2.QtWidgets import QAction
 from .ui_ActionsWidget import Ui_ActionsWidget
-import platform
-from .ActionWidget import *
-from .TravelDecisionWidget import *
+from .GenericActionWidget import *
+from .TravelDecisionActionWidget import *
+from .ResolveOrRestActionWidget import *
+from .ChooseEncounterActionWidget import *
+
 
 class ActionsWidget(QtWidgets.QWidget, Ui_ActionsWidget):
 
@@ -35,7 +33,6 @@ class ActionsWidget(QtWidgets.QWidget, Ui_ActionsWidget):
         for a in self.action_widgets:
             a.setVisible(False)
             self.action_layout.removeWidget(a)
-            #a.deleteLater()
         self.action_widgets = []
         # FIXME --> check phase and sub phase
         p = self.game.phase
@@ -44,25 +41,49 @@ class ActionsWidget(QtWidgets.QWidget, Ui_ActionsWidget):
         if not p.is_travel:
             self.repaint()
             return
-        if p.is_travel and sp.is_preparation_step:
+        if p.is_travel:
             self.update_travel()
-        if p.is_travel and sp.is_decision_step:
-            self.update_decision()
+        else:
+            self.update_combat()
         self.repaint()
 
+    def update_combat(self):
+        sp = self.game.sub_phase
+        return
+
     def update_travel(self):
+        sp = self.game.sub_phase
+        if sp.is_preparation_step:
+            self.update_preparation()
+        if sp.is_decision_step:
+            self.update_decision()
+        if sp.is_exploration_step:
+            self.update_exploration()
+
+    def update_preparation(self):
+        # all character abilities
         for a in self.game.character.abilities:
-            wa = ActionWidget(self, a)
+            wa = GenericActionWidget(self, a)
             self.action_layout.addWidget(wa)
             self.action_widgets.append(wa)
+        # all possible actions in the current phase
         for a in self.game.all_actions:
             if not a.is_ability:
-                wa = ActionWidget(self, a)
+                wa = GenericActionWidget(self, a)
                 self.action_layout.addWidget(wa)
                 self.action_widgets.append(wa)
 
     def update_decision(self):
-        a = next(x for x in self.game.all_actions if x.id == 10)
-        wa = TravelDecisionWidget(self.game, self)
+        wa = TravelDecisionActionWidget(self.game, self)
+        self.action_layout.addWidget(wa)
+        self.action_widgets.append(wa)
+
+    def update_exploration(self):
+        n = len(self.game.encounter)
+        print('enc', n)
+        if n == 1:
+            wa = ResolveOrRestActionWidget(self.game, self)
+        else:
+            wa = ChooseEncounterActionWidget(self.game, self)
         self.action_layout.addWidget(wa)
         self.action_widgets.append(wa)
