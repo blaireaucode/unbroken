@@ -160,34 +160,34 @@
   },
   {
     "id": 21,
-    "name": "todo",
+    "name": "Raw hunting trophies",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
-    "time": 1
+    "spend": "-1w",
+    "gain": "+2f",
+    "time": 3
   },
   {
     "id": 22,
-    "name": "todo",
+    "name": "Boar ambush",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
-    "time": 1
+    "spend": "-1me",
+    "gain": "+3f",
+    "time": 4
   },
   {
     "id": 23,
-    "name": "todo",
+    "name": "Suspicious mushrooms",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
-    "time": 1
+    "spend": "-1se",
+    "gain": "+2f",
+    "time": 4
   },
   {
     "id": 24,
-    "name": "todo",
+    "name": "Juicy bats",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
+    "spend": "-1le",
+    "gain": "+2f +2se",
     "time": 1
   },
   {

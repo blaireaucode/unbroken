@@ -9,6 +9,10 @@ class ResolveOrRestActionWidget(QtWidgets.QWidget, Ui_ResolveOrRestActionWidget)
         super().__init__(parent)
         self.setupUi(self)
         self.game = game
+
+        n = self.game.encounter[0].time
+        self.label_text.setText(_(f'Resolve or rest ?\nIn all cases:, spend {n} Times.'))
+
         self.button_resolve.setText(_('Resolve'))
         self.button_rest.setText(_('Rest'))
         self.button_resolve.clicked.connect(self.slot_on_resolve)

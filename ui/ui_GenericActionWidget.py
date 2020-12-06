@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/GenericActionWidget.ui',
 # licensing of 'ui/GenericActionWidget.ui' applies.
 #
-# Created: Sun Dec  6 13:41:00 2020
+# Created: Sun Dec  6 21:50:40 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!

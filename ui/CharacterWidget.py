@@ -34,6 +34,7 @@ class CharacterWidget(QtWidgets.QWidget, Ui_CharacterWidget):
         s += f'Wood {r.wood}\n'
         s += f'Metal {r.metal}\n'
         s += f'Treasure {r.treasure}\n'
-        s += f'Time {r.time}'
+        s += f'Time {r.time}\n\n'
+        s += f'exploration cards to reveal: {c.orienteer_cards}'
         self.textEdit.setText(s)
         self.repaint()

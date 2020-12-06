@@ -49,14 +49,14 @@
     "id": 8,
     "name": "Orienteer",
     "action_type": "Travel",
-    "text": "TODO.",
+    "text": "Reveal 2 extra cards during Exploration.",
     "is_ability": false
   },
   {
     "id": 9,
     "name": "Scout",
     "action_type": "Travel",
-    "text": "TODO.",
+    "text": "Reveal monster.",
     "is_ability": false
   },
   {

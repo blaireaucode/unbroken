@@ -51,7 +51,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.slot_on_load_game(f)
 
     def set_game(self, g):
-        print('set game', g)
         self.game = g
         if g:
             self.button_save.setEnabled(True)

@@ -24,7 +24,6 @@ class EncounterWidget(QtWidgets.QWidget, Ui_EncounterWidget):
         else:
             s = ''
             for ee in e:
-                print(ee)
                 s += f'Encounter: {ee}\n'
             self.textEdit.setText(s)
         self.repaint()

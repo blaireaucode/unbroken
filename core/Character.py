@@ -24,6 +24,7 @@ class Character(object):
         self.abilities = []
         self.image = None
         self.game = None
+        self.orienteer_cards = 2
         # initialize according a initial_data dictionary
         for dictionary in initial_data:
             for key in dictionary:
@@ -65,7 +66,6 @@ class Character(object):
 
     def get_resource_update(self, s):
         words = s.split()
-        print('word', words)
         rtype = []
         rn = []
         if len(words) > 1:
@@ -73,7 +73,6 @@ class Character(object):
                 t, n = self.get_resource_update(w)
                 rtype = rtype + t
                 rn = rn + n
-                print(rtype, rn)
             return rtype, rn
         f = None
         if s[0] == '-':
@@ -88,20 +87,18 @@ class Character(object):
         v = f * n
         rtype.append(r)
         rn.append(v)
-        print('return', rtype, rn)
         return rtype, rn
 
     def is_enough_resource(self, spend):
         rtype, rn = self.get_resource_update(spend)
         for t, n in zip(rtype, rn):
-            if not self.resources[t] >= n:
+            # (n is negative because spend)
+            if not self.resources[t] >= -n:
                 return False
         return True
 
     def update_resource(self, s):
         rt, rn = self.get_resource_update(s)
-        print(rt, rn)
         for t, n in zip(rt, rn):
-            print('-->', t, n)
             self.resources[t] += n
         self.character_changed.emit()

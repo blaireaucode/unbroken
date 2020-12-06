@@ -37,7 +37,6 @@ class ActionsWidget(QtWidgets.QWidget, Ui_ActionsWidget):
         # FIXME --> check phase and sub phase
         p = self.game.phase
         sp = self.game.sub_phase
-        print(p, sp)
         if not p.is_travel:
             self.repaint()
             return
@@ -80,7 +79,6 @@ class ActionsWidget(QtWidgets.QWidget, Ui_ActionsWidget):
 
     def update_exploration(self):
         n = len(self.game.encounter)
-        print('enc', n)
         if n == 1:
             wa = ResolveOrRestActionWidget(self.game, self)
         else:

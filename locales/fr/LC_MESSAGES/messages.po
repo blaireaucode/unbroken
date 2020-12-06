@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unbroken VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-06 13:41+0100\n"
+"POT-Creation-Date: 2020-12-06 21:50+0100\n"
 "PO-Revision-Date: 2020-11-25 21:47+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -28,6 +28,10 @@ msgstr ""
 #: qrc/encounters.json:90 qrc/encounters.json:98 qrc/encounters.json:106
 #: qrc/encounters.json:114 qrc/encounters.json:122 qrc/encounters.json:130
 #: qrc/encounters.json:138 qrc/encounters.json:146 qrc/encounters.json:154
+#: qrc/encounters.json:162 qrc/encounters.json:170 qrc/encounters.json:178
+#: qrc/encounters.json:186 qrc/encounters.json:194 qrc/encounters.json:202
+#: qrc/encounters.json:210 qrc/encounters.json:218 qrc/encounters.json:226
+#: qrc/encounters.json:234
 msgid "id"
 msgstr ""
 
@@ -112,12 +116,16 @@ msgstr ""
 msgid "Orienteer"
 msgstr ""
 
-#: qrc/actions.json:52 qrc/actions.json:59
-msgid "TODO."
+#: qrc/actions.json:52
+msgid "Reveal 2 extra cards during Exploration."
 msgstr ""
 
 #: qrc/actions.json:57
 msgid "Scout"
+msgstr ""
+
+#: qrc/actions.json:59
+msgid "Reveal monster."
 msgstr ""
 
 #: qrc/actions.json:64
@@ -230,7 +238,8 @@ msgstr ""
 "Vous voyez un taudis abandonné. L’examiner vous permet d’en apprendre "
 "davantage sur les créatures qui y vivaient."
 
-#: qrc/encounters.json:6
+#: qrc/encounters.json:6 qrc/encounters.json:101 qrc/encounters.json:109
+#: qrc/encounters.json:117 qrc/encounters.json:181
 msgid "-1se"
 msgstr ""
 
@@ -245,7 +254,10 @@ msgstr ""
 #: qrc/encounters.json:80 qrc/encounters.json:87 qrc/encounters.json:95
 #: qrc/encounters.json:103 qrc/encounters.json:111 qrc/encounters.json:119
 #: qrc/encounters.json:127 qrc/encounters.json:135 qrc/encounters.json:143
-#: qrc/encounters.json:151 qrc/encounters.json:159
+#: qrc/encounters.json:151 qrc/encounters.json:159 qrc/encounters.json:167
+#: qrc/encounters.json:175 qrc/encounters.json:183 qrc/encounters.json:191
+#: qrc/encounters.json:199 qrc/encounters.json:207 qrc/encounters.json:215
+#: qrc/encounters.json:223 qrc/encounters.json:231 qrc/encounters.json:239
 msgid "time"
 msgstr ""
 
@@ -278,6 +290,7 @@ msgstr ""
 "vous concentrer sur votre plan d’action."
 
 #: qrc/encounters.json:22 qrc/encounters.json:30 qrc/encounters.json:62
+#: qrc/encounters.json:125 qrc/encounters.json:133
 msgid "0"
 msgstr ""
 
@@ -355,21 +368,23 @@ msgid "Valuable information"
 msgstr ""
 
 #: qrc/encounters.json:69 qrc/encounters.json:77 qrc/encounters.json:84
-#: qrc/encounters.json:92 qrc/encounters.json:99 qrc/encounters.json:100
-#: qrc/encounters.json:101 qrc/encounters.json:102 qrc/encounters.json:107
-#: qrc/encounters.json:108 qrc/encounters.json:109 qrc/encounters.json:110
-#: qrc/encounters.json:115 qrc/encounters.json:116 qrc/encounters.json:117
-#: qrc/encounters.json:118 qrc/encounters.json:123 qrc/encounters.json:124
-#: qrc/encounters.json:125 qrc/encounters.json:126 qrc/encounters.json:131
-#: qrc/encounters.json:132 qrc/encounters.json:133 qrc/encounters.json:134
-#: qrc/encounters.json:139 qrc/encounters.json:140 qrc/encounters.json:141
-#: qrc/encounters.json:142 qrc/encounters.json:147 qrc/encounters.json:148
-#: qrc/encounters.json:149 qrc/encounters.json:150 qrc/encounters.json:155
-#: qrc/encounters.json:156 qrc/encounters.json:157 qrc/encounters.json:158
+#: qrc/encounters.json:92 qrc/encounters.json:100 qrc/encounters.json:108
+#: qrc/encounters.json:116 qrc/encounters.json:124 qrc/encounters.json:132
+#: qrc/encounters.json:140 qrc/encounters.json:148 qrc/encounters.json:156
+#: qrc/encounters.json:164 qrc/encounters.json:172 qrc/encounters.json:180
+#: qrc/encounters.json:188 qrc/encounters.json:195 qrc/encounters.json:196
+#: qrc/encounters.json:197 qrc/encounters.json:198 qrc/encounters.json:203
+#: qrc/encounters.json:204 qrc/encounters.json:205 qrc/encounters.json:206
+#: qrc/encounters.json:211 qrc/encounters.json:212 qrc/encounters.json:213
+#: qrc/encounters.json:214 qrc/encounters.json:219 qrc/encounters.json:220
+#: qrc/encounters.json:221 qrc/encounters.json:222 qrc/encounters.json:227
+#: qrc/encounters.json:228 qrc/encounters.json:229 qrc/encounters.json:230
+#: qrc/encounters.json:235 qrc/encounters.json:236 qrc/encounters.json:237
+#: qrc/encounters.json:238
 msgid "todo"
 msgstr ""
 
-#: qrc/encounters.json:70 qrc/encounters.json:78
+#: qrc/encounters.json:70 qrc/encounters.json:78 qrc/encounters.json:189
 msgid "-1le"
 msgstr ""
 
@@ -389,7 +404,7 @@ msgstr ""
 msgid "Talkative trader"
 msgstr ""
 
-#: qrc/encounters.json:85
+#: qrc/encounters.json:85 qrc/encounters.json:149
 msgid "-1m"
 msgstr ""
 
@@ -401,16 +416,74 @@ msgstr ""
 msgid "Cryptic markings"
 msgstr ""
 
-#: qrc/encounters.json:93
+#: qrc/encounters.json:93 qrc/encounters.json:173
 msgid "-1me"
 msgstr ""
 
-#: ui/ChooseEncounterActionWidget.py:20
-msgid "Choose {e1.name}"
+#: qrc/encounters.json:99 qrc/encounters.json:107 qrc/encounters.json:115
+msgid "Sickly berries"
 msgstr ""
 
-#: ui/ChooseEncounterActionWidget.py:21
-msgid "Choose {e2.name}"
+#: qrc/encounters.json:102 qrc/encounters.json:110 qrc/encounters.json:118
+#: qrc/encounters.json:126 qrc/encounters.json:134
+msgid "+1f"
+msgstr ""
+
+#: qrc/encounters.json:123 qrc/encounters.json:131
+msgid "Slimy yet nourishing"
+msgstr ""
+
+#: qrc/encounters.json:139
+msgid "Slithering snake"
+msgstr ""
+
+#: qrc/encounters.json:141 qrc/encounters.json:157
+msgid "-1c"
+msgstr ""
+
+#: qrc/encounters.json:142 qrc/encounters.json:150 qrc/encounters.json:158
+#: qrc/encounters.json:166 qrc/encounters.json:182
+msgid "+2f"
+msgstr ""
+
+#: qrc/encounters.json:147
+msgid "Spearfishing"
+msgstr ""
+
+#: qrc/encounters.json:155
+msgid "Disrupting the feast"
+msgstr ""
+
+#: qrc/encounters.json:163
+msgid "Raw hunting trophies"
+msgstr ""
+
+#: qrc/encounters.json:165
+msgid "-1w"
+msgstr ""
+
+#: qrc/encounters.json:171
+msgid "Boar ambush"
+msgstr ""
+
+#: qrc/encounters.json:174
+msgid "+3f"
+msgstr ""
+
+#: qrc/encounters.json:179
+msgid "Suspicious mushrooms"
+msgstr ""
+
+#: qrc/encounters.json:187
+msgid "Juicy bats"
+msgstr ""
+
+#: qrc/encounters.json:190
+msgid "+2f +2se"
+msgstr ""
+
+#: ui/ChooseEncounterActionWidget.py:23
+msgid "{e.name}"
 msgstr ""
 
 #: ui/NewGameWidget.py:51
@@ -646,4 +719,13 @@ msgstr ""
 
 #~ msgid "Next"
 #~ msgstr "Suivant"
+
+#~ msgid "Choose {e1.name}"
+#~ msgstr ""
+
+#~ msgid "Choose {e2.name}"
+#~ msgstr ""
+
+#~ msgid "Choose {e.name}"
+#~ msgstr ""
 

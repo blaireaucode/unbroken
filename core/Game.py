@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 from .Database import *
 from .Phase import *
 import jsonpickle
@@ -63,10 +60,11 @@ class Game(object):
     def explore(self):
         self.sub_phase.to_exploration()
         self.encounter = []
-        e = self.all_encounters.pop(0)
-        self.encounter.append(e)
-        e = self.all_encounters.pop(0)
-        self.encounter.append(e)
+        # choose 2 cards or more if orienteer was used
+        n = self.character.orienteer_cards
+        for i in range(n):
+            e = self.all_encounters.pop(0)
+            self.encounter.append(e)
         self.phase_changed.emit()
 
     def choose_encounter_card(self, index):
@@ -84,6 +82,12 @@ class Game(object):
         self.phase_changed.emit()
 
     def after_encounter(self):
+        # init nb of cards to reveal
+        self.character.orienteer_cards = 2
+        # remove encounter, put end of the deck
+        e = self.encounter.pop(0)
+        self.all_encounters.append(e)
+        # check time
         if self.character.resources.time <= 0:
             self.sub_phase.to_ambush()
             self.phase.to_combat()

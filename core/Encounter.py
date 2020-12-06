@@ -23,11 +23,9 @@ class Encounter(object):
 
     def resolve(self):
         s = f'{self.spend} {self.gain} -{self.time}time'
-        print(s)
         self.game.character.update_resource(s)
 
     def rest(self):
         e = self.game.encounter[0]
         s = f'+{e.time}se -{self.time}time'
-        print(s)
         self.game.character.update_resource(s)

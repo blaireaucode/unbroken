@@ -1,8 +1,5 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 def is_general_action_applicable(g):
-    if not g.phase.is_travel and not g.phase.is_fight:
+    if not g.phase.is_travel and not g.phase.is_combat:
         return False
     return True
 
@@ -38,6 +35,18 @@ def action_plan_is_applicable(g):
 def action_plan_do_it(g):
     g.character.update_resource('-4se')
     g.character.update_resource('+1c')
+
+
+# Orienteer # 8
+def action_orienteer_is_applicable(g):
+    return g.phase.is_travel and g.sub_phase.is_preparation_step
+
+
+# Orienteer #8
+def action_orienteer_do_it(g):
+    g.character.update_resource('-1se')
+    g.character.orienteer_cards += 2
+    g.character.character_changed.emit()
 
 
 # decision # 10
