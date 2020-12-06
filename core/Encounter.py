@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-from .ability_helpers import *
-
-
 class Encounter(object):
 
     def __init__(self, *initial_data, **kwargs):
@@ -28,6 +22,12 @@ class Encounter(object):
         self.game = game
 
     def resolve(self):
-        c = self.game.character
-        c.update_resource(self.spend)
-        c.update_resource(self.gain)
+        s = f'{self.spend} {self.gain} -{self.time}time'
+        print(s)
+        self.game.character.update_resource(s)
+
+    def rest(self):
+        e = self.game.encounter[0]
+        s = f'+{e.time}se -{self.time}time'
+        print(s)
+        self.game.character.update_resource(s)

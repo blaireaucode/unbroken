@@ -1,15 +1,22 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-# from PySide2.QtCore import Signal, QObject
 from signalslot import Signal
+from box import Box
 
 
 class Character(object):
     character_changed = Signal()
 
+    alias = {'se': 'small_efforts',
+             'me': 'medium_efforts',
+             'le': 'large_efforts',
+             'time': 'time',
+             'c': 'cunning',
+             'f': 'food',
+             'w': 'wood',
+             'm': 'metal',
+             't': 'treasure'
+             }
+
     def __init__(self, *initial_data, **kwargs):
-        # QObject.__init__(self)
         self.id = None
         self.name = None
         self.class_type = None
@@ -28,10 +35,16 @@ class Character(object):
         for key in kwargs:
             setattr(self, key, kwargs[key])
         # resources
-        self.small_efforts = 13
-        self.medium_efforts = 0
-        self.large_efforts = 0
-        self.cunning = 0
+        self.resources = Box()
+        self.resources.small_efforts = 13
+        self.resources.medium_efforts = 0
+        self.resources.large_efforts = 0
+        self.resources.cunning = 0
+        self.resources.time = 7
+        self.resources.food = 0
+        self.resources.wood = 0
+        self.resources.metal = 0
+        self.resources.treasure = 0
 
     def init_actions(self, all_actions):
         ab = []
@@ -50,45 +63,45 @@ class Character(object):
         for a in self.abilities:
             a.set_game(g)
 
-    def update_resource(self, s):
+    def get_resource_update(self, s):
         words = s.split()
-        print(words)
+        print('word', words)
+        rtype = []
+        rn = []
         if len(words) > 1:
             for w in words:
-                self.update_resource(w)
-            return
+                t, n = self.get_resource_update(w)
+                rtype = rtype + t
+                rn = rn + n
+                print(rtype, rn)
+            return rtype, rn
         f = None
         if s[0] == '-':
             f = -1
-        if s[0] == '0':
+        if s[0] == '+':
             f = 1
-        if not f:
-            print('error update resource', s)
-            return
+        if s[0] == '0':  # do nothing
+            return rtype, rn
         n = int(s[1:2])
         r = s[2:]
-        print(n, r)
+        r = self.alias[r]
         v = f * n
-        if r == 'se':
-            self.small_efforts += v
-        if r == 'me':
-            self.medium_efforts += v
-        if r == 'se':
-            self.large_efforts += v
-        self.character_changed.emit()
+        rtype.append(r)
+        rn.append(v)
+        print('return', rtype, rn)
+        return rtype, rn
 
-    def add_small_efforts(self, v):
-        self.small_efforts += v
-        self.character_changed.emit()
+    def is_enough_resource(self, spend):
+        rtype, rn = self.get_resource_update(spend)
+        for t, n in zip(rtype, rn):
+            if not self.resources[t] >= n:
+                return False
+        return True
 
-    def add_medium_efforts(self, v):
-        self.medium_efforts += v
-        self.character_changed.emit()
-
-    def add_large_efforts(self, v):
-        self.large_efforts += v
-        self.character_changed.emit()
-
-    def add_cunning(self, v):
-        self.cunning += v
+    def update_resource(self, s):
+        rt, rn = self.get_resource_update(s)
+        print(rt, rn)
+        for t, n in zip(rt, rn):
+            print('-->', t, n)
+            self.resources[t] += n
         self.character_changed.emit()

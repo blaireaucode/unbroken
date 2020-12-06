@@ -82,3 +82,11 @@ class Game(object):
         self.encounter.append(e)
         # announce
         self.phase_changed.emit()
+
+    def after_encounter(self):
+        if self.character.resources.time <= 0:
+            self.sub_phase.to_ambush()
+            self.phase.to_combat()
+        else:
+            self.sub_phase.to_preparation()
+        self.phase_changed.emit()

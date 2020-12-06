@@ -27,7 +27,13 @@ class CharacterWidget(QtWidgets.QWidget, Ui_CharacterWidget):
     @Slot()
     def slot_on_character_changed(self, **kwargs):
         c = self.character
-        s = f'{c.name} Efforts: {c.small_efforts} {c.medium_efforts} {c.large_efforts}\n'
-        s += f'Cunning {c.cunning}'
+        r = c.resources
+        s = f'{c.name} Efforts: {r.small_efforts} {r.medium_efforts} {r.large_efforts}\n'
+        s += f'Cunning {r.cunning}\n'
+        s += f'Food {r.food}\n'
+        s += f'Wood {r.wood}\n'
+        s += f'Metal {r.metal}\n'
+        s += f'Treasure {r.treasure}\n'
+        s += f'Time {r.time}'
         self.textEdit.setText(s)
         self.repaint()

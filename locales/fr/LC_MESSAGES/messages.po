@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unbroken VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-05 18:38+0100\n"
+"POT-Creation-Date: 2020-12-06 13:41+0100\n"
 "PO-Revision-Date: 2020-11-25 21:47+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -218,22 +218,24 @@ msgstr ""
 msgid "niola.png"
 msgstr ""
 
-#: qrc/encounters.json:4 qrc/encounters.json:83
-msgid "Abandoned Hovel"
+#: qrc/encounters.json:4
+msgid "Abandoned hovel"
 msgstr ""
 
-#: qrc/encounters.json:5 qrc/encounters.json:84
+#: qrc/encounters.json:5
 msgid ""
 "You see a abandoned slum. Examining it allows you to learn more about the"
 " creatures that once lived there."
 msgstr ""
+"Vous voyez un taudis abandonné. L’examiner vous permet d’en apprendre "
+"davantage sur les créatures qui y vivaient."
 
-#: qrc/encounters.json:6 qrc/encounters.json:85
+#: qrc/encounters.json:6
 msgid "-1se"
 msgstr ""
 
-#: qrc/encounters.json:7 qrc/encounters.json:15 qrc/encounters.json:86
-#: qrc/encounters.json:94
+#: qrc/encounters.json:7 qrc/encounters.json:15 qrc/encounters.json:23
+#: qrc/encounters.json:31
 msgid "+1c"
 msgstr ""
 
@@ -247,21 +249,112 @@ msgstr ""
 msgid "time"
 msgstr ""
 
-#: qrc/encounters.json:12 qrc/encounters.json:91
+#: qrc/encounters.json:12
 msgid "Eavesdropping"
+msgstr "Ecoute discrète"
+
+#: qrc/encounters.json:13
+msgid ""
+"Spy on two orcs provides you a little insight, but you have to hurry so "
+"you don't get noticed."
+msgstr ""
+"Espionner deux orcs vous fournit un peu de perspicacité, mais vous devez "
+"presser le pas pour ne pas vous faire remarquer."
+
+#: qrc/encounters.json:14
+msgid "Commit to next encounter"
 msgstr ""
 
-#: qrc/encounters.json:13 qrc/encounters.json:20 qrc/encounters.json:21
-#: qrc/encounters.json:22 qrc/encounters.json:23 qrc/encounters.json:28
-#: qrc/encounters.json:29 qrc/encounters.json:30 qrc/encounters.json:31
-#: qrc/encounters.json:36 qrc/encounters.json:37 qrc/encounters.json:38
-#: qrc/encounters.json:39 qrc/encounters.json:44 qrc/encounters.json:45
-#: qrc/encounters.json:46 qrc/encounters.json:47 qrc/encounters.json:52
-#: qrc/encounters.json:53 qrc/encounters.json:54 qrc/encounters.json:55
-#: qrc/encounters.json:60 qrc/encounters.json:61 qrc/encounters.json:62
-#: qrc/encounters.json:63 qrc/encounters.json:68 qrc/encounters.json:69
-#: qrc/encounters.json:70 qrc/encounters.json:71 qrc/encounters.json:76
-#: qrc/encounters.json:77 qrc/encounters.json:78 qrc/encounters.json:79
+#: qrc/encounters.json:20 qrc/encounters.json:28
+msgid "A clever scheme"
+msgstr ""
+
+#: qrc/encounters.json:21 qrc/encounters.json:29
+msgid ""
+"You resume your breath behind rocks. This allows you to focus on your "
+"action plan."
+msgstr ""
+"Vous reprenez votre souffle derrière des rochers. Cela vous permet de "
+"vous concentrer sur votre plan d’action."
+
+#: qrc/encounters.json:22 qrc/encounters.json:30 qrc/encounters.json:62
+msgid "0"
+msgstr ""
+
+#: qrc/encounters.json:36
+msgid "Bribing the whelps"
+msgstr "Corrompre les petits"
+
+#: qrc/encounters.json:37
+msgid ""
+"A group goblin children play here. You could buy them for some info and "
+"play with them a bit."
+msgstr ""
+"Un groupe d'enfants gobelins joue ici. Vous pourriez les acheter pour "
+"quelques informations et jouer un peu avec eux."
+
+#: qrc/encounters.json:38
+msgid "-1t"
+msgstr ""
+
+#: qrc/encounters.json:39
+msgid "+1c +2se"
+msgstr ""
+
+#: qrc/encounters.json:44
+msgid "Starving Gobelins"
+msgstr ""
+
+#: qrc/encounters.json:45
+msgid ""
+"Half an orca starving in exile is ready to share with you all the secrets"
+" he knows to feed."
+msgstr ""
+"Un demi-orque affamé en exil est prêt à vous partager tous les secrets "
+"qu'il connaît pour se nourrir."
+
+#: qrc/encounters.json:46
+msgid "-1f"
+msgstr ""
+
+#: qrc/encounters.json:47 qrc/encounters.json:55 qrc/encounters.json:63
+#: qrc/encounters.json:94
+msgid "+2c"
+msgstr ""
+
+#: qrc/encounters.json:52
+msgid "Steep Ledge"
+msgstr "Pente raide"
+
+#: qrc/encounters.json:53
+msgid ""
+"There is a slope steep here. In amount that might give you a glimpse of "
+"what to expect."
+msgstr ""
+"Il y a une pente raide ici. En montant cela pourrait vous donner un "
+"aperçu de ce qui vous attend."
+
+#: qrc/encounters.json:54
+msgid "-2se"
+msgstr ""
+
+#: qrc/encounters.json:60
+msgid "Curious tracks"
+msgstr "Traces étranges"
+
+#: qrc/encounters.json:61
+msgid ""
+"Tracks. You can learn a bit more about these creatures if you spend time "
+"here."
+msgstr ""
+"Des traces. Vous pouvez en apprendre un peu plus sur ces créatures si "
+"vous passez du temps ici."
+
+#: qrc/encounters.json:68
+msgid "Valuable information"
+msgstr ""
+
+#: qrc/encounters.json:69 qrc/encounters.json:77 qrc/encounters.json:84
 #: qrc/encounters.json:92 qrc/encounters.json:99 qrc/encounters.json:100
 #: qrc/encounters.json:101 qrc/encounters.json:102 qrc/encounters.json:107
 #: qrc/encounters.json:108 qrc/encounters.json:109 qrc/encounters.json:110
@@ -276,23 +369,55 @@ msgstr ""
 msgid "todo"
 msgstr ""
 
-#: qrc/encounters.json:14 qrc/encounters.json:93
-msgid "Commit to next encounter"
+#: qrc/encounters.json:70 qrc/encounters.json:78
+msgid "-1le"
 msgstr ""
 
-#: ui/ChooseEncounterActionWidget.py:22
+#: qrc/encounters.json:71
+msgid "+2c +1t +1se"
+msgstr ""
+
+#: qrc/encounters.json:76
+msgid "Mumbling Kobold"
+msgstr ""
+
+#: qrc/encounters.json:79
+msgid "+3c"
+msgstr ""
+
+#: qrc/encounters.json:83
+msgid "Talkative trader"
+msgstr ""
+
+#: qrc/encounters.json:85
+msgid "-1m"
+msgstr ""
+
+#: qrc/encounters.json:86
+msgid "+1c +1f"
+msgstr ""
+
+#: qrc/encounters.json:91
+msgid "Cryptic markings"
+msgstr ""
+
+#: qrc/encounters.json:93
+msgid "-1me"
+msgstr ""
+
+#: ui/ChooseEncounterActionWidget.py:20
 msgid "Choose {e1.name}"
 msgstr ""
 
-#: ui/ChooseEncounterActionWidget.py:23
+#: ui/ChooseEncounterActionWidget.py:21
 msgid "Choose {e2.name}"
 msgstr ""
 
-#: ui/NewGameWidget.py:57
+#: ui/NewGameWidget.py:51
 msgid "Previous"
 msgstr ""
 
-#: ui/NewGameWidget.py:58
+#: ui/NewGameWidget.py:52
 msgid "Next"
 msgstr ""
 

@@ -12,7 +12,7 @@ class Phase(StateMachine):
     terminated = State('terminated')
     # transitions
     start = before.to(travel)
-    start_fight = travel.to(combat)
+    to_combat = travel.to(combat)
     end_combat = combat.to(travel)
     end_game = combat.to(terminated)
 
@@ -32,5 +32,6 @@ class SubPhase(StateMachine):
     to_decision = preparation_step.to(decision_step)
     to_exploration = decision_step.to(exploration_step)
     to_battle = decision_step.to(battle_step)
-    to_ambush = decision_step.to(ambush_step)
+    to_ambush = exploration_step.to(ambush_step)
+    to_preparation = exploration_step.to(preparation_step)
     to_trickery = decision_step.to(trickery_step)

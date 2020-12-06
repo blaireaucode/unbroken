@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Abandoned Hovel",
+    "name": "Abandoned hovel",
     "text": "You see a abandoned slum. Examining it allows you to learn more about the creatures that once lived there.",
     "spend": "-1se",
     "gain": "+1c",
@@ -10,140 +10,156 @@
   {
     "id": 2,
     "name": "Eavesdropping",
-    "text": "todo",
+    "text": "Spy on two orcs provides you a little insight, but you have to hurry so you don't get noticed.",
     "spend": "Commit to next encounter",
     "gain": "+1c",
     "time": 1
   },
   {
     "id": 3,
-    "name": "todo",
-    "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
-    "time": 1
+    "name": "A clever scheme",
+    "text": "You resume your breath behind rocks. This allows you to focus on your action plan.",
+    "spend": "0",
+    "gain": "+1c",
+    "time": 2
   },
   {
     "id": 4,
-    "name": "todo",
-    "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
-    "time": 1
+    "name": "A clever scheme",
+    "text": "You resume your breath behind rocks. This allows you to focus on your action plan.",
+    "spend": "0",
+    "gain": "+1c",
+    "time": 2
   },
   {
     "id": 5,
-    "name": "todo",
-    "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
+    "name": "Bribing the whelps",
+    "text": "A group goblin children play here. You could buy them for some info and play with them a bit.",
+    "spend": "-1t",
+    "gain": "+1c +2se",
     "time": 1
   },
   {
     "id": 6,
-    "name": "todo",
-    "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
-    "time": 1
+    "name": "Starving Gobelins",
+    "text": "Half an orca starving in exile is ready to share with you all the secrets he knows to feed.",
+    "spend": "-1f",
+    "gain": "+2c",
+    "time": 3
   },
   {
     "id": 7,
-    "name": "todo",
-    "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
-    "time": 1
+    "name": "Steep Ledge",
+    "text": "There is a slope steep here. In amount that might give you a glimpse of what to expect.",
+    "spend": "-2se",
+    "gain": "+2c",
+    "time": 3
   },
   {
     "id": 8,
-    "name": "todo",
-    "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
-    "time": 1
+    "name": "Curious tracks",
+    "text": "Tracks. You can learn a bit more about these creatures if you spend time here.",
+    "spend": "0",
+    "gain": "+2c",
+    "time": 5
   },
   {
     "id": 9,
-    "name": "todo",
+    "name": "Valuable information",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
+    "spend": "-1le",
+    "gain": "+2c +1t +1se",
     "time": 1
   },
   {
     "id": 10,
-    "name": "todo",
+    "name": "Mumbling Kobold",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
-    "time": 1
+    "spend": "-1le",
+    "gain": "+3c",
+    "time": 2
   },{
     "id": 11,
-    "name": "Abandoned Hovel",
-    "text": "You see a abandoned slum. Examining it allows you to learn more about the creatures that once lived there.",
-    "spend": "-1se",
-    "gain": "+1c",
-    "time": 1
+    "name": "Talkative trader",
+    "text": "todo",
+    "spend": "-1m",
+    "gain": "+1c +1f",
+    "time": 2
   },
   {
     "id": 12,
-    "name": "Eavesdropping",
+    "name": "Cryptic markings",
     "text": "todo",
-    "spend": "Commit to next encounter",
-    "gain": "+1c",
-    "time": 1
+    "spend": "-1me",
+    "gain": "+2c",
+    "time": 2
   },
   {
     "id": 13,
-    "name": "todo",
+    "name": "Sickly berries",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
+    "spend": "-1se",
+    "gain": "+1f",
     "time": 1
   },
   {
     "id": 14,
-    "name": "todo",
+    "name": "Sickly berries",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
+    "spend": "-1se",
+    "gain": "+1f",
     "time": 1
   },
   {
     "id": 15,
-    "name": "todo",
+    "name": "Sickly berries",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
+    "spend": "-1se",
+    "gain": "+1f",
     "time": 1
   },
   {
     "id": 16,
-    "name": "todo",
+    "name": "Slimy yet nourishing",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
-    "time": 1
+    "spend": "0",
+    "gain": "+1f",
+    "time": 2
   },
   {
     "id": 17,
-    "name": "todo",
+    "name": "Slimy yet nourishing",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
-    "time": 1
+    "spend": "0",
+    "gain": "+1f",
+    "time": 2
   },
   {
     "id": 18,
-    "name": "todo",
+    "name": "Slithering snake",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
-    "time": 1
+    "spend": "-1c",
+    "gain": "+2f",
+    "time": 2
   },
   {
     "id": 19,
+    "name": "Spearfishing",
+    "text": "todo",
+    "spend": "-1m",
+    "gain": "+2f",
+    "time": 2
+  },
+  {
+    "id": 20,
+    "name": "Disrupting the feast",
+    "text": "todo",
+    "spend": "-1c",
+    "gain": "+2f",
+    "time": 2
+  },
+  {
+    "id": 21,
     "name": "todo",
     "text": "todo",
     "spend": "todo",
@@ -151,7 +167,71 @@
     "time": 1
   },
   {
-    "id": 20,
+    "id": 22,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 23,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 24,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 25,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 26,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 27,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 28,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 29,
+    "name": "todo",
+    "text": "todo",
+    "spend": "todo",
+    "gain": "todo",
+    "time": 1
+  },
+  {
+    "id": 30,
     "name": "todo",
     "text": "todo",
     "spend": "todo",

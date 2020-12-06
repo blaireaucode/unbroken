@@ -1,13 +1,7 @@
-from PySide2 import QtWidgets
 from PySide2.QtCore import Slot, Signal, QSize
-from PySide2.QtGui import QPixmap, QPalette, QColor, QFont
-from PySide2.QtWidgets import QAction
 from .ui_NewGameWidget import Ui_NewGameWidget
-import platform
-from PySide2 import QtCore, QtGui, QtWidgets
 from .SlidingStackedWidget import *
 from core import Game
-import gettext
 
 """
 Later: manage difficulty
@@ -101,9 +95,5 @@ class NewGameWidget(QtWidgets.QDialog, Ui_NewGameWidget):
         self.label_ability.setText(t)
 
     def slot_accepted(self):
-        print('accepted')
         self.game.set_character(self.current_character)
-        #for a in Game.db.all_actions:
-        #    a.set_game(self.game)
         self.game.phase.start()
-

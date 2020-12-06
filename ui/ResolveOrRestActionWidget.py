@@ -13,13 +13,19 @@ class ResolveOrRestActionWidget(QtWidgets.QWidget, Ui_ResolveOrRestActionWidget)
         self.button_rest.setText(_('Rest'))
         self.button_resolve.clicked.connect(self.slot_on_resolve)
         self.button_rest.clicked.connect(self.slot_on_rest)
+        e = self.game.encounter[0]
+        c = self.game.character
+        if c.is_enough_resource(e.spend):
+            self.button_resolve.setEnabled(True)
+        else:
+            self.button_resolve.setEnabled(False)
 
     @Slot()
     def slot_on_resolve(self):
-        pass
-        # self.game.set_travel_phase_decision(True)
+        self.game.encounter[0].resolve()
+        self.game.after_encounter()
 
     @Slot()
     def slot_on_rest(self):
-        pass
-        # self.game.set_travel_phase_decision(False)
+        self.game.encounter[0].rest()
+        self.game.after_encounter()
