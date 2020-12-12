@@ -61,6 +61,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.widget_phase.set_game(g)
         self.widget_encounter.set_game(g)
         self.widget_actions.set_game(g)
+        self.widget_monster.set_game(g)
 
     @Slot()
     def slot_on_load_game(self, filename):

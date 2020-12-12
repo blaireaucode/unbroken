@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1132</width>
-    <height>699</height>
+    <width>1455</width>
+    <height>808</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -80,26 +80,50 @@
     <item>
      <layout class="QGridLayout" name="gridLayout">
       <item row="0" column="0">
-       <widget class="CharacterWidget" name="widget_character" native="true"/>
+       <widget class="CharacterWidget" name="widget_character" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
       </item>
       <item row="0" column="1">
        <widget class="ActionsWidget" name="widget_actions" native="true">
         <property name="minimumSize">
          <size>
-          <width>0</width>
+          <width>300</width>
+          <height>300</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" rowspan="2">
+       <widget class="MonsterWidget" name="widget_monster" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
           <height>300</height>
          </size>
         </property>
        </widget>
       </item>
       <item row="1" column="0">
-       <widget class="PhaseWidget" name="widget_phase" native="true"/>
+       <widget class="PhaseWidget" name="widget_phase" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
       </item>
       <item row="1" column="1">
        <widget class="EncounterWidget" name="widget_encounter" native="true">
         <property name="minimumSize">
          <size>
-          <width>0</width>
+          <width>300</width>
           <height>300</height>
          </size>
         </property>
@@ -134,6 +158,12 @@
    <class>ActionsWidget</class>
    <extends>QWidget</extends>
    <header>.ActionsWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MonsterWidget</class>
+   <extends>QWidget</extends>
+   <header>.MonsterWidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

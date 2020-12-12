@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/NewGameWidget.ui',
 # licensing of 'ui/NewGameWidget.ui' applies.
 #
-# Created: Sun Dec  6 21:50:39 2020
+# Created: Sat Dec 12 17:22:20 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!

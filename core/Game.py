@@ -53,8 +53,8 @@ class Game(object):
         self.character.set_game(self)
 
     def combat(self):
-        self.phase.start_combat()
-        self.sub_phase.to_battle()
+        self.phase.to_combat()
+        self.sub_phase.to_trickery()
         self.phase_changed.emit()
 
     def explore(self):

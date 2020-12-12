@@ -1,13 +1,7 @@
 from PySide2 import QtWidgets
 from PySide2.QtCore import Slot
 from .ui_ChooseEncounterActionWidget import Ui_ChooseEncounterActionWidget
-from inspect import currentframe
-
-
-def f(s):
-    frame = currentframe().f_back
-    return eval(f"f'{s}'", frame.f_locals, frame.f_globals)
-
+from core import *
 
 class ChooseEncounterActionWidget(QtWidgets.QWidget, Ui_ChooseEncounterActionWidget):
 
@@ -19,7 +13,7 @@ class ChooseEncounterActionWidget(QtWidgets.QWidget, Ui_ChooseEncounterActionWid
         for e in self.game.encounter:
             b = QtWidgets.QPushButton(self)
             self.verticalLayout.addWidget(b)
-            b.setText(f(_('{e.name}')))
+            b.setText(ff(_('{e.name}')))
             b.clicked.connect(self.slot_pushed)
             self.buttons.append(b)
 

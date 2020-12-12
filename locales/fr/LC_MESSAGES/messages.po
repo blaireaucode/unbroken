@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unbroken VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-06 21:50+0100\n"
+"POT-Creation-Date: 2020-12-12 17:22+0100\n"
 "PO-Revision-Date: 2020-11-25 21:47+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -235,8 +235,6 @@ msgid ""
 "You see a abandoned slum. Examining it allows you to learn more about the"
 " creatures that once lived there."
 msgstr ""
-"Vous voyez un taudis abandonné. L’examiner vous permet d’en apprendre "
-"davantage sur les créatures qui y vivaient."
 
 #: qrc/encounters.json:6 qrc/encounters.json:101 qrc/encounters.json:109
 #: qrc/encounters.json:117 qrc/encounters.json:181
@@ -263,15 +261,13 @@ msgstr ""
 
 #: qrc/encounters.json:12
 msgid "Eavesdropping"
-msgstr "Ecoute discrète"
+msgstr ""
 
 #: qrc/encounters.json:13
 msgid ""
 "Spy on two orcs provides you a little insight, but you have to hurry so "
 "you don't get noticed."
 msgstr ""
-"Espionner deux orcs vous fournit un peu de perspicacité, mais vous devez "
-"presser le pas pour ne pas vous faire remarquer."
 
 #: qrc/encounters.json:14
 msgid "Commit to next encounter"
@@ -286,8 +282,6 @@ msgid ""
 "You resume your breath behind rocks. This allows you to focus on your "
 "action plan."
 msgstr ""
-"Vous reprenez votre souffle derrière des rochers. Cela vous permet de "
-"vous concentrer sur votre plan d’action."
 
 #: qrc/encounters.json:22 qrc/encounters.json:30 qrc/encounters.json:62
 #: qrc/encounters.json:125 qrc/encounters.json:133
@@ -296,15 +290,13 @@ msgstr ""
 
 #: qrc/encounters.json:36
 msgid "Bribing the whelps"
-msgstr "Corrompre les petits"
+msgstr ""
 
 #: qrc/encounters.json:37
 msgid ""
 "A group goblin children play here. You could buy them for some info and "
 "play with them a bit."
 msgstr ""
-"Un groupe d'enfants gobelins joue ici. Vous pourriez les acheter pour "
-"quelques informations et jouer un peu avec eux."
 
 #: qrc/encounters.json:38
 msgid "-1t"
@@ -323,8 +315,6 @@ msgid ""
 "Half an orca starving in exile is ready to share with you all the secrets"
 " he knows to feed."
 msgstr ""
-"Un demi-orque affamé en exil est prêt à vous partager tous les secrets "
-"qu'il connaît pour se nourrir."
 
 #: qrc/encounters.json:46
 msgid "-1f"
@@ -337,15 +327,13 @@ msgstr ""
 
 #: qrc/encounters.json:52
 msgid "Steep Ledge"
-msgstr "Pente raide"
+msgstr ""
 
 #: qrc/encounters.json:53
 msgid ""
 "There is a slope steep here. In amount that might give you a glimpse of "
 "what to expect."
 msgstr ""
-"Il y a une pente raide ici. En montant cela pourrait vous donner un "
-"aperçu de ce qui vous attend."
 
 #: qrc/encounters.json:54
 msgid "-2se"
@@ -353,15 +341,13 @@ msgstr ""
 
 #: qrc/encounters.json:60
 msgid "Curious tracks"
-msgstr "Traces étranges"
+msgstr ""
 
 #: qrc/encounters.json:61
 msgid ""
 "Tracks. You can learn a bit more about these creatures if you spend time "
 "here."
 msgstr ""
-"Des traces. Vous pouvez en apprendre un peu plus sur ces créatures si "
-"vous passez du temps ici."
 
 #: qrc/encounters.json:68
 msgid "Valuable information"
@@ -482,7 +468,7 @@ msgstr ""
 msgid "+2f +2se"
 msgstr ""
 
-#: ui/ChooseEncounterActionWidget.py:23
+#: ui/ChooseEncounterActionWidget.py:16
 msgid "{e.name}"
 msgstr ""
 
@@ -494,11 +480,17 @@ msgstr ""
 msgid "Next"
 msgstr ""
 
-#: ui/ResolveOrRestActionWidget.py:12
+#: ui/ResolveOrRestActionWidget.py:15
+msgid ""
+"Resolve or rest ?\n"
+"In all cases:, spend {n} Times."
+msgstr ""
+
+#: ui/ResolveOrRestActionWidget.py:17
 msgid "Resolve"
 msgstr ""
 
-#: ui/ResolveOrRestActionWidget.py:13
+#: ui/ResolveOrRestActionWidget.py:18
 msgid "Rest"
 msgstr ""
 
@@ -550,10 +542,10 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Take a peek"
-#~ msgstr "Jeter un oeil"
+#~ msgstr ""
 
 #~ msgid "Travel"
-#~ msgstr "Voyager"
+#~ msgstr ""
 
 #~ msgid "Reveal +1 card during the Exploration Step."
 #~ msgstr ""
@@ -562,13 +554,13 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Response"
-#~ msgstr "Combat"
+#~ msgstr ""
 
 #~ msgid "Before gaining a new Skill, reveal +1 Skill card to select from."
 #~ msgstr ""
 
 #~ msgid "Dodge"
-#~ msgstr "Éviter"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "After a monster's combat roll spend "
@@ -628,7 +620,7 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Sneak"
-#~ msgstr "Furtif"
+#~ msgstr ""
 
 #~ msgid "maxyn.png"
 #~ msgstr ""
@@ -640,7 +632,7 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Brawler"
-#~ msgstr "Bagarreur"
+#~ msgstr ""
 
 #~ msgid "caellahan.png"
 #~ msgstr ""
@@ -649,7 +641,7 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Hunter"
-#~ msgstr "Chasseur"
+#~ msgstr ""
 
 #~ msgid "kirilla.png"
 #~ msgstr ""
@@ -695,6 +687,10 @@ msgstr ""
 #~ "it allows you to learn more about"
 #~ " the creatures that once lived there."
 #~ msgstr ""
+#~ "Vous voyez un taudis abandonné. "
+#~ "L’examiner vous permet d’en apprendre "
+#~ "davantage sur les créatures qui y "
+#~ "vivaient."
 
 #~ msgid "-1se"
 #~ msgstr ""
@@ -706,7 +702,7 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Eavesdropping"
-#~ msgstr ""
+#~ msgstr "Ecoute discrète"
 
 #~ msgid "todo"
 #~ msgstr ""
@@ -715,10 +711,10 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Previous"
-#~ msgstr "Précédent"
+#~ msgstr ""
 
 #~ msgid "Next"
-#~ msgstr "Suivant"
+#~ msgstr ""
 
 #~ msgid "Choose {e1.name}"
 #~ msgstr ""
@@ -727,5 +723,193 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Choose {e.name}"
+#~ msgstr ""
+
+#~ msgid "Reveal 2 extra cards during Exploration."
+#~ msgstr ""
+
+#~ msgid "Reveal monster."
+#~ msgstr ""
+
+#~ msgid "Abandoned hovel"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Spy on two orcs provides you a "
+#~ "little insight, but you have to "
+#~ "hurry so you don't get noticed."
+#~ msgstr ""
+#~ "Espionner deux orcs vous fournit un "
+#~ "peu de perspicacité, mais vous devez "
+#~ "presser le pas pour ne pas vous"
+#~ " faire remarquer."
+
+#~ msgid "A clever scheme"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You resume your breath behind rocks. "
+#~ "This allows you to focus on your"
+#~ " action plan."
+#~ msgstr ""
+#~ "Vous reprenez votre souffle derrière des"
+#~ " rochers. Cela vous permet de vous"
+#~ " concentrer sur votre plan d’action."
+
+#~ msgid "0"
+#~ msgstr ""
+
+#~ msgid "Bribing the whelps"
+#~ msgstr "Corrompre les petits"
+
+#~ msgid ""
+#~ "A group goblin children play here. "
+#~ "You could buy them for some info"
+#~ " and play with them a bit."
+#~ msgstr ""
+#~ "Un groupe d'enfants gobelins joue ici."
+#~ " Vous pourriez les acheter pour "
+#~ "quelques informations et jouer un peu"
+#~ " avec eux."
+
+#~ msgid "-1t"
+#~ msgstr ""
+
+#~ msgid "+1c +2se"
+#~ msgstr ""
+
+#~ msgid "Starving Gobelins"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Half an orca starving in exile is"
+#~ " ready to share with you all "
+#~ "the secrets he knows to feed."
+#~ msgstr ""
+#~ "Un demi-orque affamé en exil est"
+#~ " prêt à vous partager tous les "
+#~ "secrets qu'il connaît pour se nourrir."
+
+#~ msgid "-1f"
+#~ msgstr ""
+
+#~ msgid "+2c"
+#~ msgstr ""
+
+#~ msgid "Steep Ledge"
+#~ msgstr "Pente raide"
+
+#~ msgid ""
+#~ "There is a slope steep here. In"
+#~ " amount that might give you a "
+#~ "glimpse of what to expect."
+#~ msgstr ""
+#~ "Il y a une pente raide ici. "
+#~ "En montant cela pourrait vous donner "
+#~ "un aperçu de ce qui vous attend."
+
+#~ msgid "-2se"
+#~ msgstr ""
+
+#~ msgid "Curious tracks"
+#~ msgstr "Traces étranges"
+
+#~ msgid ""
+#~ "Tracks. You can learn a bit more"
+#~ " about these creatures if you spend"
+#~ " time here."
+#~ msgstr ""
+#~ "Des traces. Vous pouvez en apprendre "
+#~ "un peu plus sur ces créatures si"
+#~ " vous passez du temps ici."
+
+#~ msgid "Valuable information"
+#~ msgstr ""
+
+#~ msgid "-1le"
+#~ msgstr ""
+
+#~ msgid "+2c +1t +1se"
+#~ msgstr ""
+
+#~ msgid "Mumbling Kobold"
+#~ msgstr ""
+
+#~ msgid "+3c"
+#~ msgstr ""
+
+#~ msgid "Talkative trader"
+#~ msgstr ""
+
+#~ msgid "-1m"
+#~ msgstr ""
+
+#~ msgid "+1c +1f"
+#~ msgstr ""
+
+#~ msgid "Cryptic markings"
+#~ msgstr ""
+
+#~ msgid "-1me"
+#~ msgstr ""
+
+#~ msgid "Sickly berries"
+#~ msgstr ""
+
+#~ msgid "+1f"
+#~ msgstr ""
+
+#~ msgid "Slimy yet nourishing"
+#~ msgstr ""
+
+#~ msgid "Slithering snake"
+#~ msgstr ""
+
+#~ msgid "-1c"
+#~ msgstr ""
+
+#~ msgid "+2f"
+#~ msgstr ""
+
+#~ msgid "Spearfishing"
+#~ msgstr ""
+
+#~ msgid "Disrupting the feast"
+#~ msgstr ""
+
+#~ msgid "Raw hunting trophies"
+#~ msgstr ""
+
+#~ msgid "-1w"
+#~ msgstr ""
+
+#~ msgid "Boar ambush"
+#~ msgstr ""
+
+#~ msgid "+3f"
+#~ msgstr ""
+
+#~ msgid "Suspicious mushrooms"
+#~ msgstr ""
+
+#~ msgid "Juicy bats"
+#~ msgstr ""
+
+#~ msgid "+2f +2se"
+#~ msgstr ""
+
+#~ msgid "{e.name}"
+#~ msgstr ""
+
+#~ msgid "Resolve"
+#~ msgstr ""
+
+#~ msgid "Rest"
+#~ msgstr ""
+
+#~ msgid "Yes! Start the combat ..."
+#~ msgstr ""
+
+#~ msgid "Not yet, explore!"
 #~ msgstr ""
 
