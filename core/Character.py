@@ -13,7 +13,8 @@ class Character(object):
              'f': 'food',
              'w': 'wood',
              'm': 'metal',
-             't': 'treasure'
+             't': 'treasure',
+             'k': 'skill'
              }
 
     def __init__(self, *initial_data, **kwargs):

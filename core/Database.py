@@ -1,6 +1,7 @@
 from .Action import *
 from .Character import *
 from .Encounter import *
+from .Monster import *
 import json
 
 
@@ -8,6 +9,7 @@ class Database(object):
     all_actions = []
     all_characters = []
     all_encounters = []
+    all_monsters = []
 
     def __init__(self):
         pass
@@ -16,6 +18,7 @@ class Database(object):
         self.all_actions = read_actions_database()
         self.all_characters = read_character_database(self.all_actions)
         self.all_encounters = read_encounter_database()
+        self.all_monsters = read_monster_database()
 
 
 def read_actions_database():
@@ -51,3 +54,13 @@ def read_encounter_database():
         c = Encounter(d)
         encounters.append(c)
     return encounters
+
+
+def read_monster_database():
+    f = open('qrc/monsters.json')
+    data = json.load(f)
+    monsters = []
+    for d in data:
+        c = Monster(d)
+        monsters.append(c)
+    return monsters

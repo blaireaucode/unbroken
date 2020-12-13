@@ -29,10 +29,12 @@ gen_ui(w, 'EncounterWidget')
 gen_ui(w, 'MonsterWidget')
 gen_ui(w, 'NewGameWidget')
 gen_ui(w, 'GenericActionWidget')
+gen_ui(w, 'CombatActionsWidget')
 gen_ui(w, 'ActionsWidget')
 gen_ui(w, 'TravelDecisionActionWidget')
 gen_ui(w, 'ResolveOrRestActionWidget')
 gen_ui(w, 'ChooseEncounterActionWidget')
+gen_ui(w, 'TrickeryActionWidget')
 
 print('Generate RC')
 if w:

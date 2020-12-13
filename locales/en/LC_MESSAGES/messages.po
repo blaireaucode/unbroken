@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unbroken VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-12 17:22+0100\n"
+"POT-Creation-Date: 2020-12-13 14:56+0100\n"
 "PO-Revision-Date: 2020-11-25 21:54+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -31,7 +31,7 @@ msgstr ""
 #: qrc/encounters.json:162 qrc/encounters.json:170 qrc/encounters.json:178
 #: qrc/encounters.json:186 qrc/encounters.json:194 qrc/encounters.json:202
 #: qrc/encounters.json:210 qrc/encounters.json:218 qrc/encounters.json:226
-#: qrc/encounters.json:234
+#: qrc/encounters.json:234 qrc/monsters.json:3 qrc/monsters.json:18
 msgid "id"
 msgstr ""
 
@@ -242,7 +242,7 @@ msgid "-1se"
 msgstr ""
 
 #: qrc/encounters.json:7 qrc/encounters.json:15 qrc/encounters.json:23
-#: qrc/encounters.json:31
+#: qrc/encounters.json:31 qrc/monsters.json:12
 msgid "+1c"
 msgstr ""
 
@@ -366,7 +366,8 @@ msgstr ""
 #: qrc/encounters.json:221 qrc/encounters.json:222 qrc/encounters.json:227
 #: qrc/encounters.json:228 qrc/encounters.json:229 qrc/encounters.json:230
 #: qrc/encounters.json:235 qrc/encounters.json:236 qrc/encounters.json:237
-#: qrc/encounters.json:238
+#: qrc/encounters.json:238 qrc/monsters.json:11 qrc/monsters.json:13
+#: qrc/monsters.json:26 qrc/monsters.json:28
 msgid "todo"
 msgstr ""
 
@@ -468,6 +469,70 @@ msgstr ""
 msgid "+2f +2se"
 msgstr ""
 
+#: qrc/monsters.json:4
+msgid "Giant Spider"
+msgstr ""
+
+#: qrc/monsters.json:5
+msgid "Ansheb"
+msgstr ""
+
+#: qrc/monsters.json:7 qrc/monsters.json:22
+msgid "armor"
+msgstr ""
+
+#: qrc/monsters.json:8 qrc/monsters.json:23
+msgid "health"
+msgstr ""
+
+#: qrc/monsters.json:9 qrc/monsters.json:24
+msgid "level"
+msgstr ""
+
+#: qrc/monsters.json:10 qrc/monsters.json:25
+msgid "unknown.png"
+msgstr ""
+
+#: qrc/monsters.json:14 qrc/monsters.json:29
+msgid "miss"
+msgstr ""
+
+#: qrc/monsters.json:14 qrc/monsters.json:29
+msgid "wound"
+msgstr ""
+
+#: qrc/monsters.json:14 qrc/monsters.json:29
+msgid "daze"
+msgstr ""
+
+#: qrc/monsters.json:14 qrc/monsters.json:29
+msgid "poison"
+msgstr ""
+
+#: qrc/monsters.json:14 qrc/monsters.json:29
+msgid "web"
+msgstr ""
+
+#: qrc/monsters.json:15
+msgid "+1f +1w +1se +1me +1t +1k"
+msgstr ""
+
+#: qrc/monsters.json:19
+msgid "Gibberling"
+msgstr ""
+
+#: qrc/monsters.json:20
+msgid "Tishtak"
+msgstr ""
+
+#: qrc/monsters.json:27
+msgid "+3t"
+msgstr ""
+
+#: qrc/monsters.json:30
+msgid "+1le +1c +1t +1k"
+msgstr ""
+
 #: ui/ChooseEncounterActionWidget.py:16
 msgid "{e.name}"
 msgstr ""
@@ -481,16 +546,18 @@ msgid "Next"
 msgstr ""
 
 #: ui/ResolveOrRestActionWidget.py:15
-msgid ""
-"Resolve or rest ?\n"
-"In all cases:, spend {n} Times."
+msgid "Resolve or rest ?\n"
 msgstr ""
 
-#: ui/ResolveOrRestActionWidget.py:17
+#: ui/ResolveOrRestActionWidget.py:16
+msgid "In all cases:, spend {n} Times."
+msgstr ""
+
+#: ui/ResolveOrRestActionWidget.py:19
 msgid "Resolve"
 msgstr ""
 
-#: ui/ResolveOrRestActionWidget.py:18
+#: ui/ResolveOrRestActionWidget.py:20
 msgid "Rest"
 msgstr ""
 
@@ -500,6 +567,32 @@ msgstr ""
 
 #: ui/TravelDecisionActionWidget.py:13
 msgid "Not yet, explore!"
+msgstr ""
+
+#: ui/TrickeryActionWidget.py:14
+msgid ""
+"Trickery ? \n"
+"\n"
+msgstr ""
+
+#: ui/TrickeryActionWidget.py:15
+msgid ""
+"You may now choose to trick the monster, avoiding combat entirely, if you"
+" can pay the Trickery Cost, which is listed on the monster sheet. Some "
+"monsters do not have a Trickery Cost and cannot be tricked.\n"
+"\n"
+msgstr ""
+
+#: ui/TrickeryActionWidget.py:19
+msgid "If you trick the monster, you get no reward."
+msgstr ""
+
+#: ui/TrickeryActionWidget.py:22
+msgid "Trick"
+msgstr ""
+
+#: ui/TrickeryActionWidget.py:23
+msgid "Fight !"
 msgstr ""
 
 #~ msgid "Hello World"
@@ -887,5 +980,10 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Not yet, explore!"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Resolve or rest ?\n"
+#~ "In all cases:, spend {n} Times."
 #~ msgstr ""
 

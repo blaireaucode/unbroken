@@ -3,7 +3,7 @@ from .GenericActionWidget import *
 from .TravelDecisionActionWidget import *
 from .ResolveOrRestActionWidget import *
 from .ChooseEncounterActionWidget import *
-
+from .CombatActionsWidget import *
 
 class ActionsWidget(QtWidgets.QWidget, Ui_ActionsWidget):
 
@@ -36,30 +36,27 @@ class ActionsWidget(QtWidgets.QWidget, Ui_ActionsWidget):
         self.action_widgets = []
         # FIXME --> check phase and sub phase
         p = self.game.phase
-        sp = self.game.sub_phase
-        if not p.is_travel:
-            self.repaint()
-            return
         if p.is_travel:
             self.update_travel()
-        else:
+        if p.is_combat:
             self.update_combat()
         self.repaint()
 
     def update_combat(self):
-        sp = self.game.sub_phase
-        return
+        wa = CombatActionsWidget(self.game, self)
+        self.action_layout.addWidget(wa)
+        self.action_widgets.append(wa)
 
     def update_travel(self):
         sp = self.game.sub_phase
         if sp.is_preparation_step:
-            self.update_preparation()
+            self.update_travel_preparation()
         if sp.is_decision_step:
-            self.update_decision()
+            self.update_travel_decision()
         if sp.is_exploration_step:
-            self.update_exploration()
+            self.update_travel_exploration()
 
-    def update_preparation(self):
+    def update_travel_preparation(self):
         # all character abilities
         for a in self.game.character.abilities:
             wa = GenericActionWidget(self, a)
@@ -72,12 +69,12 @@ class ActionsWidget(QtWidgets.QWidget, Ui_ActionsWidget):
                 self.action_layout.addWidget(wa)
                 self.action_widgets.append(wa)
 
-    def update_decision(self):
+    def update_travel_decision(self):
         wa = TravelDecisionActionWidget(self.game, self)
         self.action_layout.addWidget(wa)
         self.action_widgets.append(wa)
 
-    def update_exploration(self):
+    def update_travel_exploration(self):
         n = len(self.game.encounter)
         if n == 1:
             wa = ResolveOrRestActionWidget(self.game, self)

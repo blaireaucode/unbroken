@@ -12,7 +12,9 @@ class ResolveOrRestActionWidget(QtWidgets.QWidget, Ui_ResolveOrRestActionWidget)
         self.game = game
 
         n = self.game.encounter[0].time
-        self.label_text.setText(ff(_('Resolve or rest ?\nIn all cases:, spend {n} Times.')))
+        s = _('Resolve or rest ?\n')
+        s = s + ff(_('In all cases:, spend {n} Times.'))
+        self.label_text.setText(s)
 
         self.button_resolve.setText(_('Resolve'))
         self.button_rest.setText(_('Rest'))

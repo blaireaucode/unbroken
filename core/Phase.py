@@ -25,6 +25,8 @@ class SubPhase(StateMachine):
     ambush_step = State('ambush_step')
     trickery_step = State('trickery_step')
     battle_step = State('battle_step')
+    reward_step = State('reward_step')
+    hunger_step = State('hunger_step')
     # transitions
     to_decision = preparation_step.to(decision_step)
     to_exploration = decision_step.to(exploration_step)
@@ -32,3 +34,6 @@ class SubPhase(StateMachine):
     to_ambush = exploration_step.to(ambush_step)
     to_preparation = exploration_step.to(preparation_step)
     to_trickery = decision_step.to(trickery_step)
+    to_reward = battle_step.to(reward_step)
+    to_hunger = reward_step.to(hunger_step)
+    trick_to_hunger = trickery_step.to(hunger_step)

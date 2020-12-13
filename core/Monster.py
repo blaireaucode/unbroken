@@ -7,12 +7,15 @@ class Monster(object):
 
     def __init__(self, *initial_data, **kwargs):
         self.id = None
+        self.monster_type = None
         self.name = None
         self.armor = 0
         self.health = 0
         self.level = 1
+        self.trickery = None
+        self.ambush = None
 
-        self.abilities = []
+        # self.abilities = []
         self.image = None
         self.game = None
 
@@ -28,10 +31,15 @@ class Monster(object):
             setattr(self, key, kwargs[key])
 
     def __str__(self):
-        s = f'{self.id} {self.name} ({self.level}) ar:{self.armor} heath:{self.health}'
+        s = f'{self.id} {self.monster_type} {self.name} ({self.level}) ar:{self.armor} heath:{self.health}'
         return s
 
     def set_game(self, g):
         self.game = g
-        for a in self.abilities:
-            a.set_game(g)
+        # for a in self.abilities:
+        #    a.set_game(g)
+
+    def trick(self):
+        self.game.character.update_resource(self.trickery)
+        self.game.sub_phase.trick_to_hunger()
+        self.game.phase_changed.emit()

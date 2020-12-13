@@ -20,6 +20,7 @@ class Game(object):
         self.actions = []
         self.all_actions = []
         self.all_encounters = []
+        self.all_monsters = []
         if not Game.db:
             print('reading database')
             Game.db = Database()
@@ -32,8 +33,14 @@ class Game(object):
         self.all_encounters = Game.db.all_encounters.copy()
         for a in self.all_encounters:
             a.set_game(self)
-        # shuffle
+        # shuffle encounters
         random.shuffle(self.all_encounters)
+        # init all monsters (make a copy to keep the game consistent)
+        self.all_monsters = Game.db.all_monsters.copy()
+        for a in self.all_monsters:
+            a.set_game(self)
+        # shuffle monsters
+        random.shuffle(self.all_monsters)
 
     def save(self, filename):
         print('save to', filename)
@@ -52,14 +59,35 @@ class Game(object):
         self.character = c
         self.character.set_game(self)
 
-    def combat(self):
+    def start_combat(self, t):
         self.phase.to_combat()
-        self.sub_phase.to_trickery()
+        if t == 'trickery':
+            self.sub_phase.to_trickery()
+        if t == 'ambush':
+            self.sub_phase.to_ambush()
+        # find the monster FIXME use D6 and level
+        m = self.all_monsters.pop(0)
+        self.monster = m
+        # reset time
+        level = self.character.level
+        if level == 1:
+            self.character.resources.time = 12
+        if level == 2:
+            self.character.resources.time = 16
+        if level == 3:
+            self.character.resources.time = 19
+        if level == 4:
+            self.character.resources.time = None
+        self.character.level += 1
+        if self.character.level > 4:
+            self.character.level = 4
+        self.character.character_changed.emit()
         self.phase_changed.emit()
 
-    def explore(self):
+    def start_explore(self):
         self.sub_phase.to_exploration()
         self.encounter = []
+        self.monster = None
         # choose 2 cards or more if orienteer was used
         n = self.character.orienteer_cards
         for i in range(n):
@@ -89,8 +117,7 @@ class Game(object):
         self.all_encounters.append(e)
         # check time
         if self.character.resources.time <= 0:
-            self.sub_phase.to_ambush()
-            self.phase.to_combat()
+            self.start_combat('ambush')
         else:
             self.sub_phase.to_preparation()
-        self.phase_changed.emit()
+            self.phase_changed.emit()

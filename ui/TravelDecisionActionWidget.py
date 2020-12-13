@@ -16,8 +16,8 @@ class TravelDecisionActionWidget(QtWidgets.QWidget, Ui_TravelDecisionActionWidge
 
     @Slot()
     def slot_on_combat(self):
-        self.game.combat()
+        self.game.start_combat("trickery")
 
     @Slot()
     def slot_on_exploration(self):
-        self.game.explore()
+        self.game.start_explore()

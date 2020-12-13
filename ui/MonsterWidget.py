@@ -18,5 +18,9 @@ class MonsterWidget(QtWidgets.QWidget, Ui_MonsterWidget):
         self.slot_on_phase_changed()
 
     def slot_on_phase_changed(self, **kwargs):
-        self.textEdit.setText('No Monster')
+        m = self.game.monster
+        if not m:
+            self.textEdit.setText('No Monster')
+        else:
+            self.textEdit.setText(f'Monster {m}')
         self.repaint()

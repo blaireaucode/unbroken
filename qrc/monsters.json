@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "monster_type": "Giant Spider",
+    "name": "Ansheb",
+    "text": "",
+    "armor": 0,
+    "health": 3,
+    "level": 1,
+    "image": "unknown.png",
+    "ambush": "todo",
+    "trickery": "-1c",
+    "response": "todo",
+    "actions": ["miss", "wound", "wound", "daze", "poison", "web"],
+    "reward": "+1f +1w +1se +1me +1t +1k"
+  },
+  {
+    "id": 2,
+    "monster_type": "Gibberling",
+    "name": "Tishtak",
+    "text": "",
+    "armor": 0,
+    "health": 2,
+    "level": 2,
+    "image": "unknown.png",
+    "ambush": "todo",
+    "trickery": "-3t",
+    "response": "todo",
+    "actions": ["miss", "wound", "wound", "daze", "poison", "web"],
+    "reward": "+1le +1c +1t +1k"
+  }
+]
