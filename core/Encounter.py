@@ -26,6 +26,6 @@ class Encounter(object):
         self.game.character.update_resource(s)
 
     def rest(self):
-        e = self.game.encounter[0]
+        e = self.game.encounters[0]
         s = f'+{e.time}se -{self.time}time'
         self.game.character.update_resource(s)

@@ -11,7 +11,7 @@ class ResolveOrRestActionWidget(QtWidgets.QWidget, Ui_ResolveOrRestActionWidget)
         self.setupUi(self)
         self.game = game
 
-        n = self.game.encounter[0].time
+        n = self.game.encounters[0].time
         s = _('Resolve or rest ?\n')
         s = s + ff(_('In all cases:, spend {n} Times.'))
         self.label_text.setText(s)
@@ -20,7 +20,7 @@ class ResolveOrRestActionWidget(QtWidgets.QWidget, Ui_ResolveOrRestActionWidget)
         self.button_rest.setText(_('Rest'))
         self.button_resolve.clicked.connect(self.slot_on_resolve)
         self.button_rest.clicked.connect(self.slot_on_rest)
-        e = self.game.encounter[0]
+        e = self.game.encounters[0]
         c = self.game.character
         if c.is_enough_resource(e.spend):
             self.button_resolve.setEnabled(True)
@@ -29,10 +29,10 @@ class ResolveOrRestActionWidget(QtWidgets.QWidget, Ui_ResolveOrRestActionWidget)
 
     @Slot()
     def slot_on_resolve(self):
-        self.game.encounter[0].resolve()
+        self.game.encounters[0].resolve()
         self.game.after_encounter()
 
     @Slot()
     def slot_on_rest(self):
-        self.game.encounter[0].rest()
+        self.game.encounters[0].rest()
         self.game.after_encounter()

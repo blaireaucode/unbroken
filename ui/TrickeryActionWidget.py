@@ -25,8 +25,6 @@ class TrickeryActionWidget(QtWidgets.QWidget, Ui_TrickeryActionWidget):
         self.button_fight.clicked.connect(self.slot_on_fight)
         m = self.game.monster
         c = self.game.character
-        print(m)
-        print(m.trickery)
         if c.is_enough_resource(m.trickery):
             self.button_trick.setEnabled(True)
         else:
@@ -38,6 +36,4 @@ class TrickeryActionWidget(QtWidgets.QWidget, Ui_TrickeryActionWidget):
 
     @Slot()
     def slot_on_fight(self):
-        pass
-        # self.game.encounter[0].fight()
-        # self.game.after_encounter()
+        self.game.start_fight()

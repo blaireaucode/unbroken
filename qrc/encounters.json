@@ -192,50 +192,66 @@
   },
   {
     "id": 25,
-    "name": "todo",
+    "name": "Burying a friend",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
+    "spend": "-1me",
+    "gain": "+1le",
     "time": 1
   },
   {
     "id": 26,
-    "name": "todo",
+    "name": "Makeshift shelter",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
-    "time": 1
+    "spend": "-1w",
+    "gain": "+1le",
+    "time": 2
   },
   {
     "id": 27,
-    "name": "todo",
+    "name": "A safe place",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
-    "time": 1
+    "spend": "-1se",
+    "gain": "+1le",
+    "time": 3
   },
   {
     "id": 28,
-    "name": "todo",
+    "name": "The will to survive",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
-    "time": 1
+    "spend": "0",
+    "gain": "+1le",
+    "time": 4
   },
   {
     "id": 29,
-    "name": "todo",
+    "name": "A surge of confidence",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
-    "time": 1
+    "spend": "-1c",
+    "gain": "+1le +1se",
+    "time": 2
   },
   {
     "id": 30,
-    "name": "todo",
+    "name": "Hunger pangs",
     "text": "todo",
-    "spend": "todo",
-    "gain": "todo",
+    "spend": "-1f",
+    "gain": "+1le +1se",
+    "time": 2
+  },
+  {
+    "id": 31,
+    "name": "Metal scraps",
+    "text": "todo",
+    "spend": "-1se",
+    "gain": "+1m",
     "time": 1
+  },
+  {
+    "id": 32,
+    "name": "Unfortunate adventurer",
+    "text": "todo",
+    "spend": "-",
+    "gain": "+1m",
+    "time": 2
   }
 ]

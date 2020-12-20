@@ -15,8 +15,9 @@ class Game(object):
         self.character = None
         self.phase = Phase()
         self.sub_phase = SubPhase()
-        self.encounter = []
+        self.encounters = []
         self.monster = None
+        self.battle_round = 0
         self.actions = []
         self.all_actions = []
         self.all_encounters = []
@@ -86,26 +87,26 @@ class Game(object):
 
     def start_explore(self):
         self.sub_phase.to_exploration()
-        self.encounter = []
+        self.encounters = []
         self.monster = None
         # choose 2 cards or more if orienteer was used
         n = self.character.orienteer_cards
         for i in range(n):
             e = self.all_encounters.pop(0)
-            self.encounter.append(e)
+            self.encounters.append(e)
         self.phase_changed.emit()
 
     def choose_encounter_card(self, index):
         # put all other cards at the end of the desk
         i = 0
-        for e in self.encounter:
+        for e in self.encounters:
             if i != index:
                 self.all_encounters.append(e)
             i += 1
         # keep only one encounter card
-        e = self.encounter[index]
-        self.encounter = []
-        self.encounter.append(e)
+        e = self.encounters[index]
+        self.encounters = []
+        self.encounters.append(e)
         # announce
         self.phase_changed.emit()
 
@@ -113,7 +114,7 @@ class Game(object):
         # init nb of cards to reveal
         self.character.orienteer_cards = 2
         # remove encounter, put end of the deck
-        e = self.encounter.pop(0)
+        e = self.encounters.pop(0)
         self.all_encounters.append(e)
         # check time
         if self.character.resources.time <= 0:
@@ -121,3 +122,9 @@ class Game(object):
         else:
             self.sub_phase.to_preparation()
             self.phase_changed.emit()
+
+    def start_fight(self):
+        print(self.sub_phase)
+        self.sub_phase.to_battle()
+        self.battle_round = 1
+        self.phase_changed.emit()

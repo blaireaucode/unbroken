@@ -47,4 +47,6 @@ class CombatActionsWidget(QtWidgets.QWidget, Ui_CombatActionsWidget):
         self.action_widgets.append(wa)
 
     def update_battle(self):
-        pass
+        wa = BattleActionWidget(self.game, self)
+        self.action_layout.addWidget(wa)
+        self.action_widgets.append(wa)

@@ -75,7 +75,7 @@ class ActionsWidget(QtWidgets.QWidget, Ui_ActionsWidget):
         self.action_widgets.append(wa)
 
     def update_travel_exploration(self):
-        n = len(self.game.encounter)
+        n = len(self.game.encounters)
         if n == 1:
             wa = ResolveOrRestActionWidget(self.game, self)
         else:

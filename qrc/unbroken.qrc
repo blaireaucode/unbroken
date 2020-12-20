@@ -13,4 +13,31 @@
     <file>fr.png</file>
     <file>en.jpg</file>
   </qresource>
+  <qresource prefix="encounters">
+    <file>encounters/9.png</file>
+    <file>encounters/24.png</file>
+    <file>encounters/23.png</file>
+    <file>encounters/22.png</file>
+    <file>encounters/21.png</file>
+    <file>encounters/20.png</file>
+    <file>encounters/19.png</file>
+    <file>encounters/18.png</file>
+    <file>encounters/17.png</file>
+    <file>encounters/16.png</file>
+    <file>encounters/15.png</file>
+    <file>encounters/14.png</file>
+    <file>encounters/back.png</file>
+    <file>encounters/13.png</file>
+    <file>encounters/12.png</file>
+    <file>encounters/11.png</file>
+    <file>encounters/10.png</file>
+    <file>encounters/1.png</file>
+    <file>encounters/2.png</file>
+    <file>encounters/3.png</file>
+    <file>encounters/4.png</file>
+    <file>encounters/5.png</file>
+    <file>encounters/6.png</file>
+    <file>encounters/7.png</file>
+    <file>encounters/8.png</file>
+  </qresource>
 </RCC>

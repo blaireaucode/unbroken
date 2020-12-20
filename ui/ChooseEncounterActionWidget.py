@@ -10,7 +10,7 @@ class ChooseEncounterActionWidget(QtWidgets.QWidget, Ui_ChooseEncounterActionWid
         self.setupUi(self)
         self.game = game
         self.buttons = []
-        for e in self.game.encounter:
+        for e in self.game.encounters:
             b = QtWidgets.QPushButton(self)
             self.verticalLayout.addWidget(b)
             b.setText(ff(_('{e.name}')))

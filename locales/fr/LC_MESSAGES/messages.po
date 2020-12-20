@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unbroken VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-13 14:56+0100\n"
+"POT-Creation-Date: 2020-12-20 17:59+0100\n"
 "PO-Revision-Date: 2020-11-25 21:47+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -31,7 +31,8 @@ msgstr ""
 #: qrc/encounters.json:162 qrc/encounters.json:170 qrc/encounters.json:178
 #: qrc/encounters.json:186 qrc/encounters.json:194 qrc/encounters.json:202
 #: qrc/encounters.json:210 qrc/encounters.json:218 qrc/encounters.json:226
-#: qrc/encounters.json:234 qrc/monsters.json:3 qrc/monsters.json:18
+#: qrc/encounters.json:234 qrc/encounters.json:242 qrc/encounters.json:250
+#: qrc/monsters.json:3 qrc/monsters.json:18
 msgid "id"
 msgstr ""
 
@@ -132,7 +133,7 @@ msgstr ""
 msgid "Decision step"
 msgstr ""
 
-#: qrc/actions.json:65
+#: qrc/actions.json:65 qrc/encounters.json:253
 msgid "-"
 msgstr ""
 
@@ -237,12 +238,13 @@ msgid ""
 msgstr ""
 
 #: qrc/encounters.json:6 qrc/encounters.json:101 qrc/encounters.json:109
-#: qrc/encounters.json:117 qrc/encounters.json:181
+#: qrc/encounters.json:117 qrc/encounters.json:181 qrc/encounters.json:213
+#: qrc/encounters.json:245
 msgid "-1se"
 msgstr ""
 
 #: qrc/encounters.json:7 qrc/encounters.json:15 qrc/encounters.json:23
-#: qrc/encounters.json:31 qrc/monsters.json:12
+#: qrc/encounters.json:31
 msgid "+1c"
 msgstr ""
 
@@ -256,6 +258,7 @@ msgstr ""
 #: qrc/encounters.json:175 qrc/encounters.json:183 qrc/encounters.json:191
 #: qrc/encounters.json:199 qrc/encounters.json:207 qrc/encounters.json:215
 #: qrc/encounters.json:223 qrc/encounters.json:231 qrc/encounters.json:239
+#: qrc/encounters.json:247 qrc/encounters.json:255
 msgid "time"
 msgstr ""
 
@@ -284,7 +287,7 @@ msgid ""
 msgstr ""
 
 #: qrc/encounters.json:22 qrc/encounters.json:30 qrc/encounters.json:62
-#: qrc/encounters.json:125 qrc/encounters.json:133
+#: qrc/encounters.json:125 qrc/encounters.json:133 qrc/encounters.json:221
 msgid "0"
 msgstr ""
 
@@ -316,7 +319,7 @@ msgid ""
 " he knows to feed."
 msgstr ""
 
-#: qrc/encounters.json:46
+#: qrc/encounters.json:46 qrc/encounters.json:237
 msgid "-1f"
 msgstr ""
 
@@ -358,16 +361,11 @@ msgstr ""
 #: qrc/encounters.json:116 qrc/encounters.json:124 qrc/encounters.json:132
 #: qrc/encounters.json:140 qrc/encounters.json:148 qrc/encounters.json:156
 #: qrc/encounters.json:164 qrc/encounters.json:172 qrc/encounters.json:180
-#: qrc/encounters.json:188 qrc/encounters.json:195 qrc/encounters.json:196
-#: qrc/encounters.json:197 qrc/encounters.json:198 qrc/encounters.json:203
-#: qrc/encounters.json:204 qrc/encounters.json:205 qrc/encounters.json:206
-#: qrc/encounters.json:211 qrc/encounters.json:212 qrc/encounters.json:213
-#: qrc/encounters.json:214 qrc/encounters.json:219 qrc/encounters.json:220
-#: qrc/encounters.json:221 qrc/encounters.json:222 qrc/encounters.json:227
-#: qrc/encounters.json:228 qrc/encounters.json:229 qrc/encounters.json:230
-#: qrc/encounters.json:235 qrc/encounters.json:236 qrc/encounters.json:237
-#: qrc/encounters.json:238 qrc/monsters.json:11 qrc/monsters.json:13
-#: qrc/monsters.json:26 qrc/monsters.json:28
+#: qrc/encounters.json:188 qrc/encounters.json:196 qrc/encounters.json:204
+#: qrc/encounters.json:212 qrc/encounters.json:220 qrc/encounters.json:228
+#: qrc/encounters.json:236 qrc/encounters.json:244 qrc/encounters.json:252
+#: qrc/monsters.json:11 qrc/monsters.json:13 qrc/monsters.json:26
+#: qrc/monsters.json:28
 msgid "todo"
 msgstr ""
 
@@ -403,7 +401,7 @@ msgstr ""
 msgid "Cryptic markings"
 msgstr ""
 
-#: qrc/encounters.json:93 qrc/encounters.json:173
+#: qrc/encounters.json:93 qrc/encounters.json:173 qrc/encounters.json:197
 msgid "-1me"
 msgstr ""
 
@@ -424,7 +422,8 @@ msgstr ""
 msgid "Slithering snake"
 msgstr ""
 
-#: qrc/encounters.json:141 qrc/encounters.json:157
+#: qrc/encounters.json:141 qrc/encounters.json:157 qrc/encounters.json:229
+#: qrc/monsters.json:12
 msgid "-1c"
 msgstr ""
 
@@ -445,7 +444,7 @@ msgstr ""
 msgid "Raw hunting trophies"
 msgstr ""
 
-#: qrc/encounters.json:165
+#: qrc/encounters.json:165 qrc/encounters.json:205
 msgid "-1w"
 msgstr ""
 
@@ -467,6 +466,51 @@ msgstr ""
 
 #: qrc/encounters.json:190
 msgid "+2f +2se"
+msgstr ""
+
+#: qrc/encounters.json:195
+msgid "Burying a friend"
+msgstr ""
+
+#: qrc/encounters.json:198 qrc/encounters.json:206 qrc/encounters.json:214
+#: qrc/encounters.json:222
+msgid "+1le"
+msgstr ""
+
+#: qrc/encounters.json:203
+msgid "Makeshift shelter"
+msgstr ""
+
+#: qrc/encounters.json:211
+msgid "A safe place"
+msgstr ""
+
+#: qrc/encounters.json:219
+msgid "The will to survive"
+msgstr ""
+
+#: qrc/encounters.json:227
+msgid "A surge of confidence"
+msgstr ""
+
+#: qrc/encounters.json:230 qrc/encounters.json:238
+msgid "+1le +1se"
+msgstr ""
+
+#: qrc/encounters.json:235
+msgid "Hunger pangs"
+msgstr ""
+
+#: qrc/encounters.json:243
+msgid "Metal scraps"
+msgstr ""
+
+#: qrc/encounters.json:246 qrc/encounters.json:254
+msgid "+1m"
+msgstr ""
+
+#: qrc/encounters.json:251
+msgid "Unfortunate adventurer"
 msgstr ""
 
 #: qrc/monsters.json:4
@@ -526,11 +570,37 @@ msgid "Tishtak"
 msgstr ""
 
 #: qrc/monsters.json:27
-msgid "+3t"
+msgid "-3t"
 msgstr ""
 
 #: qrc/monsters.json:30
 msgid "+1le +1c +1t +1k"
+msgstr ""
+
+#: ui/BattleActionWidget.py:14
+msgid ""
+"Battle ? \n"
+"\n"
+msgstr ""
+
+#: ui/BattleActionWidget.py:15
+msgid ""
+"You may now choose to trick the monster, avoiding combat entirely, if you"
+" can pay the Battle Cost, which is listed on the monster sheet. Some "
+"monsters do not have a Battle Cost and cannot be tricked.\n"
+"\n"
+msgstr ""
+
+#: ui/BattleActionWidget.py:19 ui/TrickeryActionWidget.py:19
+msgid "If you trick the monster, you get no reward."
+msgstr ""
+
+#: ui/BattleActionWidget.py:22 ui/TrickeryActionWidget.py:22
+msgid "Trick"
+msgstr ""
+
+#: ui/BattleActionWidget.py:23 ui/TrickeryActionWidget.py:23
+msgid "Fight !"
 msgstr ""
 
 #: ui/ChooseEncounterActionWidget.py:16
@@ -581,18 +651,6 @@ msgid ""
 " can pay the Trickery Cost, which is listed on the monster sheet. Some "
 "monsters do not have a Trickery Cost and cannot be tricked.\n"
 "\n"
-msgstr ""
-
-#: ui/TrickeryActionWidget.py:19
-msgid "If you trick the monster, you get no reward."
-msgstr ""
-
-#: ui/TrickeryActionWidget.py:22
-msgid "Trick"
-msgstr ""
-
-#: ui/TrickeryActionWidget.py:23
-msgid "Fight !"
 msgstr ""
 
 #~ msgid "Hello World"
@@ -1009,5 +1067,8 @@ msgstr ""
 #~ msgid ""
 #~ "Resolve or rest ?\n"
 #~ "In all cases:, spend {n} Times."
+#~ msgstr ""
+
+#~ msgid "+3t"
 #~ msgstr ""
 

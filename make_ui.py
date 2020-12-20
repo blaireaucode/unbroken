@@ -35,6 +35,7 @@ gen_ui(w, 'TravelDecisionActionWidget')
 gen_ui(w, 'ResolveOrRestActionWidget')
 gen_ui(w, 'ChooseEncounterActionWidget')
 gen_ui(w, 'TrickeryActionWidget')
+gen_ui(w, 'BattleActionWidget')
 
 print('Generate RC')
 if w:

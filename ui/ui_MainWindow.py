@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/MainWindow.ui',
 # licensing of 'ui/MainWindow.ui' applies.
 #
-# Created: Sun Dec 13 14:56:16 2020
+# Created: Sun Dec 20 17:58:57 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -13,7 +13,7 @@ from PySide2 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1455, 808)
+        MainWindow.resize(1674, 1025)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
@@ -57,7 +57,7 @@ class Ui_MainWindow(object):
         self.widget_phase.setObjectName("widget_phase")
         self.gridLayout.addWidget(self.widget_phase, 1, 0, 1, 1)
         self.widget_encounter = EncounterWidget(self.centralwidget)
-        self.widget_encounter.setMinimumSize(QtCore.QSize(300, 300))
+        self.widget_encounter.setMinimumSize(QtCore.QSize(300, 600))
         self.widget_encounter.setObjectName("widget_encounter")
         self.gridLayout.addWidget(self.widget_encounter, 1, 1, 1, 1)
         self.verticalLayout.addLayout(self.gridLayout)
@@ -74,9 +74,9 @@ class Ui_MainWindow(object):
         self.button_new.setText(QtWidgets.QApplication.translate("MainWindow", "new", None, -1))
         self.button_save.setText(QtWidgets.QApplication.translate("MainWindow", "save", None, -1))
 
-from .MonsterWidget import MonsterWidget
 from .EncounterWidget import EncounterWidget
-from .ActionsWidget import ActionsWidget
 from .CharacterWidget import CharacterWidget
 from .PhaseWidget import PhaseWidget
+from .ActionsWidget import ActionsWidget
+from .MonsterWidget import MonsterWidget
 import unbroken_rc
