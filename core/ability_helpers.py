@@ -39,7 +39,9 @@ def action_plan_do_it(g):
 
 # Orienteer # 8
 def action_orienteer_is_applicable(g):
-    return g.phase.is_travel and g.sub_phase.is_preparation_step
+    return g.phase.is_travel \
+           and g.sub_phase.is_preparation_step \
+           and g.character.resources.small_efforts >= 1
 
 
 # Orienteer #8

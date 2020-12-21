@@ -18,7 +18,8 @@ class PhaseWidget(QtWidgets.QWidget, Ui_PhaseWidget):
         self.slot_on_phase_changed()
 
     def slot_on_phase_changed(self, **kwargs):
-        s = f'Phase: {self.game.phase.current_state}\n'
-        s += f' step: {self.game.sub_phase.current_state}'
+        s = f'Phase:   {self.game.phase.current_state}\n'
+        s += f'Step:   {self.game.sub_phase.current_state}\n'
+        s += f'Battle: {self.game.battle_phase.current_state}'
         self.textEdit.setText(s)
         self.repaint()

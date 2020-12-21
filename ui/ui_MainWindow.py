@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/MainWindow.ui',
 # licensing of 'ui/MainWindow.ui' applies.
 #
-# Created: Sun Dec 20 17:58:57 2020
+# Created: Mon Dec 21 15:51:14 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -52,14 +52,14 @@ class Ui_MainWindow(object):
         self.widget_monster.setMinimumSize(QtCore.QSize(300, 300))
         self.widget_monster.setObjectName("widget_monster")
         self.gridLayout.addWidget(self.widget_monster, 0, 2, 2, 1)
-        self.widget_phase = PhaseWidget(self.centralwidget)
-        self.widget_phase.setMinimumSize(QtCore.QSize(300, 0))
-        self.widget_phase.setObjectName("widget_phase")
-        self.gridLayout.addWidget(self.widget_phase, 1, 0, 1, 1)
         self.widget_encounter = EncounterWidget(self.centralwidget)
         self.widget_encounter.setMinimumSize(QtCore.QSize(300, 600))
         self.widget_encounter.setObjectName("widget_encounter")
         self.gridLayout.addWidget(self.widget_encounter, 1, 1, 1, 1)
+        self.widget_phase = PhaseWidget(self.centralwidget)
+        self.widget_phase.setMinimumSize(QtCore.QSize(300, 0))
+        self.widget_phase.setObjectName("widget_phase")
+        self.gridLayout.addWidget(self.widget_phase, 1, 0, 1, 1)
         self.verticalLayout.addLayout(self.gridLayout)
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -74,9 +74,9 @@ class Ui_MainWindow(object):
         self.button_new.setText(QtWidgets.QApplication.translate("MainWindow", "new", None, -1))
         self.button_save.setText(QtWidgets.QApplication.translate("MainWindow", "save", None, -1))
 
-from .EncounterWidget import EncounterWidget
 from .CharacterWidget import CharacterWidget
-from .PhaseWidget import PhaseWidget
 from .ActionsWidget import ActionsWidget
+from .EncounterWidget import EncounterWidget
+from .PhaseWidget import PhaseWidget
 from .MonsterWidget import MonsterWidget
 import unbroken_rc

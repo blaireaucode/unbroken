@@ -21,7 +21,8 @@ def main():
     s = qdarkstyle.load_stylesheet(qt_api='pyside2')
     # print(s)
     # BACKGROUND
-    s = s.replace('#19232D', '#1B1A17')
+    #s = s.replace('#19232D', '#1B1A17')
+    s = s.replace('#19232D', '#050505')
     app.setStyleSheet(s)
     m = MainWindow()
     m.show()

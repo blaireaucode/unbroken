@@ -39,7 +39,7 @@ def read_character_database(actions):
     for d in data:
         c = Character(d)
         c.id = i
-        c.init_actions(actions)
+        c.init_abilities(actions)
         characters.append(c)
         # FIXME actions
         i = i + 1

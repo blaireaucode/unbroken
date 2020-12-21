@@ -30,9 +30,7 @@ class ResolveOrRestActionWidget(QtWidgets.QWidget, Ui_ResolveOrRestActionWidget)
     @Slot()
     def slot_on_resolve(self):
         self.game.encounters[0].resolve()
-        self.game.after_encounter()
 
     @Slot()
     def slot_on_rest(self):
         self.game.encounters[0].rest()
-        self.game.after_encounter()

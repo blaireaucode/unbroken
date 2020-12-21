@@ -109,22 +109,22 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="0">
-       <widget class="PhaseWidget" name="widget_phase" native="true">
-        <property name="minimumSize">
-         <size>
-          <width>300</width>
-          <height>0</height>
-         </size>
-        </property>
-       </widget>
-      </item>
       <item row="1" column="1">
        <widget class="EncounterWidget" name="widget_encounter" native="true">
         <property name="minimumSize">
          <size>
           <width>300</width>
           <height>600</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="PhaseWidget" name="widget_phase" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>0</height>
          </size>
         </property>
        </widget>

@@ -48,7 +48,7 @@ class Character(object):
         self.resources.metal = 0
         self.resources.treasure = 0
 
-    def init_actions(self, all_actions):
+    def init_abilities(self, all_actions):
         ab = []
         for a in self.abilities:
             aa = next((item for item in all_actions if item.id == a), None)

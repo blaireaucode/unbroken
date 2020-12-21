@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/BattleActionWidget.ui',
 # licensing of 'ui/BattleActionWidget.ui' applies.
 #
-# Created: Sun Dec 20 17:59:01 2020
+# Created: Mon Dec 21 15:51:20 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -13,30 +13,36 @@ from PySide2 import QtCore, QtGui, QtWidgets
 class Ui_BattleActionWidget(object):
     def setupUi(self, BattleActionWidget):
         BattleActionWidget.setObjectName("BattleActionWidget")
-        BattleActionWidget.resize(408, 90)
-        self.horizontalLayout = QtWidgets.QHBoxLayout(BattleActionWidget)
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        self.label_text = QtWidgets.QLabel(BattleActionWidget)
-        self.label_text.setWordWrap(True)
-        self.label_text.setObjectName("label_text")
-        self.horizontalLayout.addWidget(self.label_text)
-        self.verticalLayout = QtWidgets.QVBoxLayout()
+        BattleActionWidget.resize(567, 291)
+        self.gridLayout = QtWidgets.QGridLayout(BattleActionWidget)
+        self.gridLayout.setObjectName("gridLayout")
+        self.scrollArea = QtWidgets.QScrollArea(BattleActionWidget)
+        self.scrollArea.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.scrollArea.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 543, 267))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.button_trick = QtWidgets.QPushButton(BattleActionWidget)
-        self.button_trick.setObjectName("button_trick")
-        self.verticalLayout.addWidget(self.button_trick)
-        self.button_fight = QtWidgets.QPushButton(BattleActionWidget)
-        self.button_fight.setObjectName("button_fight")
-        self.verticalLayout.addWidget(self.button_fight)
-        self.horizontalLayout.addLayout(self.verticalLayout)
+        self.action_layout = QtWidgets.QGridLayout()
+        self.action_layout.setObjectName("action_layout")
+        self.debug1 = GenericActionWidget(self.scrollAreaWidgetContents)
+        self.debug1.setObjectName("debug1")
+        self.action_layout.addWidget(self.debug1, 0, 0, 1, 1)
+        self.debug2 = GenericActionWidget(self.scrollAreaWidgetContents)
+        self.debug2.setObjectName("debug2")
+        self.action_layout.addWidget(self.debug2, 1, 0, 1, 1)
+        self.verticalLayout.addLayout(self.action_layout)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.gridLayout.addWidget(self.scrollArea, 0, 0, 1, 1)
 
         self.retranslateUi(BattleActionWidget)
         QtCore.QMetaObject.connectSlotsByName(BattleActionWidget)
 
     def retranslateUi(self, BattleActionWidget):
         BattleActionWidget.setWindowTitle(QtWidgets.QApplication.translate("BattleActionWidget", "Form", None, -1))
-        self.label_text.setText(QtWidgets.QApplication.translate("BattleActionWidget", "Trick ? ", None, -1))
-        self.button_trick.setText(QtWidgets.QApplication.translate("BattleActionWidget", "Trick", None, -1))
-        self.button_fight.setText(QtWidgets.QApplication.translate("BattleActionWidget", "Fight", None, -1))
 
+from .GenericActionWidget import GenericActionWidget
 import unbroken_rc

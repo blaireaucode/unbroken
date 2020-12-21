@@ -15,6 +15,7 @@ class Game(object):
         self.character = None
         self.phase = Phase()
         self.sub_phase = SubPhase()
+        self.battle_phase = BattlePhase()
         self.encounters = []
         self.monster = None
         self.battle_round = 0
@@ -122,9 +123,12 @@ class Game(object):
         else:
             self.sub_phase.to_preparation()
             self.phase_changed.emit()
+        self.character.character_changed.emit()
 
     def start_fight(self):
-        print(self.sub_phase)
-        self.sub_phase.to_battle()
+        print('start fight', self.sub_phase)
+        # fixme later : check sub phase
+        self.sub_phase.trick_to_battle()
+        # self.battle_phase.to_character()
         self.battle_round = 1
         self.phase_changed.emit()

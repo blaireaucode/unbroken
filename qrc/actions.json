@@ -49,7 +49,7 @@
     "id": 8,
     "name": "Orienteer",
     "action_type": "Travel",
-    "text": "Reveal 2 extra cards during Exploration.",
+    "text": "Spend one small effort and reveal 2 extra cards during Exploration.",
     "is_ability": false
   },
   {
@@ -62,7 +62,7 @@
   {
     "id": 10,
     "name": "Decision step",
-    "action_type": "-",
+    "action_type": "Travel",
     "text": "You must make a decision: are you ready to encounter the monster? ",
     "is_ability": false
   }

@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/ChooseEncounterActionWidget.ui',
 # licensing of 'ui/ChooseEncounterActionWidget.ui' applies.
 #
-# Created: Sun Dec 20 17:59:00 2020
+# Created: Mon Dec 21 15:51:19 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!

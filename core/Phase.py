@@ -37,3 +37,13 @@ class SubPhase(StateMachine):
     to_reward = battle_step.to(reward_step)
     to_hunger = reward_step.to(hunger_step)
     trick_to_hunger = trickery_step.to(hunger_step)
+    trick_to_battle = trickery_step.to(battle_step)
+
+
+class BattlePhase(StateMachine):
+    # states
+    character_step = State('character_step', initial=True)
+    monster_step = State('monster_step')
+    # transitions
+    to_monster = character_step.to(monster_step)
+    to_character = monster_step.to(character_step)

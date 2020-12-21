@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/MonsterWidget.ui',
 # licensing of 'ui/MonsterWidget.ui' applies.
 #
-# Created: Sun Dec 20 17:58:58 2020
+# Created: Mon Dec 21 15:51:16 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!

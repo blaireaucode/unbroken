@@ -253,5 +253,69 @@
     "spend": "-",
     "gain": "+1m",
     "time": 2
+  },
+  {
+    "id": 33,
+    "name": "Unfortunate adventurer",
+    "text": "todo",
+    "spend": "-",
+    "gain": "+1m",
+    "time": 2
+  },
+  {
+    "id": 34,
+    "name": "Obnoxious Imp",
+    "text": "todo",
+    "spend": "-1m",
+    "gain": "+1m +2se",
+    "time": 1
+  },
+  {
+    "id": 35,
+    "name": "Makeshift blood idol",
+    "text": "todo",
+    "spend": "-1me",
+    "gain": "+2m",
+    "time": 2
+  },
+  {
+    "id": 36,
+    "name": "Bear trap",
+    "text": "todo",
+    "spend": "-1c",
+    "gain": "+2m",
+    "time": 2
+  },
+  {
+    "id": 37,
+    "name": "Discarded weaponry",
+    "text": "todo",
+    "spend": "Commit to next encounter",
+    "gain": "+1m",
+    "time": 1
+  },
+  {
+    "id": 38,
+    "name": "Greedy Goblin",
+    "text": "todo",
+    "spend": "-1t",
+    "gain": "+2m",
+    "time": 2
+  },
+  {
+    "id": 39,
+    "name": "Rusted cage",
+    "text": "todo",
+    "spend": "-1se",
+    "gain": "+2m",
+    "time": 4
+  },
+  {
+    "id": 40,
+    "name": "Dislodging the beam",
+    "text": "todo",
+    "spend": "-1le",
+    "gain": "+2m +2se",
+    "time": 1
   }
 ]
