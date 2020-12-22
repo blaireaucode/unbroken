@@ -1,4 +1,5 @@
-from PySide2.QtCore import Slot, Signal, QSize
+from PySide2.QtCore import Slot
+from PySide2 import QtGui
 from .ui_NewGameWidget import Ui_NewGameWidget
 from .SlidingStackedWidget import *
 from core import Game

@@ -1,7 +1,6 @@
 from PySide2 import QtWidgets
 from PySide2.QtCore import Slot
 from .ui_TrickeryActionWidget import Ui_TrickeryActionWidget
-from core import *
 
 
 class TrickeryActionWidget(QtWidgets.QWidget, Ui_TrickeryActionWidget):

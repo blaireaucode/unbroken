@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/MainWindow.ui',
 # licensing of 'ui/MainWindow.ui' applies.
 #
-# Created: Mon Dec 21 15:51:14 2020
+# Created: Mon Dec 21 20:54:23 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -44,7 +44,7 @@ class Ui_MainWindow(object):
         self.widget_character.setMinimumSize(QtCore.QSize(300, 0))
         self.widget_character.setObjectName("widget_character")
         self.gridLayout.addWidget(self.widget_character, 0, 0, 1, 1)
-        self.widget_actions = ActionsWidget(self.centralwidget)
+        self.widget_actions = ActionWidget(self.centralwidget)
         self.widget_actions.setMinimumSize(QtCore.QSize(300, 300))
         self.widget_actions.setObjectName("widget_actions")
         self.gridLayout.addWidget(self.widget_actions, 0, 1, 1, 1)
@@ -74,9 +74,9 @@ class Ui_MainWindow(object):
         self.button_new.setText(QtWidgets.QApplication.translate("MainWindow", "new", None, -1))
         self.button_save.setText(QtWidgets.QApplication.translate("MainWindow", "save", None, -1))
 
-from .CharacterWidget import CharacterWidget
-from .ActionsWidget import ActionsWidget
 from .EncounterWidget import EncounterWidget
 from .PhaseWidget import PhaseWidget
+from .CharacterWidget import CharacterWidget
 from .MonsterWidget import MonsterWidget
+from .ActionWidget import ActionWidget
 import unbroken_rc

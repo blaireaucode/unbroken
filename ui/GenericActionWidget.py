@@ -14,9 +14,7 @@ class GenericActionWidget(QtWidgets.QWidget, Ui_GenericActionWidget):
         self.label_name.setText(action.name)
         self.label_action_type.setText(action.action_type)
         self.label_text.setText(action.text)
-
         self.button_do_it.clicked.connect(self.slot_on_do_it)
-        self.action.game.phase_changed.connect(self.slot_on_changed)
         self.action.game.character.character_changed.connect(self.slot_on_changed)
         self.slot_on_changed()
 

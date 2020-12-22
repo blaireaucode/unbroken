@@ -3,6 +3,7 @@ from PySide2.QtCore import Slot
 from .ui_ChooseEncounterActionWidget import Ui_ChooseEncounterActionWidget
 from core import *
 
+
 class ChooseEncounterActionWidget(QtWidgets.QWidget, Ui_ChooseEncounterActionWidget):
 
     def __init__(self, game, parent=None):

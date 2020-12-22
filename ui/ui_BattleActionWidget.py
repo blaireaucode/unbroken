@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/BattleActionWidget.ui',
 # licensing of 'ui/BattleActionWidget.ui' applies.
 #
-# Created: Mon Dec 21 15:51:20 2020
+# Created: Mon Dec 21 20:54:28 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -15,6 +15,7 @@ class Ui_BattleActionWidget(object):
         BattleActionWidget.setObjectName("BattleActionWidget")
         BattleActionWidget.resize(567, 291)
         self.gridLayout = QtWidgets.QGridLayout(BattleActionWidget)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
         self.gridLayout.setObjectName("gridLayout")
         self.scrollArea = QtWidgets.QScrollArea(BattleActionWidget)
         self.scrollArea.setFrameShape(QtWidgets.QFrame.NoFrame)
@@ -22,7 +23,7 @@ class Ui_BattleActionWidget(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 543, 267))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 567, 291))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout.setObjectName("verticalLayout")

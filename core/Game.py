@@ -19,7 +19,7 @@ class Game(object):
         self.encounters = []
         self.monster = None
         self.battle_round = 0
-        self.actions = []
+        self.actions_sheet = []
         self.all_actions = []
         self.all_encounters = []
         self.all_monsters = []
@@ -31,6 +31,15 @@ class Game(object):
         self.all_actions = Game.db.all_actions.copy()
         for a in self.all_actions:
             a.set_game(self)
+        # init action sheet
+        self.actions_sheet.append(self.all_actions[4])
+        self.actions_sheet.append(self.all_actions[5])
+        self.actions_sheet.append(self.all_actions[6])
+        self.actions_sheet.append(self.all_actions[7])
+        self.actions_sheet.append(self.all_actions[8])
+        self.actions_sheet.append(self.all_actions[9])
+        self.actions_sheet.append(self.all_actions[10])
+        print(self.actions_sheet)
         # init all encounters (make a copy to keep the game consistent)
         self.all_encounters = Game.db.all_encounters.copy()
         for a in self.all_encounters:
@@ -112,12 +121,14 @@ class Game(object):
         self.phase_changed.emit()
 
     def after_encounter(self):
+        print('after encounter')
         # init nb of cards to reveal
         self.character.orienteer_cards = 2
         # remove encounter, put end of the deck
         e = self.encounters.pop(0)
         self.all_encounters.append(e)
         # check time
+        print(self.character.resources)
         if self.character.resources.time <= 0:
             self.start_combat('ambush')
         else:
@@ -132,3 +143,43 @@ class Game(object):
         # self.battle_phase.to_character()
         self.battle_round = 1
         self.phase_changed.emit()
+
+    def get_current_activities(self):
+        if self.phase.is_travel:
+            if self.sub_phase.is_preparation_step:
+                return self.get_preparation_actions()
+        if self.phase.is_combat:
+            if self.battle_phase.is_character_step:
+                return self.get_combat_character_actions()
+            if self.battle_phase.is_monster_step:
+                return self.get_combat_monster_actions()
+        return []
+
+    def get_preparation_actions(self):
+        actions = []
+        for a in self.actions_sheet:
+            # print('action sheet', a.name)
+            if a.action_type == 'General' or a.action_type == 'Travel':
+                actions.append(a)
+        for a in self.character.abilities:
+            # print('abilities', a.name)
+            if a.action_type == 'General' or a.action_type == 'Travel':
+                actions.append(a)
+        # FIXME Skill, weapons
+        #print(actions)
+        return actions
+
+    def get_combat_character_actions(self):
+        actions = []
+        for a in self.actions_sheet:
+            if a.action_type == 'General' or a.action_type == 'Combat':
+                actions.append(a)
+        for a in self.character.abilities:
+            if a.action_type == 'General' or a.action_type == 'Combat':
+                actions.append(a)
+        # FIXME Skill, weapons
+        return actions
+
+    def get_combat_monster_actions(self):
+        actions = []
+        return actions

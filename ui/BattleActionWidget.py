@@ -1,5 +1,3 @@
-from PySide2 import QtWidgets
-from PySide2.QtCore import Slot
 from .ui_BattleActionWidget import Ui_BattleActionWidget
 from .GenericActionWidget import *
 
@@ -28,8 +26,8 @@ class BattleActionWidget(QtWidgets.QWidget, Ui_BattleActionWidget):
         print(self.game.battle_phase)
         # remove previous
         for a in self.action_widgets:
-            a.setVisible(False)
             self.action_layout.removeWidget(a)
+            a.setVisible(False)
         self.action_widgets = []
         # set current actions
         if self.game.battle_phase.is_character_step:
@@ -42,16 +40,8 @@ class BattleActionWidget(QtWidgets.QWidget, Ui_BattleActionWidget):
         pass
 
     def update_character(self):
-        # all character abilities
-        for a in self.game.character.abilities:
-            if a.action_type != 'Travel':
-                wa = GenericActionWidget(self, a)
-                self.action_layout.addWidget(wa)
-                self.action_widgets.append(wa)
-        # all possible actions in the current phase
-        for a in self.game.all_actions:
-            if not a.is_ability:
-                if a.action_type != 'Travel':
-                    wa = GenericActionWidget(self, a)
-                    self.action_layout.addWidget(wa)
-                    self.action_widgets.append(wa)
+        actions = self.game.get_current_activities()
+        for a in actions:
+            wa = GenericActionWidget(self, a)
+            self.action_layout.addWidget(wa)
+            self.action_widgets.append(wa)

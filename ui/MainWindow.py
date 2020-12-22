@@ -2,7 +2,6 @@ from .ui_MainWindow import Ui_MainWindow
 from .NewGameWidget import *
 import gettext
 import os
-# import config
 import configparser
 
 

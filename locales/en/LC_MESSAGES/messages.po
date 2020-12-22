@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unbroken VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-21 15:51+0100\n"
+"POT-Creation-Date: 2020-12-21 20:54+0100\n"
 "PO-Revision-Date: 2020-11-25 21:54+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -19,128 +19,132 @@ msgstr ""
 "Generated-By: Babel 2.9.0\n"
 
 #: qrc/actions.json:3 qrc/actions.json:9 qrc/actions.json:15
-#: qrc/actions.json:21 qrc/actions.json:28 qrc/actions.json:35
-#: qrc/actions.json:42 qrc/actions.json:49 qrc/actions.json:56
-#: qrc/actions.json:63 qrc/encounters.json:3 qrc/encounters.json:11
-#: qrc/encounters.json:19 qrc/encounters.json:27 qrc/encounters.json:35
-#: qrc/encounters.json:43 qrc/encounters.json:51 qrc/encounters.json:59
-#: qrc/encounters.json:67 qrc/encounters.json:75 qrc/encounters.json:82
-#: qrc/encounters.json:90 qrc/encounters.json:98 qrc/encounters.json:106
-#: qrc/encounters.json:114 qrc/encounters.json:122 qrc/encounters.json:130
-#: qrc/encounters.json:138 qrc/encounters.json:146 qrc/encounters.json:154
-#: qrc/encounters.json:162 qrc/encounters.json:170 qrc/encounters.json:178
-#: qrc/encounters.json:186 qrc/encounters.json:194 qrc/encounters.json:202
-#: qrc/encounters.json:210 qrc/encounters.json:218 qrc/encounters.json:226
-#: qrc/encounters.json:234 qrc/encounters.json:242 qrc/encounters.json:250
-#: qrc/encounters.json:258 qrc/encounters.json:266 qrc/encounters.json:274
-#: qrc/encounters.json:282 qrc/encounters.json:290 qrc/encounters.json:298
-#: qrc/encounters.json:306 qrc/encounters.json:314 qrc/monsters.json:3
+#: qrc/actions.json:21 qrc/actions.json:27 qrc/actions.json:34
+#: qrc/actions.json:41 qrc/actions.json:48 qrc/actions.json:55
+#: qrc/actions.json:62 qrc/actions.json:69 qrc/encounters.json:3
+#: qrc/encounters.json:11 qrc/encounters.json:19 qrc/encounters.json:27
+#: qrc/encounters.json:35 qrc/encounters.json:43 qrc/encounters.json:51
+#: qrc/encounters.json:59 qrc/encounters.json:67 qrc/encounters.json:75
+#: qrc/encounters.json:82 qrc/encounters.json:90 qrc/encounters.json:98
+#: qrc/encounters.json:106 qrc/encounters.json:114 qrc/encounters.json:122
+#: qrc/encounters.json:130 qrc/encounters.json:138 qrc/encounters.json:146
+#: qrc/encounters.json:154 qrc/encounters.json:162 qrc/encounters.json:170
+#: qrc/encounters.json:178 qrc/encounters.json:186 qrc/encounters.json:194
+#: qrc/encounters.json:202 qrc/encounters.json:210 qrc/encounters.json:218
+#: qrc/encounters.json:226 qrc/encounters.json:234 qrc/encounters.json:242
+#: qrc/encounters.json:250 qrc/encounters.json:258 qrc/encounters.json:266
+#: qrc/encounters.json:274 qrc/encounters.json:282 qrc/encounters.json:290
+#: qrc/encounters.json:298 qrc/encounters.json:306 qrc/encounters.json:314
+#: qrc/encounters.json:322 qrc/encounters.json:330 qrc/encounters.json:338
+#: qrc/encounters.json:346 qrc/encounters.json:354 qrc/encounters.json:362
+#: qrc/encounters.json:370 qrc/encounters.json:378 qrc/monsters.json:3
 #: qrc/monsters.json:18
 msgid "id"
 msgstr ""
 
-#: qrc/actions.json:4
-msgid "Take a peek"
-msgstr ""
-
-#: qrc/actions.json:5 qrc/actions.json:51 qrc/actions.json:58
-msgid "Travel"
-msgstr ""
-
-#: qrc/actions.json:6
-msgid "Reveal +1 card during the Exploration Step."
+#: qrc/actions.json:4 qrc/actions.json:5 qrc/actions.json:6
+msgid "Debug"
 msgstr ""
 
 #: qrc/actions.json:10
-msgid "Flexible"
+msgid "Take a peek"
 msgstr ""
 
-#: qrc/actions.json:11 qrc/actions.json:17
-msgid "Response"
+#: qrc/actions.json:11 qrc/actions.json:57 qrc/actions.json:64
+#: qrc/actions.json:71
+msgid "Travel"
 msgstr ""
 
 #: qrc/actions.json:12
-msgid "Before gaining a new Skill, reveal +1 Skill card to select from."
+msgid "Reveal +1 card during the Exploration Step."
 msgstr ""
 
 #: qrc/actions.json:16
-msgid "Dodge"
+msgid "Flexible"
+msgstr ""
+
+#: qrc/actions.json:17 qrc/actions.json:23
+msgid "Response"
 msgstr ""
 
 #: qrc/actions.json:18
+msgid "Before gaining a new Skill, reveal +1 Skill card to select from."
+msgstr ""
+
+#: qrc/actions.json:22
+msgid "Dodge"
+msgstr ""
+
+#: qrc/actions.json:24
 msgid ""
 "After a monster's combat roll spend <Effort> to reduce the roll result by"
 " 1."
 msgstr ""
 
-#: qrc/actions.json:22
+#: qrc/actions.json:28
 msgid "Focus"
 msgstr ""
 
-#: qrc/actions.json:23 qrc/actions.json:30 qrc/actions.json:37
-#: qrc/actions.json:44
+#: qrc/actions.json:29 qrc/actions.json:36 qrc/actions.json:43
+#: qrc/actions.json:50
 msgid "General"
 msgstr ""
 
-#: qrc/actions.json:24
+#: qrc/actions.json:30
 msgid "Spend 4 small Efforts and gain 1 medium Effort."
 msgstr ""
 
-#: qrc/actions.json:25 qrc/actions.json:32 qrc/actions.json:39
-#: qrc/actions.json:46 qrc/actions.json:53 qrc/actions.json:60
-#: qrc/actions.json:67
+#: qrc/actions.json:31 qrc/actions.json:38 qrc/actions.json:45
+#: qrc/actions.json:52 qrc/actions.json:59 qrc/actions.json:66
+#: qrc/actions.json:73
 msgid "is_ability"
 msgstr ""
 
-#: qrc/actions.json:29
+#: qrc/actions.json:35
 msgid "Inspiration"
 msgstr ""
 
-#: qrc/actions.json:31
+#: qrc/actions.json:37
 msgid "Spend 2 medium Efforts and gain 1 large Effort."
 msgstr ""
 
-#: qrc/actions.json:36
+#: qrc/actions.json:42
 msgid "Plan"
 msgstr ""
 
-#: qrc/actions.json:38
+#: qrc/actions.json:44
 msgid "Spend 4 small Efforts and gain 1 Cunning."
 msgstr ""
 
-#: qrc/actions.json:43
+#: qrc/actions.json:49
 msgid "Craft"
 msgstr ""
 
-#: qrc/actions.json:45
+#: qrc/actions.json:51
 msgid "Spend the required cost to upgrade your weapon."
 msgstr ""
 
-#: qrc/actions.json:50
+#: qrc/actions.json:56
 msgid "Orienteer"
 msgstr ""
 
-#: qrc/actions.json:52
+#: qrc/actions.json:58
 msgid "Spend one small effort and reveal 2 extra cards during Exploration."
 msgstr ""
 
-#: qrc/actions.json:57
+#: qrc/actions.json:63
 msgid "Scout"
 msgstr ""
 
-#: qrc/actions.json:59
+#: qrc/actions.json:65
 msgid "Reveal monster."
 msgstr ""
 
-#: qrc/actions.json:64
+#: qrc/actions.json:70
 msgid "Decision step"
 msgstr ""
 
-#: qrc/actions.json:65 qrc/encounters.json:253 qrc/encounters.json:261
-msgid "-"
-msgstr ""
-
-#: qrc/actions.json:66
+#: qrc/actions.json:72
 msgid "You must make a decision: are you ready to encounter the monster? "
 msgstr ""
 
@@ -242,7 +246,8 @@ msgstr ""
 
 #: qrc/encounters.json:6 qrc/encounters.json:101 qrc/encounters.json:109
 #: qrc/encounters.json:117 qrc/encounters.json:181 qrc/encounters.json:213
-#: qrc/encounters.json:245 qrc/encounters.json:309
+#: qrc/encounters.json:245 qrc/encounters.json:309 qrc/encounters.json:333
+#: qrc/encounters.json:341
 msgid "-1se"
 msgstr ""
 
@@ -264,7 +269,9 @@ msgstr ""
 #: qrc/encounters.json:247 qrc/encounters.json:255 qrc/encounters.json:263
 #: qrc/encounters.json:271 qrc/encounters.json:279 qrc/encounters.json:287
 #: qrc/encounters.json:295 qrc/encounters.json:303 qrc/encounters.json:311
-#: qrc/encounters.json:319
+#: qrc/encounters.json:319 qrc/encounters.json:327 qrc/encounters.json:335
+#: qrc/encounters.json:343 qrc/encounters.json:351 qrc/encounters.json:359
+#: qrc/encounters.json:367 qrc/encounters.json:375 qrc/encounters.json:383
 msgid "time"
 msgstr ""
 
@@ -294,6 +301,7 @@ msgstr ""
 
 #: qrc/encounters.json:22 qrc/encounters.json:30 qrc/encounters.json:62
 #: qrc/encounters.json:125 qrc/encounters.json:133 qrc/encounters.json:221
+#: qrc/encounters.json:349 qrc/encounters.json:357
 msgid "0"
 msgstr ""
 
@@ -372,8 +380,11 @@ msgstr ""
 #: qrc/encounters.json:236 qrc/encounters.json:244 qrc/encounters.json:252
 #: qrc/encounters.json:260 qrc/encounters.json:268 qrc/encounters.json:276
 #: qrc/encounters.json:284 qrc/encounters.json:292 qrc/encounters.json:300
-#: qrc/encounters.json:308 qrc/encounters.json:316 qrc/monsters.json:11
-#: qrc/monsters.json:13 qrc/monsters.json:26 qrc/monsters.json:28
+#: qrc/encounters.json:308 qrc/encounters.json:316 qrc/encounters.json:324
+#: qrc/encounters.json:332 qrc/encounters.json:340 qrc/encounters.json:348
+#: qrc/encounters.json:356 qrc/encounters.json:364 qrc/encounters.json:372
+#: qrc/encounters.json:380 qrc/monsters.json:11 qrc/monsters.json:13
+#: qrc/monsters.json:26 qrc/monsters.json:28
 msgid "todo"
 msgstr ""
 
@@ -399,6 +410,7 @@ msgid "Talkative trader"
 msgstr ""
 
 #: qrc/encounters.json:85 qrc/encounters.json:149 qrc/encounters.json:269
+#: qrc/encounters.json:365
 msgid "-1m"
 msgstr ""
 
@@ -433,7 +445,7 @@ msgid "Slithering snake"
 msgstr ""
 
 #: qrc/encounters.json:141 qrc/encounters.json:157 qrc/encounters.json:229
-#: qrc/encounters.json:285 qrc/monsters.json:12
+#: qrc/encounters.json:285 qrc/encounters.json:373 qrc/monsters.json:12
 msgid "-1c"
 msgstr ""
 
@@ -454,7 +466,8 @@ msgstr ""
 msgid "Raw hunting trophies"
 msgstr ""
 
-#: qrc/encounters.json:165 qrc/encounters.json:205
+#: qrc/encounters.json:165 qrc/encounters.json:205 qrc/encounters.json:325
+#: qrc/encounters.json:381
 msgid "-1w"
 msgstr ""
 
@@ -524,6 +537,10 @@ msgstr ""
 msgid "Unfortunate adventurer"
 msgstr ""
 
+#: qrc/encounters.json:253 qrc/encounters.json:261
+msgid "-"
+msgstr ""
+
 #: qrc/encounters.json:267
 msgid "Obnoxious Imp"
 msgstr ""
@@ -563,6 +580,43 @@ msgstr ""
 
 #: qrc/encounters.json:318
 msgid "+2m +2se"
+msgstr ""
+
+#: qrc/encounters.json:323
+msgid "Solace in warmth"
+msgstr ""
+
+#: qrc/encounters.json:326 qrc/encounters.json:334 qrc/encounters.json:342
+#: qrc/encounters.json:350 qrc/encounters.json:358
+msgid "+1me"
+msgstr ""
+
+#: qrc/encounters.json:331 qrc/encounters.json:339
+msgid "Forsaken shrine"
+msgstr ""
+
+#: qrc/encounters.json:347 qrc/encounters.json:355
+msgid "Gathering strength"
+msgstr ""
+
+#: qrc/encounters.json:363
+msgid "Reaching the shelter"
+msgstr ""
+
+#: qrc/encounters.json:366
+msgid "+1me +2se"
+msgstr ""
+
+#: qrc/encounters.json:371
+msgid "The dark places"
+msgstr ""
+
+#: qrc/encounters.json:374 qrc/encounters.json:382
+msgid "+2me"
+msgstr ""
+
+#: qrc/encounters.json:379
+msgid "The glowing embers"
 msgstr ""
 
 #: qrc/monsters.json:4
@@ -665,13 +719,13 @@ msgstr ""
 msgid "Not yet, explore!"
 msgstr ""
 
-#: ui/TrickeryActionWidget.py:14
+#: ui/TrickeryActionWidget.py:13
 msgid ""
 "Trickery ? \n"
 "\n"
 msgstr ""
 
-#: ui/TrickeryActionWidget.py:15
+#: ui/TrickeryActionWidget.py:14
 msgid ""
 "You may now choose to trick the monster, avoiding combat entirely, if you"
 " can pay the Trickery Cost, which is listed on the monster sheet. Some "
@@ -679,15 +733,15 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ui/TrickeryActionWidget.py:19
+#: ui/TrickeryActionWidget.py:18
 msgid "If you trick the monster, you get no reward."
 msgstr ""
 
-#: ui/TrickeryActionWidget.py:22
+#: ui/TrickeryActionWidget.py:21
 msgid "Trick"
 msgstr ""
 
-#: ui/TrickeryActionWidget.py:23
+#: ui/TrickeryActionWidget.py:22
 msgid "Fight !"
 msgstr ""
 

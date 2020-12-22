@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/ResolveOrRestActionWidget.ui',
 # licensing of 'ui/ResolveOrRestActionWidget.ui' applies.
 #
-# Created: Mon Dec 21 15:51:19 2020
+# Created: Mon Dec 21 20:54:27 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!

@@ -12,7 +12,8 @@ from .TrickeryActionWidget import *
 from .BattleActionWidget import *
 from .ChooseEncounterActionWidget import *
 from .CombatActionsWidget import *
-from .ActionsWidget import *
+from .MultipleActionsWidget import *
+from .ActionWidget import *
 
 from .MainWindow import *
 

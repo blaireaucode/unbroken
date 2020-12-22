@@ -1,5 +1,11 @@
 [
   {
+    "id": 0,
+    "name": "Debug",
+    "action_type": "Debug",
+    "text": "Debug"
+  },
+  {
     "id": 1,
     "name": "Take a peek",
     "action_type": "Travel",

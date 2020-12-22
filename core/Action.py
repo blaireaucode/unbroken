@@ -9,7 +9,7 @@ class Action(object):
         self.text = None
         self.action_type = None
         self.game = None
-        self.is_ability = True
+        # self.is_ability = True
         # initialize according a initial_data dictionary
         for dictionary in initial_data:
             for key in dictionary:

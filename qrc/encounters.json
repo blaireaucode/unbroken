@@ -317,5 +317,69 @@
     "spend": "-1le",
     "gain": "+2m +2se",
     "time": 1
+  },
+  {
+    "id": 41,
+    "name": "Solace in warmth",
+    "text": "todo",
+    "spend": "-1w",
+    "gain": "+1me",
+    "time": 0
+  },
+  {
+    "id": 42,
+    "name": "Forsaken shrine",
+    "text": "todo",
+    "spend": "-1se",
+    "gain": "+1me",
+    "time": 1
+  },
+  {
+    "id": 43,
+    "name": "Forsaken shrine",
+    "text": "todo",
+    "spend": "-1se",
+    "gain": "+1me",
+    "time": 1
+  },
+  {
+    "id": 44,
+    "name": "Gathering strength",
+    "text": "todo",
+    "spend": "0",
+    "gain": "+1me",
+    "time": 2
+  },
+  {
+    "id": 45,
+    "name": "Gathering strength",
+    "text": "todo",
+    "spend": "0",
+    "gain": "+1me",
+    "time": 2
+  },
+  {
+    "id": 46,
+    "name": "Reaching the shelter",
+    "text": "todo",
+    "spend": "-1m",
+    "gain": "+1me +2se",
+    "time": 1
+  },
+  {
+    "id": 47,
+    "name": "The dark places",
+    "text": "todo",
+    "spend": "-1c",
+    "gain": "+2me",
+    "time": 2
+  },
+  {
+    "id": 48,
+    "name": "The glowing embers",
+    "text": "todo",
+    "spend": "-1w",
+    "gain": "+2me",
+    "time": 3
   }
 ]

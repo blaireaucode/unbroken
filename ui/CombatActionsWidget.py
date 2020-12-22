@@ -9,23 +9,16 @@ class CombatActionsWidget(QtWidgets.QWidget, Ui_CombatActionsWidget):
         super().__init__(parent)
         self.setupUi(self)
         self.game = game
-        self.action_widgets = []
-        # remove debug widgets
-        self.action_layout.removeWidget(self.debug1)
-        self.action_layout.removeWidget(self.debug2)
-        self.debug1.setVisible(False)
-        self.debug2.setVisible(False)
-        self.debug2.deleteLater()
-        self.debug2.deleteLater()
+        self.action_widget = None
         self.game.phase_changed.connect(self.update)
         self.update()
 
     def update(self, **kwargs):
         # remove previous
-        for a in self.action_widgets:
-            a.setVisible(False)
-            self.action_layout.removeWidget(a)
-        self.action_widgets = []
+        if self.action_widget:
+            self.action_widget.setVisible(False)
+            self.gridLayout.removeWidget(self.action_widget)
+        self.action_widget = None
         if not self.game.phase.is_combat:
             return
         sp = self.game.sub_phase
@@ -41,11 +34,7 @@ class CombatActionsWidget(QtWidgets.QWidget, Ui_CombatActionsWidget):
         pass
 
     def update_trickery(self):
-        wa = TrickeryActionWidget(self.game, self)
-        self.action_layout.addWidget(wa)
-        self.action_widgets.append(wa)
+        self.action_widget = TrickeryActionWidget(self.game, self)
 
     def update_battle(self):
-        wa = BattleActionWidget(self.game, self)
-        self.action_layout.addWidget(wa)
-        self.action_widgets.append(wa)
+        self.action_widget = BattleActionWidget(self.game, self)

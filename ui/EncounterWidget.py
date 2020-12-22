@@ -1,8 +1,8 @@
-from PySide2.QtCore import Slot, Signal, QSize
-from PySide2 import QtWidgets
+from PySide2.QtCore import Slot
 from .ui_EncounterWidget import Ui_EncounterWidget
 from .SlidingStackedWidget import *
 from core.helpers import *
+from PySide2 import QtGui
 
 
 class EncounterWidget(QtWidgets.QWidget, Ui_EncounterWidget):

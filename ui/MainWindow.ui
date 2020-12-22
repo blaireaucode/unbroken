@@ -90,7 +90,7 @@
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="ActionsWidget" name="widget_actions" native="true">
+       <widget class="ActionWidget" name="widget_actions" native="true">
         <property name="minimumSize">
          <size>
           <width>300</width>
@@ -155,15 +155,15 @@
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>ActionsWidget</class>
-   <extends>QWidget</extends>
-   <header>.ActionsWidget.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
    <class>MonsterWidget</class>
    <extends>QWidget</extends>
    <header>.MonsterWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ActionWidget</class>
+   <extends>QWidget</extends>
+   <header>.ActionWidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

@@ -1,10 +1,6 @@
 from PySide2 import QtWidgets
-from PySide2.QtCore import Slot, Signal, QSize
-from PySide2.QtGui import QPixmap, QPalette, QColor, QFont
-from PySide2.QtWidgets import QAction
+from PySide2.QtCore import Slot
 from .ui_CharacterWidget import Ui_CharacterWidget
-import platform
-from core.Character import *
 
 
 class CharacterWidget(QtWidgets.QWidget, Ui_CharacterWidget):

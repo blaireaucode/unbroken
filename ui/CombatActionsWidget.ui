@@ -6,59 +6,28 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>671</width>
-    <height>463</height>
+    <width>785</width>
+    <height>481</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0">
-    <widget class="QScrollArea" name="scrollArea">
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="widgetResizable">
-      <bool>true</bool>
-     </property>
-     <widget class="QWidget" name="scrollAreaWidgetContents">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>647</width>
-        <height>439</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <layout class="QGridLayout" name="action_layout">
-         <item row="0" column="0">
-          <widget class="GenericActionWidget" name="debug1" native="true"/>
-         </item>
-         <item row="1" column="0">
-          <widget class="GenericActionWidget" name="debug2" native="true"/>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-   </item>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
   </layout>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>GenericActionWidget</class>
-   <extends>QWidget</extends>
-   <header>.GenericActionWidget.h</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <resources>
   <include location="../qrc/unbroken.qrc"/>
  </resources>
