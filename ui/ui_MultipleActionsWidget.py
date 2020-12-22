@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/MultipleActionsWidget.ui',
 # licensing of 'ui/MultipleActionsWidget.ui' applies.
 #
-# Created: Mon Dec 21 20:54:26 2020
+# Created: Tue Dec 22 11:04:37 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!

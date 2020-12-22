@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unbroken VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-21 20:54+0100\n"
+"POT-Creation-Date: 2020-12-22 11:04+0100\n"
 "PO-Revision-Date: 2020-11-25 21:47+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -683,15 +683,15 @@ msgstr ""
 msgid "+1le +1c +1t +1k"
 msgstr ""
 
-#: ui/ChooseEncounterActionWidget.py:16
+#: ui/ChooseEncounterActionWidget.py:17
 msgid "{e.name}"
 msgstr ""
 
-#: ui/NewGameWidget.py:51
+#: ui/NewGameWidget.py:52
 msgid "Previous"
 msgstr ""
 
-#: ui/NewGameWidget.py:52
+#: ui/NewGameWidget.py:53
 msgid "Next"
 msgstr ""
 

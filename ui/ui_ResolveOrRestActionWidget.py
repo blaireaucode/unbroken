@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/ResolveOrRestActionWidget.ui',
 # licensing of 'ui/ResolveOrRestActionWidget.ui' applies.
 #
-# Created: Mon Dec 21 20:54:27 2020
+# Created: Tue Dec 22 11:04:38 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -13,7 +13,7 @@ from PySide2 import QtCore, QtGui, QtWidgets
 class Ui_ResolveOrRestActionWidget(object):
     def setupUi(self, ResolveOrRestActionWidget):
         ResolveOrRestActionWidget.setObjectName("ResolveOrRestActionWidget")
-        ResolveOrRestActionWidget.resize(408, 90)
+        ResolveOrRestActionWidget.resize(268, 90)
         self.horizontalLayout = QtWidgets.QHBoxLayout(ResolveOrRestActionWidget)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.label_text = QtWidgets.QLabel(ResolveOrRestActionWidget)

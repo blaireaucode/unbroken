@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'ui/MainWindow.ui',
 # licensing of 'ui/MainWindow.ui' applies.
 #
-# Created: Mon Dec 21 20:54:23 2020
+# Created: Tue Dec 22 11:04:34 2020
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -75,8 +75,8 @@ class Ui_MainWindow(object):
         self.button_save.setText(QtWidgets.QApplication.translate("MainWindow", "save", None, -1))
 
 from .EncounterWidget import EncounterWidget
-from .PhaseWidget import PhaseWidget
+from .ActionWidget import ActionWidget
 from .CharacterWidget import CharacterWidget
 from .MonsterWidget import MonsterWidget
-from .ActionWidget import ActionWidget
+from .PhaseWidget import PhaseWidget
 import unbroken_rc
